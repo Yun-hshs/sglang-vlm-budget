@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.DS_Store
+.env
+*.key
+*.pem
+node_modules/
+.build/
+02-Multimodal/data/*
+!02-Multimodal/data/README.md
+02-Multimodal/results/*
+!02-Multimodal/results/STATUS.md
+!02-Multimodal/results/experiment_register.csv

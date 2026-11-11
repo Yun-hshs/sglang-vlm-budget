@@ -1,0 +1,10 @@
+strategies: [baseline, low, medium, high, adaptive]
+image_counts: [1, 2, 4, 8]
+concurrency: [1, 4, 8, 16]
+repeats: 3
+warmup_requests: 3
+max_tokens: 128
+temperature: 0
+seed: 20261111
+cache_mode: warm
+# cold 模式每次请求前调用 /flush_cache，且要求 concurrency=1。

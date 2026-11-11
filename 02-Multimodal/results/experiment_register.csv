@@ -1,0 +1,6 @@
+experiment,status,reason,required_resource
+CPU-tests,NOT_RUN,user_deferred_tests,Python environment
+MVP-end-to-end,NOT_RUN,user_deferred_tests,GPU server and model
+A-scaling,NOT_RUN,no_GPU_server,GPU and authorized data
+B-quality-budget,NOT_RUN,no_GPU_server,GPU and authorized data
+C-cache,OPTIONAL_NOT_RUN,extension_only,isolated instrumented server
