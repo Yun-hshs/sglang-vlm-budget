@@ -1,0 +1,34 @@
+[
+  {
+    "case": "hd-image",
+    "mode": "LoRA rank 16 · step 128",
+    "answer": "40",
+    "status": "LoRA rank 16 · step 128 · 1920×1080 · 完成（1.2 秒）",
+    "distinct_text_updates": 1,
+    "client_wall_s": 9.6
+  },
+  {
+    "case": "two-images",
+    "mode": "LoRA rank 16 · step 128",
+    "answer": "30",
+    "status": "LoRA rank 16 · step 128 · 1920×1080 / 1920×1080 · 完成（0.9 秒）",
+    "distinct_text_updates": 1,
+    "client_wall_s": 10.77
+  },
+  {
+    "case": "video",
+    "mode": "LoRA rank 16 · step 128",
+    "answer": "red",
+    "status": "LoRA rank 16 · step 128 · 视频采样 16 帧 · 完成（0.3 秒）",
+    "distinct_text_updates": 1,
+    "client_wall_s": 4.61
+  },
+  {
+    "case": "base-stream",
+    "mode": "基座对照",
+    "answer": "The chart illustrates fruit sales in units, with apples having sold 40 units and pears selling 20 units.",
+    "status": "基座对照 · 1920×1080 · 完成（0.8 秒）",
+    "distinct_text_updates": 18,
+    "client_wall_s": 7.2
+  }
+]

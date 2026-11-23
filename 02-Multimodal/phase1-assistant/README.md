@@ -1,10 +1,18 @@
 # 阶段 1 · 面向图表与短视频的多模态视觉语言助手
 
-状态为待实现。启动命令、训练配置和指标将在实现和验证后落地。
+已实现数据准备与基座推理，复现命令与验收记录见 [BASELINE.md](BASELINE.md)。小规模 LoRA 已完成训练、保存、重载和逐题对比，见 [LoRA 复现指南](LORA.md)。rank 8/16 已完成验证选点与 ChartQA 全量测试，见 [正式消融记录](ABLATION.md)。单卡公开 Demo 已上线并通过三类媒体上传验收，见 [部署指南](DEMO.md)。
+
+[正式实验报告](reports/final-report.md) · [在线 Demo](https://dc9fa8a96886798c5a.gradio.live) · [一键启动指南](DEMO.md)
+
+```bash
+# 准备兼容的 CUDA 版 PyTorch、基座及已验证 adapter 后，在本目录执行
+python -m pip install -r requirements-demo.txt
+SHARE=1 bash scripts/start_demo.sh
+```
 
 ## 技术路线
 
-以**数值图表推理**为主任务。Demo 展示高清图表读数、跨图表比较和短视频事件顺序问答。建议先以 Qwen3-VL-2B-Instruct 为基础模型，用 LlamaFactory 做 LoRA 指令微调，通过 Transformers/PEFT 加载基础权重和 adapter，由 Gradio 提供上传与流式答复。2B 作为首选是为了降低训练与演示资源压力。模型卡列出 Apache-2.0，训练可从同架构上游配置出发。最终版本与资源需求在 GPU 冒烟后确定。 [Qwen 模型卡](https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct) · [LlamaFactory 上游 LoRA 配置](https://github.com/hiyouga/LlamaFactory/blob/main/examples/train_lora/qwen3vl_lora_sft.yaml)
+以**数值图表推理**为主任务。Demo 展示高清图表读数、跨图表比较和短视频事件顺序问答。基座采用 Qwen2.5-VL-7B-Instruct，单张 RTX 5090 运行 BF16 推理。小规模 LoRA 使用 Transformers 与 PEFT 实现，后续由 Gradio 提供上传与流式答复。 [Qwen 模型卡](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct)
 
 ```mermaid
 flowchart LR

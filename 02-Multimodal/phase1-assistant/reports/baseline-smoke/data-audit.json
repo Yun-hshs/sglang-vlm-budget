@@ -1,0 +1,47 @@
+{
+  "source": "HuggingFaceM4/ChartQA",
+  "revision": "b605b6e08b57faf4359aeb2fe6a3ca595f99b6c5",
+  "selection": "First valid rows per subset in shard and row order",
+  "splits": {
+    "test": {
+      "examined": 1254,
+      "selected": {
+        "human": 4,
+        "augmented": 4
+      },
+      "rejected_or_skipped": {
+        "subset_quota": 1246
+      },
+      "inputs": {
+        "test-00000-of-00001-e2cd0b7a0f9eb20d.parquet": "efcf31333368c485eb569ec7bd4cc3694bd0e8e1a06c503124b51d27c924491d"
+      }
+    },
+    "val": {
+      "examined": 964,
+      "selected": {
+        "human": 4,
+        "augmented": 4
+      },
+      "rejected_or_skipped": {
+        "subset_quota": 956
+      },
+      "inputs": {
+        "val-00000-of-00001-0f11003c77497969.parquet": "de58d649aaac8343e6a3fa5ab362a0458d5b5374f4112a95fea5d1d9253dd86e"
+      }
+    },
+    "train": {
+      "examined": 7402,
+      "selected": {
+        "human": 4,
+        "augmented": 4
+      },
+      "rejected_or_skipped": {
+        "subset_quota": 7394
+      },
+      "inputs": {
+        "train-00000-of-00003-49492f364babfa44.parquet": "169979f8a8c64ba93ac1be22916bf9b49c9c2e4c57f5c0104e6f671f2aacd83a"
+      }
+    }
+  },
+  "complete": true
+}

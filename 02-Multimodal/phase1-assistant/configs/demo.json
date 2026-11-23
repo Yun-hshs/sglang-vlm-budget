@@ -1,0 +1,10 @@
+{
+  "adapter": "runs/ablation/full/rank-16/train/step-128/adapter",
+  "adapter_sha256": "4395fd07eb61053672b532aa739074b687004b538e324114d05c789c9ee16e46",
+  "max_images": 4,
+  "max_total_image_pixels": 3211264,
+  "max_question_chars": 800,
+  "max_upload_mib": 25,
+  "max_source_image_pixels": 25000000,
+  "max_new_tokens": 192
+}

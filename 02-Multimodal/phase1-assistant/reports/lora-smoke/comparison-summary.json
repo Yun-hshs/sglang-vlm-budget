@@ -1,0 +1,53 @@
+{
+  "manifest_sha256": "ff72a685dad509b54ff96d72bce0fc3f24243cc5404ac322ce6f0b5117853c23",
+  "adapter_sha256": "afad518cb4df84cc73402965247270f8ba0e344e51eef093f996014942d315aa",
+  "scores": {
+    "human": {
+      "base": {
+        "n": 4,
+        "correct": 3,
+        "failed": 0,
+        "relaxed_accuracy": 0.75
+      },
+      "lora": {
+        "n": 4,
+        "correct": 3,
+        "failed": 0,
+        "relaxed_accuracy": 0.75
+      }
+    },
+    "augmented": {
+      "base": {
+        "n": 4,
+        "correct": 2,
+        "failed": 0,
+        "relaxed_accuracy": 0.5
+      },
+      "lora": {
+        "n": 4,
+        "correct": 2,
+        "failed": 0,
+        "relaxed_accuracy": 0.5
+      }
+    },
+    "overall": {
+      "base": {
+        "n": 8,
+        "correct": 5,
+        "failed": 0,
+        "relaxed_accuracy": 0.625
+      },
+      "lora": {
+        "n": 8,
+        "correct": 5,
+        "failed": 0,
+        "relaxed_accuracy": 0.625
+      }
+    }
+  },
+  "paired": {
+    "improved": 0,
+    "regressed": 0,
+    "changed_prediction": 0
+  }
+}

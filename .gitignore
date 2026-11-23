@@ -18,3 +18,8 @@ node_modules/
 02-Multimodal/phase1-assistant/data/processed/
 02-Multimodal/phase1-assistant/checkpoints/
 02-Multimodal/phase1-assistant/runs/
+
+02-Multimodal/phase1-assistant/data/cases/
+
+# Local named course submission draft
+02-Multimodal/course-pr-local/

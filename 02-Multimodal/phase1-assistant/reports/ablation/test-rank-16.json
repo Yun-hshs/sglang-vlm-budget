@@ -1,0 +1,43 @@
+{
+  "manifest_sha256": "70f6543a65bb5b419c22cd33913b9b6c5db7f80784dcc2093b2712cb75d32e9e",
+  "config": {
+    "model": "Qwen/Qwen2.5-VL-7B-Instruct",
+    "revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+    "dtype": "bfloat16",
+    "max_pixels": 200704,
+    "video_max_pixels": 200704,
+    "max_video_seconds": 30,
+    "max_video_frames": 16,
+    "max_new_tokens": 24,
+    "chartqa_suffix": "Answer the question with only the final answer, without explanation."
+  },
+  "batch_size": 8,
+  "adapter": {
+    "model": "Qwen/Qwen2.5-VL-7B-Instruct",
+    "revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+    "sha256": "4395fd07eb61053672b532aa739074b687004b538e324114d05c789c9ee16e46"
+  },
+  "attention": "sdpa_auto",
+  "model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+  "scores": {
+    "human": {
+      "n": 1250,
+      "correct": 949,
+      "failed": 0,
+      "relaxed_accuracy": 0.7592
+    },
+    "augmented": {
+      "n": 1250,
+      "correct": 1153,
+      "failed": 0,
+      "relaxed_accuracy": 0.9224
+    },
+    "overall": {
+      "n": 2500,
+      "correct": 2102,
+      "failed": 0,
+      "relaxed_accuracy": 0.8408
+    }
+  }
+}

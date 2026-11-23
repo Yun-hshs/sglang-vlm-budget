@@ -1,0 +1,170 @@
+[
+  {
+    "rank": "8",
+    "case": "纠正",
+    "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:0",
+    "subset": "human",
+    "base_prediction": "13",
+    "lora_prediction": "14",
+    "base_correct": false,
+    "lora_correct": true,
+    "answers": [
+      "14"
+    ],
+    "image": "images/16ed5f0796ef0b10f37e31c22684b7db43e5a95712a815c4c9ee2c3e62032912.png"
+  },
+  {
+    "rank": "8",
+    "case": "退化",
+    "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:28",
+    "subset": "human",
+    "base_prediction": "60%",
+    "lora_prediction": "60",
+    "base_correct": true,
+    "lora_correct": false,
+    "answers": [
+      "0.6"
+    ],
+    "image": "images/fc1ae6ecff02f014e888d40258e27a7843696a36bf0f2c2f7dc1f41be9c5b141.png"
+  },
+  {
+    "rank": "8",
+    "case": "持续错误",
+    "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1",
+    "subset": "human",
+    "base_prediction": "0.4",
+    "lora_prediction": "0.37",
+    "base_correct": false,
+    "lora_correct": false,
+    "answers": [
+      "0.57"
+    ],
+    "image": "images/16ed5f0796ef0b10f37e31c22684b7db43e5a95712a815c4c9ee2c3e62032912.png"
+  },
+  {
+    "rank": "8",
+    "case": "纠正",
+    "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1252",
+    "subset": "augmented",
+    "base_prediction": "6.8%",
+    "lora_prediction": "6.8",
+    "base_correct": false,
+    "lora_correct": true,
+    "answers": [
+      "6.8"
+    ],
+    "image": "images/8b64339b51599f0cfaddfa30cbf73a3da4def543652a57df57fbe1b5bd3326dc.png"
+  },
+  {
+    "rank": "8",
+    "case": "退化",
+    "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1265",
+    "subset": "augmented",
+    "base_prediction": "553",
+    "lora_prediction": "83",
+    "base_correct": true,
+    "lora_correct": false,
+    "answers": [
+      "555"
+    ],
+    "image": "images/177b75984f52e58847fe0bbc615a04c951a8dfefb37fb38e0fe1618cec758fdb.png"
+  },
+  {
+    "rank": "8",
+    "case": "持续错误",
+    "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1255",
+    "subset": "augmented",
+    "base_prediction": "28",
+    "lora_prediction": "28",
+    "base_correct": false,
+    "lora_correct": false,
+    "answers": [
+      "23"
+    ],
+    "image": "images/91909e9d3a83ec631e564696188b463a87f82e1f931b9ce7651eba0424072cef.png"
+  },
+  {
+    "rank": "16",
+    "case": "纠正",
+    "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:0",
+    "subset": "human",
+    "base_prediction": "13",
+    "lora_prediction": "14",
+    "base_correct": false,
+    "lora_correct": true,
+    "answers": [
+      "14"
+    ],
+    "image": "images/16ed5f0796ef0b10f37e31c22684b7db43e5a95712a815c4c9ee2c3e62032912.png"
+  },
+  {
+    "rank": "16",
+    "case": "退化",
+    "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:28",
+    "subset": "human",
+    "base_prediction": "60%",
+    "lora_prediction": "60",
+    "base_correct": true,
+    "lora_correct": false,
+    "answers": [
+      "0.6"
+    ],
+    "image": "images/fc1ae6ecff02f014e888d40258e27a7843696a36bf0f2c2f7dc1f41be9c5b141.png"
+  },
+  {
+    "rank": "16",
+    "case": "持续错误",
+    "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1",
+    "subset": "human",
+    "base_prediction": "0.4",
+    "lora_prediction": "0.37",
+    "base_correct": false,
+    "lora_correct": false,
+    "answers": [
+      "0.57"
+    ],
+    "image": "images/16ed5f0796ef0b10f37e31c22684b7db43e5a95712a815c4c9ee2c3e62032912.png"
+  },
+  {
+    "rank": "16",
+    "case": "纠正",
+    "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1252",
+    "subset": "augmented",
+    "base_prediction": "6.8%",
+    "lora_prediction": "6.8",
+    "base_correct": false,
+    "lora_correct": true,
+    "answers": [
+      "6.8"
+    ],
+    "image": "images/8b64339b51599f0cfaddfa30cbf73a3da4def543652a57df57fbe1b5bd3326dc.png"
+  },
+  {
+    "rank": "16",
+    "case": "退化",
+    "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1265",
+    "subset": "augmented",
+    "base_prediction": "553",
+    "lora_prediction": "85",
+    "base_correct": true,
+    "lora_correct": false,
+    "answers": [
+      "555"
+    ],
+    "image": "images/177b75984f52e58847fe0bbc615a04c951a8dfefb37fb38e0fe1618cec758fdb.png"
+  },
+  {
+    "rank": "16",
+    "case": "持续错误",
+    "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1255",
+    "subset": "augmented",
+    "base_prediction": "28",
+    "lora_prediction": "28",
+    "base_correct": false,
+    "lora_correct": false,
+    "answers": [
+      "23"
+    ],
+    "image": "images/91909e9d3a83ec631e564696188b463a87f82e1f931b9ce7651eba0424072cef.png"
+  }
+]

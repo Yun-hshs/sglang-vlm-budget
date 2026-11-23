@@ -1,0 +1,55 @@
+{
+  "source": "HuggingFaceM4/ChartQA",
+  "revision": "b605b6e08b57faf4359aeb2fe6a3ca595f99b6c5",
+  "shards": {
+    "train": {
+      "train-00000-of-00003-49492f364babfa44.parquet": "169979f8a8c64ba93ac1be22916bf9b49c9c2e4c57f5c0104e6f671f2aacd83a",
+      "train-00001-of-00003-7302bae5e425bbc7.parquet": "a8819291729c807f163b93dcb2dc1fe60044d56412a0c0626cb7312df7392140",
+      "train-00002-of-00003-194c9400785577a2.parquet": "528133aec54c7e948f40b8af56b083b98f9b7d1fdcdd1cd9e375f3df984f7ae4"
+    },
+    "val": {
+      "val-00000-of-00001-0f11003c77497969.parquet": "de58d649aaac8343e6a3fa5ab362a0458d5b5374f4112a95fea5d1d9253dd86e"
+    },
+    "test": {
+      "test-00000-of-00001-e2cd0b7a0f9eb20d.parquet": "efcf31333368c485eb569ec7bd4cc3694bd0e8e1a06c503124b51d27c924491d"
+    }
+  },
+  "source_counts": {
+    "test": {
+      "human": 1250,
+      "augmented": 1250
+    },
+    "val": {
+      "human": 960,
+      "augmented": 960
+    },
+    "train": {
+      "human": 7398,
+      "augmented": 20901
+    }
+  },
+  "export_counts": {
+    "test": {
+      "human": 1250,
+      "augmented": 1250
+    },
+    "val": {
+      "human": 958,
+      "augmented": 960
+    },
+    "train": {
+      "augmented": 128,
+      "human": 128
+    }
+  },
+  "skipped_training": {},
+  "manifest_sha256": {
+    "train": "eda26ff32931263a90b76425ca905bbfa7314cccce03ebc60e81a8c8d587ee3c",
+    "val": "36216e4eed61db6f1497a05a68d8e946bb9e4f11503eff4b5710c4896a5bebc1",
+    "test": "70f6543a65bb5b419c22cd33913b9b6c5db7f80784dcc2093b2712cb75d32e9e"
+  },
+  "validation_selection": {
+    "human": 64,
+    "augmented": 64
+  }
+}

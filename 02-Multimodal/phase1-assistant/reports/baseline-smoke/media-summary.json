@@ -1,0 +1,47 @@
+{
+  "model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "torch": "2.13.0+cu130",
+  "cuda": "13.0",
+  "attention": "sdpa_math",
+  "config": {
+    "model": "Qwen/Qwen2.5-VL-7B-Instruct",
+    "revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+    "dtype": "bfloat16",
+    "max_pixels": 1605632,
+    "video_max_pixels": 200704,
+    "max_video_seconds": 30,
+    "max_video_frames": 16,
+    "max_new_tokens": 48,
+    "chartqa_suffix": "Answer the question with only the final answer, without explanation."
+  },
+  "peak_allocated_mib": 25060,
+  "manifest_sha256": "206880a9b27cee5f2cb123521e5910e88b2e5f901a98c7befe4735aaa8930917",
+  "scores": {
+    "hd": {
+      "n": 1,
+      "correct": 1,
+      "failed": 0,
+      "relaxed_accuracy": 1.0
+    },
+    "multi-image": {
+      "n": 1,
+      "correct": 1,
+      "failed": 0,
+      "relaxed_accuracy": 1.0
+    },
+    "video": {
+      "n": 1,
+      "correct": 1,
+      "failed": 0,
+      "relaxed_accuracy": 1.0
+    },
+    "overall": {
+      "n": 3,
+      "correct": 3,
+      "failed": 0,
+      "relaxed_accuracy": 1.0
+    }
+  }
+}

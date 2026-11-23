@@ -1,0 +1,160 @@
+{
+  "8": {
+    "selected": {
+      "step": 256,
+      "adapter": "rank-8/train/adapter",
+      "sha256": "3640e6051a2d7eecf461de8f2f9b0b53ac9de85b9887944f8667c7543eb43b09",
+      "scores": {
+        "human": {
+          "n": 64,
+          "correct": 53,
+          "failed": 0,
+          "relaxed_accuracy": 0.828125
+        },
+        "augmented": {
+          "n": 64,
+          "correct": 61,
+          "failed": 0,
+          "relaxed_accuracy": 0.953125
+        },
+        "overall": {
+          "n": 128,
+          "correct": 114,
+          "failed": 0,
+          "relaxed_accuracy": 0.890625
+        }
+      }
+    },
+    "candidates": [
+      {
+        "step": 128,
+        "adapter": "rank-8/train/step-128/adapter",
+        "sha256": "c1c1fe4b832eada12938728a66fa6c428a9786b83432adee75f84e0f5a6ed55d",
+        "scores": {
+          "human": {
+            "n": 64,
+            "correct": 52,
+            "failed": 0,
+            "relaxed_accuracy": 0.8125
+          },
+          "augmented": {
+            "n": 64,
+            "correct": 58,
+            "failed": 0,
+            "relaxed_accuracy": 0.90625
+          },
+          "overall": {
+            "n": 128,
+            "correct": 110,
+            "failed": 0,
+            "relaxed_accuracy": 0.859375
+          }
+        }
+      },
+      {
+        "step": 256,
+        "adapter": "rank-8/train/adapter",
+        "sha256": "3640e6051a2d7eecf461de8f2f9b0b53ac9de85b9887944f8667c7543eb43b09",
+        "scores": {
+          "human": {
+            "n": 64,
+            "correct": 53,
+            "failed": 0,
+            "relaxed_accuracy": 0.828125
+          },
+          "augmented": {
+            "n": 64,
+            "correct": 61,
+            "failed": 0,
+            "relaxed_accuracy": 0.953125
+          },
+          "overall": {
+            "n": 128,
+            "correct": 114,
+            "failed": 0,
+            "relaxed_accuracy": 0.890625
+          }
+        }
+      }
+    ]
+  },
+  "16": {
+    "selected": {
+      "step": 128,
+      "adapter": "rank-16/train/step-128/adapter",
+      "sha256": "4395fd07eb61053672b532aa739074b687004b538e324114d05c789c9ee16e46",
+      "scores": {
+        "human": {
+          "n": 64,
+          "correct": 53,
+          "failed": 0,
+          "relaxed_accuracy": 0.828125
+        },
+        "augmented": {
+          "n": 64,
+          "correct": 59,
+          "failed": 0,
+          "relaxed_accuracy": 0.921875
+        },
+        "overall": {
+          "n": 128,
+          "correct": 112,
+          "failed": 0,
+          "relaxed_accuracy": 0.875
+        }
+      }
+    },
+    "candidates": [
+      {
+        "step": 128,
+        "adapter": "rank-16/train/step-128/adapter",
+        "sha256": "4395fd07eb61053672b532aa739074b687004b538e324114d05c789c9ee16e46",
+        "scores": {
+          "human": {
+            "n": 64,
+            "correct": 53,
+            "failed": 0,
+            "relaxed_accuracy": 0.828125
+          },
+          "augmented": {
+            "n": 64,
+            "correct": 59,
+            "failed": 0,
+            "relaxed_accuracy": 0.921875
+          },
+          "overall": {
+            "n": 128,
+            "correct": 112,
+            "failed": 0,
+            "relaxed_accuracy": 0.875
+          }
+        }
+      },
+      {
+        "step": 256,
+        "adapter": "rank-16/train/adapter",
+        "sha256": "09e7760dc7b55a3784c986abf4fdaf6f8bb290d6230c286bf9923c162f781ea2",
+        "scores": {
+          "human": {
+            "n": 64,
+            "correct": 53,
+            "failed": 0,
+            "relaxed_accuracy": 0.828125
+          },
+          "augmented": {
+            "n": 64,
+            "correct": 57,
+            "failed": 0,
+            "relaxed_accuracy": 0.890625
+          },
+          "overall": {
+            "n": 128,
+            "correct": 110,
+            "failed": 0,
+            "relaxed_accuracy": 0.859375
+          }
+        }
+      }
+    ]
+  }
+}

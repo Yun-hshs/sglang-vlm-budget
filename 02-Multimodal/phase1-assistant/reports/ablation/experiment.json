@@ -1,0 +1,35 @@
+{
+  "plan": {
+    "dataset_seed": 42,
+    "train_per_subset": 128,
+    "validation_per_subset": 64,
+    "training_ranks": [
+      8,
+      16
+    ],
+    "alpha_per_rank": 2,
+    "training": {
+      "dropout": 0.0,
+      "learning_rate": 0.0001,
+      "epochs": 1,
+      "seed": 42,
+      "train_max_pixels": 200704,
+      "gradient_clip_norm": 1.0,
+      "checkpoint_steps": [
+        128,
+        256
+      ]
+    },
+    "evaluation": {
+      "max_pixels": 200704,
+      "max_new_tokens": 24,
+      "batch_size": 8
+    }
+  },
+  "data": {
+    "train": "eda26ff32931263a90b76425ca905bbfa7314cccce03ebc60e81a8c8d587ee3c",
+    "val": "36216e4eed61db6f1497a05a68d8e946bb9e4f11503eff4b5710c4896a5bebc1",
+    "test": "70f6543a65bb5b419c22cd33913b9b6c5db7f80784dcc2093b2712cb75d32e9e"
+  },
+  "baseline_sha256": "eaaf9680e290c6360b7eedf36c248bae7660760491d91ee8ebaf401d0b4fc87b"
+}

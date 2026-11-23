@@ -1,0 +1,7 @@
+# Install the matching torch/torchvision pair from the PyTorch CUDA index first.
+transformers==5.12.1
+accelerate==1.14.0
+av==16.1.0
+pyarrow==25.0.1
+Pillow==11.3.0
+pytest==9.1.1

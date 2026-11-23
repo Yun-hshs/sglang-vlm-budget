@@ -1,0 +1,21 @@
+{
+  "dataset_seed": 42,
+  "train_per_subset": 128,
+  "validation_per_subset": 64,
+  "training_ranks": [8, 16],
+  "alpha_per_rank": 2,
+  "training": {
+    "dropout": 0.0,
+    "learning_rate": 0.0001,
+    "epochs": 1,
+    "seed": 42,
+    "train_max_pixels": 200704,
+    "gradient_clip_norm": 1.0,
+    "checkpoint_steps": [128, 256]
+  },
+  "evaluation": {
+    "max_pixels": 200704,
+    "max_new_tokens": 24,
+    "batch_size": 8
+  }
+}

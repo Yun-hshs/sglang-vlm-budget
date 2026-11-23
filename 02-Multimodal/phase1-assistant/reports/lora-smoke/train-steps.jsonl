@@ -1,0 +1,8 @@
+{"step": 1, "epoch": 1, "sample_id": "train-00000-of-00003-49492f364babfa44:3", "loss": 1.6640982627868652, "grad_norm": 3.0666332244873047, "supervised_tokens": 4}
+{"step": 2, "epoch": 1, "sample_id": "train-00000-of-00003-49492f364babfa44:7398", "loss": 0.0008204757468774915, "grad_norm": 0.008466294966638088, "supervised_tokens": 4}
+{"step": 3, "epoch": 1, "sample_id": "train-00000-of-00003-49492f364babfa44:7400", "loss": 0.007366443984210491, "grad_norm": 0.08875726163387299, "supervised_tokens": 7}
+{"step": 4, "epoch": 1, "sample_id": "train-00000-of-00003-49492f364babfa44:7401", "loss": 0.00053825305076316, "grad_norm": 0.005252474918961525, "supervised_tokens": 4}
+{"step": 5, "epoch": 1, "sample_id": "train-00000-of-00003-49492f364babfa44:2", "loss": 0.02454761229455471, "grad_norm": 0.15262998640537262, "supervised_tokens": 6}
+{"step": 6, "epoch": 1, "sample_id": "train-00000-of-00003-49492f364babfa44:7399", "loss": 0.0001148542360169813, "grad_norm": 0.0014135241508483887, "supervised_tokens": 5}
+{"step": 7, "epoch": 1, "sample_id": "train-00000-of-00003-49492f364babfa44:0", "loss": 0.016369787976145744, "grad_norm": 0.12916125357151031, "supervised_tokens": 3}
+{"step": 8, "epoch": 1, "sample_id": "train-00000-of-00003-49492f364babfa44:1", "loss": 0.8036282062530518, "grad_norm": 2.741734743118286, "supervised_tokens": 3}

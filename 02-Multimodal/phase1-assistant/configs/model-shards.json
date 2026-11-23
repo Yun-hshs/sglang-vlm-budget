@@ -1,0 +1,27 @@
+[
+  {
+    "file": "model-00001-of-00005.safetensors",
+    "sha256": "e97b877e47fde53a6c6e77aafb36e58e91ee9d95c4a3eeac6f1b5c0e6a1c986e",
+    "size": 3900233256
+  },
+  {
+    "file": "model-00002-of-00005.safetensors",
+    "sha256": "a9a300a43b4724eee2abe7c18ceb26768d0ab011eb0cad19d9bfd2476a24d024",
+    "size": 3864726320
+  },
+  {
+    "file": "model-00003-of-00005.safetensors",
+    "sha256": "111223d173e00bbee81cba1216fad28668df3476706b7fd26f4d5b50f8b3a507",
+    "size": 3864726424
+  },
+  {
+    "file": "model-00004-of-00005.safetensors",
+    "sha256": "ef47f634fa57d46ee134edcc09f34085a47da1e16c12a2abe0d67118be6d72ed",
+    "size": 3864733680
+  },
+  {
+    "file": "model-00005-of-00005.safetensors",
+    "sha256": "0c859795ad3a627a9b95bcb762e059d5b768a4a36fdd4affeff269d93fdecc67",
+    "size": 1089994880
+  }
+]
