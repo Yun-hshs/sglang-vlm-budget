@@ -1,8 +1,10 @@
-# 基于 SGLang 的多模态视觉问答系统设计与视觉 Token 预算优化研究
+# 阶段 2 · 探索优化
 
-这是阶段 2 的研究存档。课程验收以[阶段 1 实施方案](../phase1-assistant/README.md)为准。
+研究 SGLang 部署与视觉 Token 预算，关注不同图像尺寸和数量下的问答质量、延迟、吞吐和显存。
 
-**状态：实现已编写，测试和真实推理均未运行。** 2026-11-11，用户要求暂不测试，后续提供 GPU 服务器。当前为 Apple Silicon Mac，无 NVIDIA GPU；没有下载模型权重和公开评测数据。报告没有加速比、准确率或 GPU 显存测量值。
+**验证状态：探索原型已编写，SGLang 服务与 GPU 基准实验未运行。** 当前目录收纳研究协议、性能脚本、研究稿和演示材料。已完成的单卡 Gradio 与 ChartQA 实测请查看[阶段 1 · 基础作业](../phase1-assistant/README.md)。
+
+[实验状态](results/STATUS.md) · [服务器交接](reports/GPU_HANDOFF.md) · [阶段 2 研究稿](reports/final_report.md) · [探索演示材料](slides/README.md)
 
 ## 目标与范围
 

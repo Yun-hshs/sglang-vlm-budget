@@ -4,9 +4,10 @@ Demo 使用单张 RTX 5090 运行 Qwen2.5-VL-7B-Instruct BF16。默认加载 Cha
 
 ## 一键启动
 
-按 [基座](BASELINE.md) 和 [LoRA 消融](ABLATION.md) 指南准备环境与权重。对新环境，在本目录有对应 CUDA 版 PyTorch 和 TorchVision 后运行：
+按 [基座](BASELINE.md) 和 [LoRA 消融](ABLATION.md) 指南准备环境与权重。先安装与 GPU 匹配的 CUDA 版 PyTorch 和 TorchVision，再从仓库根目录执行：
 
 ```bash
+cd 02-Multimodal/phase1-assistant
 python -m pip install -r requirements-demo.txt
 CUDA_VISIBLE_DEVICES=0 MODEL_PATH=checkpoints/Qwen2.5-VL-7B-Instruct \
   SHARE=1 bash scripts/start_demo.sh
@@ -52,7 +53,7 @@ SHARE=1 bash scripts/start_demo.sh
 | 4 秒短视频 | LoRA rank 16 · step 128 | 首个颜色 `red`，实际采样 16 帧 |
 | 高清单图描述 | 基座对照 | 正确描述苹果 40、梨 20，客户端收到 18 次不同的正文更新 |
 
-[验收记录](reports/demo/public-smoke.json)。复测可使用仓库内的自制样例，将当前公开地址作为第一个参数。
+[验收记录](../reports/demo/public-smoke.json)。复测可使用仓库内的自制样例，将当前公开地址作为第一个参数。
 
 ```bash
 python scripts/check_demo.py https://YOUR-DEMO.gradio.live examples

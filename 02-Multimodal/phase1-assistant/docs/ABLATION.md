@@ -31,7 +31,7 @@ CUDA_VISIBLE_DEVICES=0 python -m vl_assistant.ablation \
 
 两组均完成 256 步，训练日志中的样本 ID 顺序逐项一致，损失均为有限值。rank 8 有 5,046,272 个可训练参数，训练及保存用时约 177.87 秒。rank 16 有 10,092,544 个可训练参数，用时约 181.86 秒。计时不含加载基座。
 
-[训练 rank 8](reports/ablation/train-rank-8.json) · [训练 rank 16](reports/ablation/train-rank-16.json) · [数据审计](reports/ablation/data-audit.json)
+[训练 rank 8](../reports/ablation/train-rank-8.json) · [训练 rank 16](../reports/ablation/train-rank-16.json) · [数据审计](../reports/ablation/data-audit.json)
 
 ## 验证选点与全量测试
 
@@ -47,6 +47,6 @@ CUDA_VISIBLE_DEVICES=0 python -m vl_assistant.ablation \
 
 两组相对基座的改进包含答案表达方式的适配。基座有 383 条被判错的预测带百分号，去掉百分号后落入无百分号标注的数值容差。两组 LoRA 在本轮均无这种方向的格式失分。反方向也可能退化：Human 样本 28 的标注是 `0.6`，基座 `60%` 按规则正确，rank 8 输出 `60` 被判错。视觉推理方面，Human 样本 0 的柱状图计数从 `13` 改为正确的 `14`。Augmented 样本 1255 的市场公司数标注为 `23`，基座和 rank 8 均答 `28`。百分号诊断单独列示，正式分数按固定规则计算。
 
-[验证选点与 adapter 哈希](reports/ablation/selection.json) · [测试结果和分组错例](reports/ablation/results.md) · [结构化错例](reports/ablation/errors.json) · [百分号格式诊断](reports/ablation/format-diagnostic.json)
+[验证选点与 adapter 哈希](../reports/ablation/selection.json) · [测试结果和分组错例](../reports/ablation/results.md) · [结构化错例](../reports/ablation/errors.json) · [百分号格式诊断](../reports/ablation/format-diagnostic.json)
 
 全部逐题预测和 adapter 保存在服务器项目目录的 `runs/ablation/full/`。汇总文件和可重跑脚本也已同步到该项目目录。

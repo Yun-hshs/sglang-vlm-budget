@@ -1,5 +1,7 @@
 # 基于 SGLang 的多模态视觉问答系统设计与视觉 Token 预算优化研究
 
+> 阶段 2 探索优化研究稿。基础作业提交请使用[阶段 1 正式报告](../../phase1-assistant/reports/final-report.md)。
+
 **Design of a Multimodal Visual Question Answering System and Optimization of Visual Token Budgets Based on SGLang**
 
 课程方向：图形图像及多模态；版本：工程交付稿 v0.1；日期：2026-11-11。

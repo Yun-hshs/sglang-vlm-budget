@@ -4,7 +4,7 @@
 
 ## 运行
 
-先按 [基座指南](BASELINE.md) 准备 Python/PyTorch、模型权重和 ChartQA 清洗清单。此次实测复用服务器已有环境，PEFT 为 0.20.0。在新环境中从本目录执行：
+先按 [基座指南](BASELINE.md) 准备 Python/PyTorch、模型权重和 ChartQA 清洗清单。此次实测复用服务器已有环境，PEFT 为 0.20.0。在新环境中进入 `02-Multimodal/phase1-assistant` 后执行：
 
 ```bash
 python -m pip install -r requirements-lora.txt
@@ -48,6 +48,6 @@ CUDA_VISIBLE_DEVICES=0 TORCH_DISABLE_NATIVE_JIT=1 \
 
 两组的 8 条最终输出文本完全一致。这次运行验证了训练、保存、独立进程重载和配对评估链路。8 条训练和 8 条测试样本不足以估计微调收益。正式实验需扩大训练集，在验证集选定配置，并在固定的完整测试集上做秩消融。原有 3 项单元测试通过。
 
-[训练配置与指标](reports/lora-smoke/train-summary.json) · [逐步训练指标](reports/lora-smoke/train-steps.jsonl) · [配对评估汇总](reports/lora-smoke/comparison-summary.json)
+[训练配置与指标](../reports/lora-smoke/train-summary.json) · [逐步训练指标](../reports/lora-smoke/train-steps.jsonl) · [配对评估汇总](../reports/lora-smoke/comparison-summary.json)
 
 服务器运行目录为 `runs/lora-smoke/`，包含 adapter、原始逐题预测以及 `comparison.json`。

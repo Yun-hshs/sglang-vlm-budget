@@ -4,7 +4,7 @@
 
 实验日期 2026-11-23
 
-[独立公开代码仓库](https://github.com/Yun-hshs/sglang-vlm-budget) · [在线 Demo](https://dc9fa8a96886798c5a.gradio.live) · [启动与复现说明](../DEMO.md)
+[独立公开代码仓库](https://github.com/Yun-hshs/sglang-vlm-budget) · [在线 Demo](https://dc9fa8a96886798c5a.gradio.live) · [启动与复现说明](../docs/DEMO.md)
 
 ## 摘要
 
@@ -108,7 +108,7 @@ Demo 在单张 RTX 5090 上默认加载 rank 16 第 128 步的 adapter，支持�
 
 ## 7. 复现与局限
 
-按 [一键启动指南](../DEMO.md) 准备基座与 adapter 后运行 `bash scripts/start_demo.sh`。按 [消融复现指南](../ABLATION.md) 重建数据和全量测试。公开仓库包含训练、测试与部署代码、配置、适量结果汇总以及自制示例。ChartQA 分片由出处单独获取，已训练权重通过仓库中脚本复现。
+按 [一键启动指南](../docs/DEMO.md) 准备基座与 adapter 后运行 `bash scripts/start_demo.sh`。按 [消融复现指南](../docs/ABLATION.md) 重建数据和全量测试。公开仓库包含训练、测试与部署代码、配置、适量结果汇总以及自制示例。ChartQA 分片由出处单独获取，已训练权重通过仓库中脚本复现。
 
 实验基于较小的 SFT 样本、单种子和单一主基准。视频、跨图综合推理及高分辨率 OCR 需要更大的独立验收集。部分数据的答案单位约定会影响绝对分数。后续课程实验可以增加固定步数对照和多个训练种子，补充按题型分组及独立视频测试。在线链接依赖运行进程与临时分享服务。
 

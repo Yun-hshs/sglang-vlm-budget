@@ -1,11 +1,12 @@
 # 方向 02 · 图形图像及多模态
 
-| 目录或文件 | 用途 | 当前进度 |
-|---|---|---|
-| [phase1-assistant/](phase1-assistant/README.md) | 课程主项目。图表推理、LoRA SFT、高清与多图输入、短视频问答、交互与评测 | 阶段 1 已发布，包含完整 ChartQA 消融与 Demo |
-| [phase2-sglang/](phase2-sglang/README.md) | SGLang 视觉输入预算、基准脚本与早期报告和答辩材料 | 已有研究代码和材料移入，验证待执行 |
-| [SUBMISSION.md](SUBMISSION.md) | 代码仓库、课程仓库、报告命名、PR 描述与提交前检查 | 规范已核对 |
+| 入口 | 用途 |
+|---|---|
+| [阶段 1 · 基础作业](phase1-assistant/README.md) | 浏览实现、启动 Demo、复现 ChartQA 训练及全量评测 |
+| [阶段 2 · 探索优化](phase2-sglang/README.md) | 查看 SGLang 原型、视觉预算研究协议和验证状态 |
+| [课程提交说明](SUBMISSION.md) | 核对方向 02 要求与对应交付证据 |
+| [课程提交包](course-delivery/README.md) | 取得匿名报告模板、PR 标题及描述 |
 
-阶段 1 用同一基础模型及其 LoRA adapter 比较问答质量，再发布可运行的 Demo。阶段 2 优先复用阶段 1 的输入协议和评测集。若模型或服务栈发生变化，重新建立同模型的部署基线。
+基础作业的报告、实测结果与 Demo 位于 `phase1-assistant/`。探索阶段的历史报告、图表计划与答辩素材位于 `phase2-sglang/`。课程提交以阶段 1 的验收证据为准。
 
-阶段 1 当前复现入口见[数据准备与基座推理](phase1-assistant/BASELINE.md)。这个代码仓库用于开发和复现。课程 PR 中报告的实际路径见提交说明。
+[返回仓库首页](../README.md)

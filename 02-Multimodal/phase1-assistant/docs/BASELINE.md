@@ -60,6 +60,6 @@ CUDA_VISIBLE_DEVICES=0 MODEL_PATH=checkpoints/Qwen2.5-VL-7B-Instruct \
 
 三个原创用例分别回答 `40`、`30` 和 `Red`。四秒视频实际取 16 帧。ChartQA 与媒体用例的 PyTorch 峰值分配分别为 16,838 MiB 和 25,060 MiB。本次只验证了两张高清图同请求的情形。批量高分辨率输入仍需按显存调整预算。
 
-[数据审计](reports/baseline-smoke/data-audit.json) · [ChartQA 汇总](reports/baseline-smoke/chartqa-summary.json) · [原创媒体汇总](reports/baseline-smoke/media-summary.json) · [原创媒体逐题输出](reports/baseline-smoke/media-predictions.jsonl)
+[数据审计](../reports/baseline-smoke/data-audit.json) · [ChartQA 汇总](../reports/baseline-smoke/chartqa-summary.json) · [原创媒体汇总](../reports/baseline-smoke/media-summary.json) · [原创媒体逐题输出](../reports/baseline-smoke/media-predictions.jsonl)
 
 ChartQA 原始逐题预测保存在运行服务器的 `runs/baseline-verified/chartqa/predictions.jsonl`。8 条测试样本仅供链路验收，正式结果需在全量固定测试集上重跑。
