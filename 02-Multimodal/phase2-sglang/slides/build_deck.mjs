@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import {Presentation,PresentationFile} from '@oai/artifact-tool';
 // Run from repository root with @oai/artifact-tool installed.
 const dir=process.cwd();
-const data=JSON.parse(await fs.readFile(dir+'/02-Multimodal/slides/deck_content.json','utf8'));
+const data=JSON.parse(await fs.readFile(dir+'/02-Multimodal/phase2-sglang/slides/deck_content.json','utf8'));
 const deck=Presentation.create({slideSize:{width:1280,height:720}});
 function text(slide,content,x,y,w,h,size,color,bold=false){
  const box=slide.shapes.add({geometry:'textbox',position:{left:x,top:y,width:w,height:h},fill:'none',line:{fill:'none',width:0}});
@@ -27,7 +27,7 @@ for(let i=0;i<data.length;i++){
  }
  s.speakerNotes.text=notes;
 }
-await (await PresentationFile.exportPptx(deck)).save(dir+'/02-Multimodal/slides/output/defense.pptx');
+await (await PresentationFile.exportPptx(deck)).save(dir+'/02-Multimodal/phase2-sglang/slides/output/defense.pptx');
 await fs.mkdir(dir+'/.build/previews',{recursive:true});
 for(let i=0;i<deck.slides.items.length;i++){
  const blob=await deck.export({slide:deck.slides.items[i],format:'png',scale:0.6});

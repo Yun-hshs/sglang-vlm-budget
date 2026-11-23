@@ -1,4 +1,4 @@
-"""Start with python -m frontend.app from 02-Multimodal."""
+"""Start with python -m frontend.app from 02-Multimodal/phase2-sglang."""
 import json
 import time
 import gradio as gr

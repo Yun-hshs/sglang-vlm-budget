@@ -7,8 +7,14 @@ __pycache__/
 *.pem
 node_modules/
 .build/
-02-Multimodal/data/*
-!02-Multimodal/data/README.md
-02-Multimodal/results/*
-!02-Multimodal/results/STATUS.md
-!02-Multimodal/results/experiment_register.csv
+02-Multimodal/phase2-sglang/data/*
+!02-Multimodal/phase2-sglang/data/README.md
+02-Multimodal/phase2-sglang/results/*
+!02-Multimodal/phase2-sglang/results/STATUS.md
+!02-Multimodal/phase2-sglang/results/experiment_register.csv
+
+# Phase 1 local data and training outputs
+02-Multimodal/phase1-assistant/data/raw/
+02-Multimodal/phase1-assistant/data/processed/
+02-Multimodal/phase1-assistant/checkpoints/
+02-Multimodal/phase1-assistant/runs/
