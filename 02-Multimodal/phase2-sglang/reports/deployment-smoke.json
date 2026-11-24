@@ -1,0 +1,118 @@
+{
+  "run_at_utc": "2026-11-23T09:07:51.994011+00:00",
+  "model": "qwen25vl-7b",
+  "image_budget": "native_default",
+  "status": "PASS",
+  "cases": {
+    "single": {
+      "question": "How many units of apples were sold? Answer with the number only.",
+      "expected": 40,
+      "inputs": [
+        {
+          "file": "day1.png",
+          "sha256": "7a0b1725608bd0e7ede746fc264b6a8fdea82bbadf62d2e8de1bec3ff8647faa",
+          "width": 1920,
+          "height": 1080
+        }
+      ],
+      "completion": {
+        "text": "40",
+        "ttft_s": 1.7610746221616864,
+        "e2e_s": 1.78030436206609,
+        "tpot_s": 0.0041144732385873795,
+        "completion_tokens": 3,
+        "prompt_tokens": 2726,
+        "content_chunks": 2,
+        "finish_reason": "stop"
+      },
+      "server_trace": {
+        "request_id": "stage2-mm-single-a94a57496441437ea1b3e52ec464ac64",
+        "spatial_merge_size": 2,
+        "images": [
+          {
+            "grid_thw": [
+              1,
+              78,
+              138
+            ],
+            "merged_tokens": 2691,
+            "offset": [
+              15,
+              2705
+            ],
+            "offset_tokens": 2691,
+            "image_pad_tokens": 2691
+          }
+        ],
+        "visual_tokens": 2691,
+        "prompt_image_pad_tokens": 2691,
+        "processor_prompt_tokens": 2726
+      }
+    },
+    "double": {
+      "question": "Image 1 and Image 2 are shown in order. How many more apple units are sold in Image 2 than in Image 1? Answer with the number only.",
+      "expected": 30,
+      "inputs": [
+        {
+          "file": "day1.png",
+          "sha256": "7a0b1725608bd0e7ede746fc264b6a8fdea82bbadf62d2e8de1bec3ff8647faa",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "file": "day2.png",
+          "sha256": "f99d073bed0262105d38a6622141f123a37831da840c86b78533d633ec35ec36",
+          "width": 1920,
+          "height": 1080
+        }
+      ],
+      "completion": {
+        "text": "30",
+        "ttft_s": 0.7392142713069916,
+        "e2e_s": 0.7643621880561113,
+        "tpot_s": 0.004122717306017876,
+        "completion_tokens": 3,
+        "prompt_tokens": 5440,
+        "content_chunks": 2,
+        "finish_reason": "stop"
+      },
+      "server_trace": {
+        "request_id": "stage2-mm-double-1cda9a6ad161464aa82014563e8bf1e0",
+        "spatial_merge_size": 2,
+        "images": [
+          {
+            "grid_thw": [
+              1,
+              78,
+              138
+            ],
+            "merged_tokens": 2691,
+            "offset": [
+              15,
+              2705
+            ],
+            "offset_tokens": 2691,
+            "image_pad_tokens": 2691
+          },
+          {
+            "grid_thw": [
+              1,
+              78,
+              138
+            ],
+            "merged_tokens": 2691,
+            "offset": [
+              2708,
+              5398
+            ],
+            "offset_tokens": 2691,
+            "image_pad_tokens": 2691
+          }
+        ],
+        "visual_tokens": 5382,
+        "prompt_image_pad_tokens": 5382,
+        "processor_prompt_tokens": 5440
+      }
+    }
+  }
+}

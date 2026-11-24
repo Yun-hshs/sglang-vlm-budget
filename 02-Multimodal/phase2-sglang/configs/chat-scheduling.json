@@ -1,0 +1,23 @@
+{
+  "overdue_ms": 100,
+  "aging_rate": 0.35,
+  "aging_thresholds_ms": {
+    "tokens": 100
+  },
+  "token_fit": {
+    "features": [
+      "uncached"
+    ],
+    "centers": [
+      681.4027777777778
+    ],
+    "scales": [
+      570.6435368103234
+    ],
+    "standardized_weights": [
+      53.09043008967137
+    ],
+    "intercept_ms": 102.04952127403683
+  },
+  "source": "reports/chartqa-prefill-signals/model.json"
+}

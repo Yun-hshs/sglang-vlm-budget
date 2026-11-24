@@ -1,0 +1,12 @@
+{
+  "seed": 2026112404,
+  "dataset_sha256": "70f6543a65bb5b419c22cd33913b9b6c5db7f80784dcc2093b2712cb75d32e9e",
+  "repeats": 3,
+  "cohorts": [
+    ["train", 3], ["validation", 3], ["train", 4], ["validation", 4],
+    ["train", 5], ["validation", 5], ["train", 3], ["train", 5]
+  ],
+  "max_tokens": 20,
+  "ridge_alpha": 1.0,
+  "ranking_gap_ms": 10
+}

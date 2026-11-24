@@ -1,0 +1,131 @@
+{
+  "run_id": "8fa89e27dd",
+  "config": {
+    "repeats": 4,
+    "max_tokens": 16,
+    "model": "qwen25vl-7b",
+    "fixtures": {
+      "day1.png": "7a0b1725608bd0e7ede746fc264b6a8fdea82bbadf62d2e8de1bec3ff8647faa",
+      "day2.png": "f99d073bed0262105d38a6622141f123a37831da840c86b78533d633ec35ec36"
+    },
+    "sessions": [
+      {
+        "id": "apple-days",
+        "turns": [
+          {
+            "kind": "initial",
+            "images": [
+              "day1.png"
+            ],
+            "question": "In the first chart, how many apples were sold?",
+            "answer": "40"
+          },
+          {
+            "kind": "same_image",
+            "images": [],
+            "question": "What is half of that apple count?",
+            "answer": "20"
+          },
+          {
+            "kind": "append_image",
+            "images": [
+              "day2.png"
+            ],
+            "question": "How many more apples were sold in the second chart than in the first?",
+            "answer": "30"
+          },
+          {
+            "kind": "same_image",
+            "images": [],
+            "question": "How many apples were sold across the two charts in total?",
+            "answer": "110"
+          }
+        ]
+      },
+      {
+        "id": "reverse-days",
+        "turns": [
+          {
+            "kind": "initial",
+            "images": [
+              "day2.png"
+            ],
+            "question": "Read the number for apples in the chart.",
+            "answer": "70"
+          },
+          {
+            "kind": "same_image",
+            "images": [],
+            "question": "How many apples would remain if ten were removed from that number?",
+            "answer": "60"
+          },
+          {
+            "kind": "append_image",
+            "images": [
+              "day1.png"
+            ],
+            "question": "By how much does the apples bar in the first uploaded chart exceed the bar in the new chart?",
+            "answer": "30"
+          },
+          {
+            "kind": "same_image",
+            "images": [],
+            "question": "How many apples were in the more recently uploaded chart?",
+            "answer": "40"
+          }
+        ]
+      },
+      {
+        "id": "chart-review",
+        "turns": [
+          {
+            "kind": "initial",
+            "images": [
+              "day1.png"
+            ],
+            "question": "Give the displayed apple count as a single number.",
+            "answer": "40"
+          },
+          {
+            "kind": "same_image",
+            "images": [],
+            "question": "Double the count from that figure. What is the result?",
+            "answer": "80"
+          },
+          {
+            "kind": "append_image",
+            "images": [
+              "day2.png"
+            ],
+            "question": "What is the apple count in the new image?",
+            "answer": "70"
+          },
+          {
+            "kind": "same_image",
+            "images": [],
+            "question": "What is the mean of the two apple counts in the images?",
+            "answer": "55"
+          }
+        ]
+      }
+    ]
+  },
+  "server": {
+    "version": "0.5.23",
+    "served_model_name": "qwen25vl-7b",
+    "tp_size": 1,
+    "schedule_policy": "fcfs",
+    "disable_radix_cache": false,
+    "enable_cache_report": true,
+    "mm_preprocess_cache_size_mb": 0,
+    "enable_prefix_mm_cache": false,
+    "enable_mm_global_cache": false,
+    "revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+    "context_length": 8192,
+    "attention_backend": "triton",
+    "max_running_requests": 4
+  },
+  "signed_input_pairs": 60,
+  "requests": 120,
+  "batch_traces": 86
+}

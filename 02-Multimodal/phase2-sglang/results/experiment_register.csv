@@ -1,6 +1,17 @@
 experiment,status,reason,required_resource
-CPU-tests,NOT_RUN,user_deferred_tests,Python environment
-MVP-end-to-end,NOT_RUN,user_deferred_tests,GPU server and model
-A-scaling,NOT_RUN,no_GPU_server,GPU and authorized data
-B-quality-budget,NOT_RUN,no_GPU_server,GPU and authorized data
+CPU-tests,PASS,9 existing tests passed,Local Python environment
+SGLang-static-image-smoke,PASS,single and double image responses and token traces matched,Single RTX 5090 and Qwen2.5-VL-7B-Instruct
+ChartQA-budget-pilot,PASS,32 distinct charts across four budgets and three repeats,Single RTX 5090 and pinned ChartQA test export
+ChartQA-budget-128,PASS,128 distinct charts across five strategies and three repeats,Single RTX 5090 and pinned ChartQA test export
+ChartQA-adaptive-v2,PASS,same 128 charts across old and revised adaptive policies plus fixed medium,Single RTX 5090 and pinned ChartQA test export
+ChartQA-adaptive-holdout,PASS,128 distinct charts with no decoded image overlap with development set,Single RTX 5090 and frozen rules
+ChartQA-adaptive-high-branch,PASS,all 4 qualifying questions plus 5 near-height charts across 10 repeats,Single RTX 5090 and frozen rules
+ChartQA-session-cost,PASS,three concurrent four-turn sessions with 48 measured KV hit and miss pairs,Single RTX 5090 with FCFS
+ChartQA-prefill-prediction,PASS,24 sessions with 216 held-out observations and three pre-dispatch feature sets,Single RTX 5090 with FCFS
+ChartQA-schedule-compare,PASS,432 measured requests on the same arrival trace across four policies,Single RTX 5090
+ChartQA-schedule-sustained,PASS,2592 measured requests from 54 sessions with identical planned arrivals,Single RTX 5090
+ChartQA-schedule-aging-ablation,PASS,3240 measured requests at three thresholds and two baselines with pinned arrivals,Single RTX 5090
+ChartQA-prefill-signals,PASS,576 probe requests and 1728 online measured requests across four policies,Single RTX 5090
+A-scaling,NOT_RUN,full benchmark deferred,GPU and authorized data
+B-quality-budget,NOT_RUN,full benchmark deferred,GPU and authorized data
 C-cache,OPTIONAL_NOT_RUN,extension_only,isolated instrumented server

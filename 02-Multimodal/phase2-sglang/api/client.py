@@ -15,6 +15,7 @@ class Completion:
     prompt_tokens: int | None
     content_chunks: int
     finish_reason: str | None
+    cached_tokens: int | None = None
     def to_dict(self):
         return asdict(self)
 
@@ -29,13 +30,18 @@ class VLMClient:
     def flush_cache(self):
         url=self.base_url.removesuffix("/v1")+"/flush_cache"
         self.http.post(url).raise_for_status()
-    def complete(self, messages, max_tokens=128):
+    def complete(self, messages, max_tokens=128, request_id=None, cache_salt=None):
         if not messages or max_tokens < 1:
             raise ValueError("Messages and positive max_tokens required")
         start=time.perf_counter(); first=None; last=None; text=""; usage={}; chunks=0; reason=None; done=False
-        with self.http.stream("POST",self.base_url+"/chat/completions",json={
+        payload = {
             "model":self.model,"messages":messages,"temperature":0,
-            "max_tokens":max_tokens,"stream":True,"stream_options":{"include_usage":True}}) as response:
+            "max_tokens":max_tokens,"stream":True,"stream_options":{"include_usage":True}}
+        if request_id is not None:
+            payload["rid"] = request_id
+        if cache_salt is not None:
+            payload["cache_salt"] = cache_salt
+        with self.http.stream("POST", self.base_url+"/chat/completions", json=payload) as response:
             response.raise_for_status()
             for line in response.iter_lines():
                 if not line.startswith("data:"): continue
@@ -57,7 +63,9 @@ class VLMClient:
         tokens=usage.get("completion_tokens")
         # Chunks may contain multiple tokens. Never use chunk count as token count.
         tpot=(last-first)/(tokens-1) if tokens and tokens>1 and last>first else None
-        return Completion(text,first-start,end-start,tpot,tokens,usage.get("prompt_tokens"),chunks,reason)
+        prompt_details = usage.get("prompt_tokens_details") or {}
+        return Completion(text,first-start,end-start,tpot,tokens,usage.get("prompt_tokens"),chunks,reason,
+                          prompt_details.get("cached_tokens"))
 
 def user_message(question, images):
     if not question or not question.strip(): raise ValueError("问题不能为空")

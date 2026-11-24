@@ -1,0 +1,48 @@
+{
+  "seed": 2026112403,
+  "dataset": {
+    "source": "HuggingFaceM4/ChartQA",
+    "revision": "b605b6e08b57faf4359aeb2fe6a3ca595f99b6c5",
+    "split": "test",
+    "jsonl_sha256": "70f6543a65bb5b419c22cd33913b9b6c5db7f80784dcc2093b2712cb75d32e9e"
+  },
+  "subsets": [
+    "human",
+    "augmented"
+  ],
+  "strategies": {
+    "adaptive_v2": null,
+    "medium": 602112,
+    "high": 1003520
+  },
+  "repeats": 10,
+  "max_tokens": 32,
+  "prompt_suffix": "Answer with only the short answer. Do not include an explanation.",
+  "server": {
+    "served_model_name": "qwen25vl-7b",
+    "version": "0.5.23",
+    "revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+    "tp_size": 1,
+    "dtype": "bfloat16",
+    "attention_backend": "triton",
+    "context_length": 8192,
+    "disable_radix_cache": true,
+    "mm_preprocess_cache_size_mb": 0,
+    "enable_prefix_mm_cache": false,
+    "enable_mm_global_cache": false
+  },
+  "source_sha256": {
+    "image_budget": "968fdfc931339683bf29bfb4ecfe930afe6a97981a46b9bfc80ba566c01ba043",
+    "chartqa_scoring": "c0c66076ab66e39151d5eb847875b44f5718103126f67def4100e9af3a4044bd"
+  },
+  "exclude_manifest_sha256": [
+    "8baa5e317b9ff23bcb6dbfd40b9eab9f91c64d12b3d6246c03e6c7746b68210f",
+    "0bf76cced983b33822c29d1f553452ffba2e311d0c2f978598aeae7d77fd4078"
+  ],
+  "geometry_sample": {
+    "near_min_height": 1440,
+    "min_aspect": 1.35,
+    "min_area": 1003520,
+    "near_image_count": 5
+  }
+}

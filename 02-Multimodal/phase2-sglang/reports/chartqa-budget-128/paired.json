@@ -1,0 +1,1457 @@
+{
+  "baseline": {
+    "n_questions": 128,
+    "stable_answers": 128,
+    "changed_visual_tokens_vs_baseline": 0,
+    "selected_budgets": {
+      "baseline": 128
+    },
+    "score_changes_vs_baseline": []
+  },
+  "low": {
+    "n_questions": 128,
+    "stable_answers": 128,
+    "changed_visual_tokens_vs_baseline": 117,
+    "selected_budgets": {
+      "low": 128
+    },
+    "score_changes_vs_baseline": [
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1063",
+        "subset": "human",
+        "reference": [
+          "35.2"
+        ],
+        "selected_budget": "low",
+        "baseline_answers": [
+          "38.2",
+          "38.2",
+          "38.2"
+        ],
+        "answers": [
+          "34.2",
+          "34.2",
+          "34.2"
+        ],
+        "baseline_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "baseline_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1227",
+        "subset": "human",
+        "reference": [
+          "0.6"
+        ],
+        "selected_budget": "low",
+        "baseline_answers": [
+          "0.6",
+          "0.6",
+          "0.6"
+        ],
+        "answers": [
+          "2.4%",
+          "2.4%",
+          "2.4%"
+        ],
+        "baseline_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "baseline_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1457",
+        "subset": "augmented",
+        "reference": [
+          "6.3"
+        ],
+        "selected_budget": "low",
+        "baseline_answers": [
+          "6.3",
+          "6.3",
+          "6.3"
+        ],
+        "answers": [
+          "6.3%",
+          "6.3%",
+          "6.3%"
+        ],
+        "baseline_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "baseline_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1461",
+        "subset": "augmented",
+        "reference": [
+          "Oklahoma"
+        ],
+        "selected_budget": "low",
+        "baseline_answers": [
+          "Oklahoma",
+          "Oklahoma",
+          "Oklahoma"
+        ],
+        "answers": [
+          "Vermont",
+          "Vermont",
+          "Vermont"
+        ],
+        "baseline_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "baseline_visual_tokens": [
+          1856,
+          1856,
+          1856
+        ],
+        "visual_tokens": [
+          264,
+          264,
+          264
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1802",
+        "subset": "augmented",
+        "reference": [
+          "28.52"
+        ],
+        "selected_budget": "low",
+        "baseline_answers": [
+          "28.52",
+          "28.52",
+          "28.52"
+        ],
+        "answers": [
+          "28.52%",
+          "28.52%",
+          "28.52%"
+        ],
+        "baseline_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "baseline_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:2202",
+        "subset": "augmented",
+        "reference": [
+          "36282"
+        ],
+        "selected_budget": "low",
+        "baseline_answers": [
+          "36282",
+          "36282",
+          "36282"
+        ],
+        "answers": [
+          "36 282",
+          "36 282",
+          "36 282"
+        ],
+        "baseline_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "baseline_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:2307",
+        "subset": "augmented",
+        "reference": [
+          "25"
+        ],
+        "selected_budget": "low",
+        "baseline_answers": [
+          "25",
+          "25",
+          "25"
+        ],
+        "answers": [
+          "25%",
+          "25%",
+          "25%"
+        ],
+        "baseline_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "baseline_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:2431",
+        "subset": "augmented",
+        "reference": [
+          "20"
+        ],
+        "selected_budget": "low",
+        "baseline_answers": [
+          "20",
+          "20",
+          "20"
+        ],
+        "answers": [
+          "20%",
+          "20%",
+          "20%"
+        ],
+        "baseline_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "baseline_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:412",
+        "subset": "human",
+        "reference": [
+          "Botswana"
+        ],
+        "selected_budget": "low",
+        "baseline_answers": [
+          "Chile",
+          "Chile",
+          "Chile"
+        ],
+        "answers": [
+          "Botswana",
+          "Botswana",
+          "Botswana"
+        ],
+        "baseline_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "baseline_visual_tokens": [
+          630,
+          630,
+          630
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:446",
+        "subset": "human",
+        "reference": [
+          "Yes"
+        ],
+        "selected_budget": "low",
+        "baseline_answers": [
+          "Yes",
+          "Yes",
+          "Yes"
+        ],
+        "answers": [
+          "No",
+          "No",
+          "No"
+        ],
+        "baseline_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "baseline_visual_tokens": [
+          1380,
+          1380,
+          1380
+        ],
+        "visual_tokens": [
+          260,
+          260,
+          260
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:597",
+        "subset": "human",
+        "reference": [
+          "2"
+        ],
+        "selected_budget": "low",
+        "baseline_answers": [
+          "2",
+          "2",
+          "2"
+        ],
+        "answers": [
+          "1",
+          "1",
+          "1"
+        ],
+        "baseline_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "baseline_visual_tokens": [
+          558,
+          558,
+          558
+        ],
+        "visual_tokens": [
+          252,
+          252,
+          252
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:706",
+        "subset": "human",
+        "reference": [
+          "6.6"
+        ],
+        "selected_budget": "low",
+        "baseline_answers": [
+          "6.6%",
+          "6.6%",
+          "6.6%"
+        ],
+        "answers": [
+          "6.6",
+          "6.6",
+          "6.6"
+        ],
+        "baseline_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "baseline_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:73",
+        "subset": "human",
+        "reference": [
+          "21.5"
+        ],
+        "selected_budget": "low",
+        "baseline_answers": [
+          "21.5",
+          "21.5",
+          "21.5"
+        ],
+        "answers": [
+          "24.5",
+          "24.5",
+          "24.5"
+        ],
+        "baseline_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "baseline_visual_tokens": [
+          1020,
+          1020,
+          1020
+        ],
+        "visual_tokens": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:742",
+        "subset": "human",
+        "reference": [
+          "15017"
+        ],
+        "selected_budget": "low",
+        "baseline_answers": [
+          "15017",
+          "15017",
+          "15017"
+        ],
+        "answers": [
+          "15 017",
+          "15 017",
+          "15 017"
+        ],
+        "baseline_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "baseline_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:887",
+        "subset": "human",
+        "reference": [
+          "40"
+        ],
+        "selected_budget": "low",
+        "baseline_answers": [
+          "40",
+          "40",
+          "40"
+        ],
+        "answers": [
+          "14",
+          "14",
+          "14"
+        ],
+        "baseline_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "baseline_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:908",
+        "subset": "human",
+        "reference": [
+          "Cooking (e.g., MasterChef, Chopped, etc.)"
+        ],
+        "selected_budget": "low",
+        "baseline_answers": [
+          "Cooking (e.g., MasterChef, Chopped, etc.)",
+          "Cooking (e.g., MasterChef, Chopped, etc.)",
+          "Cooking (e.g., MasterChef, Chopped, etc.)"
+        ],
+        "answers": [
+          "MasterChef",
+          "MasterChef",
+          "MasterChef"
+        ],
+        "baseline_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "baseline_visual_tokens": [
+          783,
+          783,
+          783
+        ],
+        "visual_tokens": [
+          256,
+          256,
+          256
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:971",
+        "subset": "human",
+        "reference": [
+          "28"
+        ],
+        "selected_budget": "low",
+        "baseline_answers": [
+          "28",
+          "28",
+          "28"
+        ],
+        "answers": [
+          "28%",
+          "28%",
+          "28%"
+        ],
+        "baseline_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "baseline_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      }
+    ]
+  },
+  "medium": {
+    "n_questions": 128,
+    "stable_answers": 128,
+    "changed_visual_tokens_vs_baseline": 18,
+    "selected_budgets": {
+      "medium": 128
+    },
+    "score_changes_vs_baseline": [
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1077",
+        "subset": "human",
+        "reference": [
+          "46"
+        ],
+        "selected_budget": "medium",
+        "baseline_answers": [
+          "55",
+          "55",
+          "55"
+        ],
+        "answers": [
+          "45",
+          "45",
+          "45"
+        ],
+        "baseline_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "baseline_visual_tokens": [
+          1044,
+          1044,
+          1044
+        ],
+        "visual_tokens": [
+          775,
+          775,
+          775
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:457",
+        "subset": "human",
+        "reference": [
+          "2"
+        ],
+        "selected_budget": "medium",
+        "baseline_answers": [
+          "4",
+          "4",
+          "4"
+        ],
+        "answers": [
+          "2",
+          "2",
+          "2"
+        ],
+        "baseline_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "baseline_visual_tokens": [
+          814,
+          814,
+          814
+        ],
+        "visual_tokens": [
+          770,
+          770,
+          770
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:73",
+        "subset": "human",
+        "reference": [
+          "21.5"
+        ],
+        "selected_budget": "medium",
+        "baseline_answers": [
+          "21.5",
+          "21.5",
+          "21.5"
+        ],
+        "answers": [
+          "26.5",
+          "26.5",
+          "26.5"
+        ],
+        "baseline_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "baseline_visual_tokens": [
+          1020,
+          1020,
+          1020
+        ],
+        "visual_tokens": [
+          780,
+          780,
+          780
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:908",
+        "subset": "human",
+        "reference": [
+          "Cooking (e.g., MasterChef, Chopped, etc.)"
+        ],
+        "selected_budget": "medium",
+        "baseline_answers": [
+          "Cooking (e.g., MasterChef, Chopped, etc.)",
+          "Cooking (e.g., MasterChef, Chopped, etc.)",
+          "Cooking (e.g., MasterChef, Chopped, etc.)"
+        ],
+        "answers": [
+          "Cooking",
+          "Cooking",
+          "Cooking"
+        ],
+        "baseline_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "baseline_visual_tokens": [
+          783,
+          783,
+          783
+        ],
+        "visual_tokens": [
+          756,
+          756,
+          756
+        ]
+      }
+    ]
+  },
+  "high": {
+    "n_questions": 128,
+    "stable_answers": 128,
+    "changed_visual_tokens_vs_baseline": 2,
+    "selected_budgets": {
+      "high": 128
+    },
+    "score_changes_vs_baseline": []
+  },
+  "adaptive": {
+    "n_questions": 128,
+    "stable_answers": 128,
+    "changed_visual_tokens_vs_baseline": 115,
+    "selected_budgets": {
+      "low": 125,
+      "high": 3
+    },
+    "score_changes_vs_baseline": [
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1063",
+        "subset": "human",
+        "reference": [
+          "35.2"
+        ],
+        "selected_budget": "low",
+        "baseline_answers": [
+          "38.2",
+          "38.2",
+          "38.2"
+        ],
+        "answers": [
+          "34.2",
+          "34.2",
+          "34.2"
+        ],
+        "baseline_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "baseline_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1227",
+        "subset": "human",
+        "reference": [
+          "0.6"
+        ],
+        "selected_budget": "low",
+        "baseline_answers": [
+          "0.6",
+          "0.6",
+          "0.6"
+        ],
+        "answers": [
+          "2.4%",
+          "2.4%",
+          "2.4%"
+        ],
+        "baseline_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "baseline_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1457",
+        "subset": "augmented",
+        "reference": [
+          "6.3"
+        ],
+        "selected_budget": "low",
+        "baseline_answers": [
+          "6.3",
+          "6.3",
+          "6.3"
+        ],
+        "answers": [
+          "6.3%",
+          "6.3%",
+          "6.3%"
+        ],
+        "baseline_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "baseline_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1802",
+        "subset": "augmented",
+        "reference": [
+          "28.52"
+        ],
+        "selected_budget": "low",
+        "baseline_answers": [
+          "28.52",
+          "28.52",
+          "28.52"
+        ],
+        "answers": [
+          "28.52%",
+          "28.52%",
+          "28.52%"
+        ],
+        "baseline_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "baseline_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:2202",
+        "subset": "augmented",
+        "reference": [
+          "36282"
+        ],
+        "selected_budget": "low",
+        "baseline_answers": [
+          "36282",
+          "36282",
+          "36282"
+        ],
+        "answers": [
+          "36 282",
+          "36 282",
+          "36 282"
+        ],
+        "baseline_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "baseline_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:2307",
+        "subset": "augmented",
+        "reference": [
+          "25"
+        ],
+        "selected_budget": "low",
+        "baseline_answers": [
+          "25",
+          "25",
+          "25"
+        ],
+        "answers": [
+          "25%",
+          "25%",
+          "25%"
+        ],
+        "baseline_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "baseline_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:2431",
+        "subset": "augmented",
+        "reference": [
+          "20"
+        ],
+        "selected_budget": "low",
+        "baseline_answers": [
+          "20",
+          "20",
+          "20"
+        ],
+        "answers": [
+          "20%",
+          "20%",
+          "20%"
+        ],
+        "baseline_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "baseline_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:412",
+        "subset": "human",
+        "reference": [
+          "Botswana"
+        ],
+        "selected_budget": "low",
+        "baseline_answers": [
+          "Chile",
+          "Chile",
+          "Chile"
+        ],
+        "answers": [
+          "Botswana",
+          "Botswana",
+          "Botswana"
+        ],
+        "baseline_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "baseline_visual_tokens": [
+          630,
+          630,
+          630
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:446",
+        "subset": "human",
+        "reference": [
+          "Yes"
+        ],
+        "selected_budget": "low",
+        "baseline_answers": [
+          "Yes",
+          "Yes",
+          "Yes"
+        ],
+        "answers": [
+          "No",
+          "No",
+          "No"
+        ],
+        "baseline_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "baseline_visual_tokens": [
+          1380,
+          1380,
+          1380
+        ],
+        "visual_tokens": [
+          260,
+          260,
+          260
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:597",
+        "subset": "human",
+        "reference": [
+          "2"
+        ],
+        "selected_budget": "low",
+        "baseline_answers": [
+          "2",
+          "2",
+          "2"
+        ],
+        "answers": [
+          "1",
+          "1",
+          "1"
+        ],
+        "baseline_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "baseline_visual_tokens": [
+          558,
+          558,
+          558
+        ],
+        "visual_tokens": [
+          252,
+          252,
+          252
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:706",
+        "subset": "human",
+        "reference": [
+          "6.6"
+        ],
+        "selected_budget": "low",
+        "baseline_answers": [
+          "6.6%",
+          "6.6%",
+          "6.6%"
+        ],
+        "answers": [
+          "6.6",
+          "6.6",
+          "6.6"
+        ],
+        "baseline_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "baseline_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:73",
+        "subset": "human",
+        "reference": [
+          "21.5"
+        ],
+        "selected_budget": "low",
+        "baseline_answers": [
+          "21.5",
+          "21.5",
+          "21.5"
+        ],
+        "answers": [
+          "24.5",
+          "24.5",
+          "24.5"
+        ],
+        "baseline_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "baseline_visual_tokens": [
+          1020,
+          1020,
+          1020
+        ],
+        "visual_tokens": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:742",
+        "subset": "human",
+        "reference": [
+          "15017"
+        ],
+        "selected_budget": "low",
+        "baseline_answers": [
+          "15017",
+          "15017",
+          "15017"
+        ],
+        "answers": [
+          "15 017",
+          "15 017",
+          "15 017"
+        ],
+        "baseline_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "baseline_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:887",
+        "subset": "human",
+        "reference": [
+          "40"
+        ],
+        "selected_budget": "low",
+        "baseline_answers": [
+          "40",
+          "40",
+          "40"
+        ],
+        "answers": [
+          "14",
+          "14",
+          "14"
+        ],
+        "baseline_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "baseline_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:908",
+        "subset": "human",
+        "reference": [
+          "Cooking (e.g., MasterChef, Chopped, etc.)"
+        ],
+        "selected_budget": "low",
+        "baseline_answers": [
+          "Cooking (e.g., MasterChef, Chopped, etc.)",
+          "Cooking (e.g., MasterChef, Chopped, etc.)",
+          "Cooking (e.g., MasterChef, Chopped, etc.)"
+        ],
+        "answers": [
+          "MasterChef",
+          "MasterChef",
+          "MasterChef"
+        ],
+        "baseline_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "baseline_visual_tokens": [
+          783,
+          783,
+          783
+        ],
+        "visual_tokens": [
+          256,
+          256,
+          256
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:971",
+        "subset": "human",
+        "reference": [
+          "28"
+        ],
+        "selected_budget": "low",
+        "baseline_answers": [
+          "28",
+          "28",
+          "28"
+        ],
+        "answers": [
+          "28%",
+          "28%",
+          "28%"
+        ],
+        "baseline_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "baseline_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1479 @@
+{
+  "run_id": "c8988c5bae",
+  "server": {
+    "revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+    "version": "0.5.23",
+    "tp_size": 1,
+    "max_running_requests": 3,
+    "schedule_policy": "fcfs",
+    "disable_radix_cache": false,
+    "enable_cache_report": true,
+    "mm_preprocess_cache_size_mb": 0,
+    "enable_prefix_mm_cache": false,
+    "enable_mm_global_cache": false
+  },
+  "config": {
+    "repeats": 2,
+    "policies": [
+      "probe"
+    ],
+    "session_replicas": 4,
+    "turn_interval_ms": 2304,
+    "arrival_spacing_ms": 64,
+    "aging_rate": 0.35,
+    "overdue_ms": 100,
+    "starvation_watch_ms": 500,
+    "long_quantile": 0.75,
+    "prefill_predictor_experiment": true,
+    "aging_thresholds_ms": {
+      "tokens": 100,
+      "ridge": 100,
+      "local": 100
+    }
+  },
+  "arrivals": [
+    {
+      "session": "train-2-0-r03",
+      "turn": 1,
+      "scheduled_ms": 0,
+      "mode": "miss",
+      "cost_ms": 73.088385913771,
+      "messages_sha256": "e9ec903a3ab9dafa5e99dc72ddbbdbee0bbdbb67c20e59af626adf9403d34170",
+      "prefix_est": 0,
+      "total_est": 662
+    },
+    {
+      "session": "train-4-2-r00",
+      "turn": 1,
+      "scheduled_ms": 64,
+      "mode": "hit",
+      "cost_ms": 73.02444009530835,
+      "messages_sha256": "aace756690210a9c6404d7bf205de8a9066ffd1b779e57d94aba129af125ee53",
+      "prefix_est": 0,
+      "total_est": 642
+    },
+    {
+      "session": "train-4-1-r02",
+      "turn": 1,
+      "scheduled_ms": 128,
+      "mode": "hit",
+      "cost_ms": 59.31884169730348,
+      "messages_sha256": "17cb2a26e7f4490df3d1165be42d5955ccf8d627acab754db7666e19bfefefa4",
+      "prefix_est": 0,
+      "total_est": 197
+    },
+    {
+      "session": "train-4-2-r03",
+      "turn": 1,
+      "scheduled_ms": 192,
+      "mode": "miss",
+      "cost_ms": 73.02444009530835,
+      "messages_sha256": "aace756690210a9c6404d7bf205de8a9066ffd1b779e57d94aba129af125ee53",
+      "prefix_est": 0,
+      "total_est": 642
+    },
+    {
+      "session": "train-0-1-r02",
+      "turn": 1,
+      "scheduled_ms": 256,
+      "mode": "hit",
+      "cost_ms": 73.02444009530835,
+      "messages_sha256": "aace756690210a9c6404d7bf205de8a9066ffd1b779e57d94aba129af125ee53",
+      "prefix_est": 0,
+      "total_est": 642
+    },
+    {
+      "session": "train-2-1-r01",
+      "turn": 1,
+      "scheduled_ms": 320,
+      "mode": "miss",
+      "cost_ms": 79.59992931726975,
+      "messages_sha256": "d09ffafd49ab5fd8d2950f27d5b33c2bc34bb4a037bc92db1a838cf299ad4e05",
+      "prefix_est": 0,
+      "total_est": 895
+    },
+    {
+      "session": "train-0-1-r01",
+      "turn": 1,
+      "scheduled_ms": 384,
+      "mode": "miss",
+      "cost_ms": 73.02444009530835,
+      "messages_sha256": "aace756690210a9c6404d7bf205de8a9066ffd1b779e57d94aba129af125ee53",
+      "prefix_est": 0,
+      "total_est": 642
+    },
+    {
+      "session": "train-0-2-r03",
+      "turn": 1,
+      "scheduled_ms": 448,
+      "mode": "miss",
+      "cost_ms": 79.52639162603771,
+      "messages_sha256": "2ce0697931d365f4f6c2384894dbd260cb6c4f3d4c463fcb91693e52d88a35b3",
+      "prefix_est": 0,
+      "total_est": 872
+    },
+    {
+      "session": "train-2-0-r01",
+      "turn": 1,
+      "scheduled_ms": 512,
+      "mode": "miss",
+      "cost_ms": 73.088385913771,
+      "messages_sha256": "e9ec903a3ab9dafa5e99dc72ddbbdbee0bbdbb67c20e59af626adf9403d34170",
+      "prefix_est": 0,
+      "total_est": 662
+    },
+    {
+      "session": "train-2-1-r03",
+      "turn": 1,
+      "scheduled_ms": 576,
+      "mode": "miss",
+      "cost_ms": 79.59992931726975,
+      "messages_sha256": "d09ffafd49ab5fd8d2950f27d5b33c2bc34bb4a037bc92db1a838cf299ad4e05",
+      "prefix_est": 0,
+      "total_est": 895
+    },
+    {
+      "session": "train-0-2-r01",
+      "turn": 1,
+      "scheduled_ms": 640,
+      "mode": "miss",
+      "cost_ms": 79.52639162603771,
+      "messages_sha256": "2ce0697931d365f4f6c2384894dbd260cb6c4f3d4c463fcb91693e52d88a35b3",
+      "prefix_est": 0,
+      "total_est": 872
+    },
+    {
+      "session": "train-0-1-r00",
+      "turn": 1,
+      "scheduled_ms": 704,
+      "mode": "hit",
+      "cost_ms": 73.02444009530835,
+      "messages_sha256": "aace756690210a9c6404d7bf205de8a9066ffd1b779e57d94aba129af125ee53",
+      "prefix_est": 0,
+      "total_est": 642
+    },
+    {
+      "session": "train-0-0-r00",
+      "turn": 1,
+      "scheduled_ms": 768,
+      "mode": "hit",
+      "cost_ms": 59.31884169730348,
+      "messages_sha256": "17cb2a26e7f4490df3d1165be42d5955ccf8d627acab754db7666e19bfefefa4",
+      "prefix_est": 0,
+      "total_est": 197
+    },
+    {
+      "session": "train-4-0-r03",
+      "turn": 1,
+      "scheduled_ms": 832,
+      "mode": "miss",
+      "cost_ms": 79.67986159034805,
+      "messages_sha256": "adeec84a5e6c30dc8d5dfba84f7671f08727c2b7796d16fc9192999a3789e58e",
+      "prefix_est": 0,
+      "total_est": 920
+    },
+    {
+      "session": "train-2-0-r00",
+      "turn": 1,
+      "scheduled_ms": 896,
+      "mode": "hit",
+      "cost_ms": 73.088385913771,
+      "messages_sha256": "e9ec903a3ab9dafa5e99dc72ddbbdbee0bbdbb67c20e59af626adf9403d34170",
+      "prefix_est": 0,
+      "total_est": 662
+    },
+    {
+      "session": "train-4-0-r02",
+      "turn": 1,
+      "scheduled_ms": 960,
+      "mode": "hit",
+      "cost_ms": 79.67986159034805,
+      "messages_sha256": "adeec84a5e6c30dc8d5dfba84f7671f08727c2b7796d16fc9192999a3789e58e",
+      "prefix_est": 0,
+      "total_est": 920
+    },
+    {
+      "session": "train-2-1-r00",
+      "turn": 1,
+      "scheduled_ms": 1024,
+      "mode": "hit",
+      "cost_ms": 79.59992931726975,
+      "messages_sha256": "d09ffafd49ab5fd8d2950f27d5b33c2bc34bb4a037bc92db1a838cf299ad4e05",
+      "prefix_est": 0,
+      "total_est": 895
+    },
+    {
+      "session": "train-2-2-r03",
+      "turn": 1,
+      "scheduled_ms": 1088,
+      "mode": "miss",
+      "cost_ms": 59.59700600761601,
+      "messages_sha256": "b183197f280f17090bc84f0edf3c960062c2b81f6fbfed34dff9ad8e3bb8036f",
+      "prefix_est": 0,
+      "total_est": 284
+    },
+    {
+      "session": "train-2-2-r01",
+      "turn": 1,
+      "scheduled_ms": 1152,
+      "mode": "miss",
+      "cost_ms": 59.59700600761601,
+      "messages_sha256": "b183197f280f17090bc84f0edf3c960062c2b81f6fbfed34dff9ad8e3bb8036f",
+      "prefix_est": 0,
+      "total_est": 284
+    },
+    {
+      "session": "train-0-2-r02",
+      "turn": 1,
+      "scheduled_ms": 1216,
+      "mode": "hit",
+      "cost_ms": 79.52639162603771,
+      "messages_sha256": "2ce0697931d365f4f6c2384894dbd260cb6c4f3d4c463fcb91693e52d88a35b3",
+      "prefix_est": 0,
+      "total_est": 872
+    },
+    {
+      "session": "train-2-1-r02",
+      "turn": 1,
+      "scheduled_ms": 1280,
+      "mode": "hit",
+      "cost_ms": 79.59992931726975,
+      "messages_sha256": "d09ffafd49ab5fd8d2950f27d5b33c2bc34bb4a037bc92db1a838cf299ad4e05",
+      "prefix_est": 0,
+      "total_est": 895
+    },
+    {
+      "session": "train-4-1-r00",
+      "turn": 1,
+      "scheduled_ms": 1344,
+      "mode": "hit",
+      "cost_ms": 59.31884169730348,
+      "messages_sha256": "17cb2a26e7f4490df3d1165be42d5955ccf8d627acab754db7666e19bfefefa4",
+      "prefix_est": 0,
+      "total_est": 197
+    },
+    {
+      "session": "train-0-0-r01",
+      "turn": 1,
+      "scheduled_ms": 1408,
+      "mode": "miss",
+      "cost_ms": 59.31884169730348,
+      "messages_sha256": "17cb2a26e7f4490df3d1165be42d5955ccf8d627acab754db7666e19bfefefa4",
+      "prefix_est": 0,
+      "total_est": 197
+    },
+    {
+      "session": "train-4-1-r03",
+      "turn": 1,
+      "scheduled_ms": 1472,
+      "mode": "miss",
+      "cost_ms": 59.31884169730348,
+      "messages_sha256": "17cb2a26e7f4490df3d1165be42d5955ccf8d627acab754db7666e19bfefefa4",
+      "prefix_est": 0,
+      "total_est": 197
+    },
+    {
+      "session": "train-2-2-r02",
+      "turn": 1,
+      "scheduled_ms": 1536,
+      "mode": "hit",
+      "cost_ms": 59.59700600761601,
+      "messages_sha256": "b183197f280f17090bc84f0edf3c960062c2b81f6fbfed34dff9ad8e3bb8036f",
+      "prefix_est": 0,
+      "total_est": 284
+    },
+    {
+      "session": "train-4-0-r01",
+      "turn": 1,
+      "scheduled_ms": 1600,
+      "mode": "miss",
+      "cost_ms": 79.67986159034805,
+      "messages_sha256": "adeec84a5e6c30dc8d5dfba84f7671f08727c2b7796d16fc9192999a3789e58e",
+      "prefix_est": 0,
+      "total_est": 920
+    },
+    {
+      "session": "train-0-2-r00",
+      "turn": 1,
+      "scheduled_ms": 1664,
+      "mode": "hit",
+      "cost_ms": 79.52639162603771,
+      "messages_sha256": "2ce0697931d365f4f6c2384894dbd260cb6c4f3d4c463fcb91693e52d88a35b3",
+      "prefix_est": 0,
+      "total_est": 872
+    },
+    {
+      "session": "train-0-0-r03",
+      "turn": 1,
+      "scheduled_ms": 1728,
+      "mode": "miss",
+      "cost_ms": 59.31884169730348,
+      "messages_sha256": "17cb2a26e7f4490df3d1165be42d5955ccf8d627acab754db7666e19bfefefa4",
+      "prefix_est": 0,
+      "total_est": 197
+    },
+    {
+      "session": "train-4-2-r02",
+      "turn": 1,
+      "scheduled_ms": 1792,
+      "mode": "hit",
+      "cost_ms": 73.02444009530835,
+      "messages_sha256": "aace756690210a9c6404d7bf205de8a9066ffd1b779e57d94aba129af125ee53",
+      "prefix_est": 0,
+      "total_est": 642
+    },
+    {
+      "session": "train-0-1-r03",
+      "turn": 1,
+      "scheduled_ms": 1856,
+      "mode": "miss",
+      "cost_ms": 73.02444009530835,
+      "messages_sha256": "aace756690210a9c6404d7bf205de8a9066ffd1b779e57d94aba129af125ee53",
+      "prefix_est": 0,
+      "total_est": 642
+    },
+    {
+      "session": "train-2-0-r02",
+      "turn": 1,
+      "scheduled_ms": 1920,
+      "mode": "hit",
+      "cost_ms": 73.088385913771,
+      "messages_sha256": "e9ec903a3ab9dafa5e99dc72ddbbdbee0bbdbb67c20e59af626adf9403d34170",
+      "prefix_est": 0,
+      "total_est": 662
+    },
+    {
+      "session": "train-4-0-r00",
+      "turn": 1,
+      "scheduled_ms": 1984,
+      "mode": "hit",
+      "cost_ms": 79.67986159034805,
+      "messages_sha256": "adeec84a5e6c30dc8d5dfba84f7671f08727c2b7796d16fc9192999a3789e58e",
+      "prefix_est": 0,
+      "total_est": 920
+    },
+    {
+      "session": "train-0-0-r02",
+      "turn": 1,
+      "scheduled_ms": 2048,
+      "mode": "hit",
+      "cost_ms": 59.31884169730348,
+      "messages_sha256": "17cb2a26e7f4490df3d1165be42d5955ccf8d627acab754db7666e19bfefefa4",
+      "prefix_est": 0,
+      "total_est": 197
+    },
+    {
+      "session": "train-4-2-r01",
+      "turn": 1,
+      "scheduled_ms": 2112,
+      "mode": "miss",
+      "cost_ms": 73.02444009530835,
+      "messages_sha256": "aace756690210a9c6404d7bf205de8a9066ffd1b779e57d94aba129af125ee53",
+      "prefix_est": 0,
+      "total_est": 642
+    },
+    {
+      "session": "train-4-1-r01",
+      "turn": 1,
+      "scheduled_ms": 2176,
+      "mode": "miss",
+      "cost_ms": 59.31884169730348,
+      "messages_sha256": "17cb2a26e7f4490df3d1165be42d5955ccf8d627acab754db7666e19bfefefa4",
+      "prefix_est": 0,
+      "total_est": 197
+    },
+    {
+      "session": "train-2-2-r00",
+      "turn": 1,
+      "scheduled_ms": 2240,
+      "mode": "hit",
+      "cost_ms": 59.59700600761601,
+      "messages_sha256": "b183197f280f17090bc84f0edf3c960062c2b81f6fbfed34dff9ad8e3bb8036f",
+      "prefix_est": 0,
+      "total_est": 284
+    },
+    {
+      "session": "train-2-0-r03",
+      "turn": 2,
+      "scheduled_ms": 2304,
+      "mode": "miss",
+      "cost_ms": 100.22886748581693,
+      "messages_sha256": "eecb251a0dd301bc6fb1294659fa009a3244a249611d398805a366c182c01dcb",
+      "prefix_est": 0,
+      "total_est": 755
+    },
+    {
+      "session": "train-4-2-r00",
+      "turn": 2,
+      "scheduled_ms": 2368,
+      "mode": "hit",
+      "cost_ms": 47.21444179065459,
+      "messages_sha256": "333c03e64ea4b188c4bd3f338664ea8692e1c277dcc3c8d66fe45d53268dde1d",
+      "prefix_est": 642,
+      "total_est": 712
+    },
+    {
+      "session": "train-4-1-r02",
+      "turn": 2,
+      "scheduled_ms": 2432,
+      "mode": "hit",
+      "cost_ms": 45.08752626009417,
+      "messages_sha256": "659985237e9931184ae0b51fb27cb87c71f1adde14dbcd49df5252a42c9ce780",
+      "prefix_est": 197,
+      "total_est": 248
+    },
+    {
+      "session": "train-4-2-r03",
+      "turn": 2,
+      "scheduled_ms": 2496,
+      "mode": "miss",
+      "cost_ms": 100.09138397612224,
+      "messages_sha256": "333c03e64ea4b188c4bd3f338664ea8692e1c277dcc3c8d66fe45d53268dde1d",
+      "prefix_est": 0,
+      "total_est": 712
+    },
+    {
+      "session": "train-0-1-r02",
+      "turn": 2,
+      "scheduled_ms": 2560,
+      "mode": "hit",
+      "cost_ms": 47.21444179065459,
+      "messages_sha256": "333c03e64ea4b188c4bd3f338664ea8692e1c277dcc3c8d66fe45d53268dde1d",
+      "prefix_est": 642,
+      "total_est": 712
+    },
+    {
+      "session": "train-2-1-r01",
+      "turn": 2,
+      "scheduled_ms": 2624,
+      "mode": "miss",
+      "cost_ms": 118.569475606374,
+      "messages_sha256": "3ca7cb1c32e177b77dbc5026e2bd8cf7aaf9f25a50ef514c93c51897890ecd19",
+      "prefix_est": 0,
+      "total_est": 1015
+    },
+    {
+      "session": "train-0-1-r01",
+      "turn": 2,
+      "scheduled_ms": 2688,
+      "mode": "miss",
+      "cost_ms": 100.09138397612224,
+      "messages_sha256": "333c03e64ea4b188c4bd3f338664ea8692e1c277dcc3c8d66fe45d53268dde1d",
+      "prefix_est": 0,
+      "total_est": 712
+    },
+    {
+      "session": "train-0-2-r03",
+      "turn": 2,
+      "scheduled_ms": 2752,
+      "mode": "miss",
+      "cost_ms": 118.41600564206362,
+      "messages_sha256": "6620e5cc13a26fab1d6e74903c9ad56df0287828d344eaad058e59c455ee348f",
+      "prefix_est": 0,
+      "total_est": 967
+    },
+    {
+      "session": "train-2-0-r01",
+      "turn": 2,
+      "scheduled_ms": 2816,
+      "mode": "miss",
+      "cost_ms": 100.22886748581693,
+      "messages_sha256": "eecb251a0dd301bc6fb1294659fa009a3244a249611d398805a366c182c01dcb",
+      "prefix_est": 0,
+      "total_est": 755
+    },
+    {
+      "session": "train-2-1-r03",
+      "turn": 2,
+      "scheduled_ms": 2880,
+      "mode": "miss",
+      "cost_ms": 118.569475606374,
+      "messages_sha256": "3ca7cb1c32e177b77dbc5026e2bd8cf7aaf9f25a50ef514c93c51897890ecd19",
+      "prefix_est": 0,
+      "total_est": 1015
+    },
+    {
+      "session": "train-0-2-r01",
+      "turn": 2,
+      "scheduled_ms": 2944,
+      "mode": "miss",
+      "cost_ms": 118.41600564206362,
+      "messages_sha256": "6620e5cc13a26fab1d6e74903c9ad56df0287828d344eaad058e59c455ee348f",
+      "prefix_est": 0,
+      "total_est": 967
+    },
+    {
+      "session": "train-0-1-r00",
+      "turn": 2,
+      "scheduled_ms": 3008,
+      "mode": "hit",
+      "cost_ms": 47.21444179065459,
+      "messages_sha256": "333c03e64ea4b188c4bd3f338664ea8692e1c277dcc3c8d66fe45d53268dde1d",
+      "prefix_est": 642,
+      "total_est": 712
+    },
+    {
+      "session": "train-0-0-r00",
+      "turn": 2,
+      "scheduled_ms": 3072,
+      "mode": "hit",
+      "cost_ms": 45.08752626009417,
+      "messages_sha256": "659985237e9931184ae0b51fb27cb87c71f1adde14dbcd49df5252a42c9ce780",
+      "prefix_est": 197,
+      "total_est": 248
+    },
+    {
+      "session": "train-4-0-r03",
+      "turn": 2,
+      "scheduled_ms": 3136,
+      "mode": "miss",
+      "cost_ms": 118.37124356913978,
+      "messages_sha256": "91f9a58d38e645dd1eece4c97319ced84841295023df9589bbb11741a7923866",
+      "prefix_est": 0,
+      "total_est": 953
+    },
+    {
+      "session": "train-2-0-r00",
+      "turn": 2,
+      "scheduled_ms": 3200,
+      "mode": "hit",
+      "cost_ms": 45.704668534446874,
+      "messages_sha256": "eecb251a0dd301bc6fb1294659fa009a3244a249611d398805a366c182c01dcb",
+      "prefix_est": 662,
+      "total_est": 755
+    },
+    {
+      "session": "train-4-0-r02",
+      "turn": 2,
+      "scheduled_ms": 3264,
+      "mode": "hit",
+      "cost_ms": 42.5974323376285,
+      "messages_sha256": "91f9a58d38e645dd1eece4c97319ced84841295023df9589bbb11741a7923866",
+      "prefix_est": 920,
+      "total_est": 953
+    },
+    {
+      "session": "train-2-1-r00",
+      "turn": 2,
+      "scheduled_ms": 3328,
+      "mode": "hit",
+      "cost_ms": 44.85473533224075,
+      "messages_sha256": "3ca7cb1c32e177b77dbc5026e2bd8cf7aaf9f25a50ef514c93c51897890ecd19",
+      "prefix_est": 895,
+      "total_est": 1015
+    },
+    {
+      "session": "train-2-2-r03",
+      "turn": 2,
+      "scheduled_ms": 3392,
+      "mode": "miss",
+      "cost_ms": 61.53042118700601,
+      "messages_sha256": "fcb404ae19e6ff4690463dd4971bc7e5b8428c3c2c0ada888d358c6a98ac47e3",
+      "prefix_est": 0,
+      "total_est": 316
+    },
+    {
+      "session": "train-2-2-r01",
+      "turn": 2,
+      "scheduled_ms": 3456,
+      "mode": "miss",
+      "cost_ms": 61.53042118700601,
+      "messages_sha256": "fcb404ae19e6ff4690463dd4971bc7e5b8428c3c2c0ada888d358c6a98ac47e3",
+      "prefix_est": 0,
+      "total_est": 316
+    },
+    {
+      "session": "train-0-2-r02",
+      "turn": 2,
+      "scheduled_ms": 3520,
+      "mode": "hit",
+      "cost_ms": 46.595610648718164,
+      "messages_sha256": "6620e5cc13a26fab1d6e74903c9ad56df0287828d344eaad058e59c455ee348f",
+      "prefix_est": 872,
+      "total_est": 967
+    },
+    {
+      "session": "train-2-1-r02",
+      "turn": 2,
+      "scheduled_ms": 3584,
+      "mode": "hit",
+      "cost_ms": 44.85473533224075,
+      "messages_sha256": "3ca7cb1c32e177b77dbc5026e2bd8cf7aaf9f25a50ef514c93c51897890ecd19",
+      "prefix_est": 895,
+      "total_est": 1015
+    },
+    {
+      "session": "train-4-1-r00",
+      "turn": 2,
+      "scheduled_ms": 3648,
+      "mode": "hit",
+      "cost_ms": 45.08752626009417,
+      "messages_sha256": "659985237e9931184ae0b51fb27cb87c71f1adde14dbcd49df5252a42c9ce780",
+      "prefix_est": 197,
+      "total_est": 248
+    },
+    {
+      "session": "train-0-0-r01",
+      "turn": 2,
+      "scheduled_ms": 3712,
+      "mode": "miss",
+      "cost_ms": 61.313005404232996,
+      "messages_sha256": "659985237e9931184ae0b51fb27cb87c71f1adde14dbcd49df5252a42c9ce780",
+      "prefix_est": 0,
+      "total_est": 248
+    },
+    {
+      "session": "train-4-1-r03",
+      "turn": 2,
+      "scheduled_ms": 3776,
+      "mode": "miss",
+      "cost_ms": 61.313005404232996,
+      "messages_sha256": "659985237e9931184ae0b51fb27cb87c71f1adde14dbcd49df5252a42c9ce780",
+      "prefix_est": 0,
+      "total_est": 248
+    },
+    {
+      "session": "train-2-2-r02",
+      "turn": 2,
+      "scheduled_ms": 3840,
+      "mode": "hit",
+      "cost_ms": 38.13937511119166,
+      "messages_sha256": "fcb404ae19e6ff4690463dd4971bc7e5b8428c3c2c0ada888d358c6a98ac47e3",
+      "prefix_est": 284,
+      "total_est": 316
+    },
+    {
+      "session": "train-4-0-r01",
+      "turn": 2,
+      "scheduled_ms": 3904,
+      "mode": "miss",
+      "cost_ms": 118.37124356913978,
+      "messages_sha256": "91f9a58d38e645dd1eece4c97319ced84841295023df9589bbb11741a7923866",
+      "prefix_est": 0,
+      "total_est": 953
+    },
+    {
+      "session": "train-0-2-r00",
+      "turn": 2,
+      "scheduled_ms": 3968,
+      "mode": "hit",
+      "cost_ms": 46.595610648718164,
+      "messages_sha256": "6620e5cc13a26fab1d6e74903c9ad56df0287828d344eaad058e59c455ee348f",
+      "prefix_est": 872,
+      "total_est": 967
+    },
+    {
+      "session": "train-0-0-r03",
+      "turn": 2,
+      "scheduled_ms": 4032,
+      "mode": "miss",
+      "cost_ms": 61.313005404232996,
+      "messages_sha256": "659985237e9931184ae0b51fb27cb87c71f1adde14dbcd49df5252a42c9ce780",
+      "prefix_est": 0,
+      "total_est": 248
+    },
+    {
+      "session": "train-4-2-r02",
+      "turn": 2,
+      "scheduled_ms": 4096,
+      "mode": "hit",
+      "cost_ms": 47.21444179065459,
+      "messages_sha256": "333c03e64ea4b188c4bd3f338664ea8692e1c277dcc3c8d66fe45d53268dde1d",
+      "prefix_est": 642,
+      "total_est": 712
+    },
+    {
+      "session": "train-0-1-r03",
+      "turn": 2,
+      "scheduled_ms": 4160,
+      "mode": "miss",
+      "cost_ms": 100.09138397612224,
+      "messages_sha256": "333c03e64ea4b188c4bd3f338664ea8692e1c277dcc3c8d66fe45d53268dde1d",
+      "prefix_est": 0,
+      "total_est": 712
+    },
+    {
+      "session": "train-2-0-r02",
+      "turn": 2,
+      "scheduled_ms": 4224,
+      "mode": "hit",
+      "cost_ms": 45.704668534446874,
+      "messages_sha256": "eecb251a0dd301bc6fb1294659fa009a3244a249611d398805a366c182c01dcb",
+      "prefix_est": 662,
+      "total_est": 755
+    },
+    {
+      "session": "train-4-0-r00",
+      "turn": 2,
+      "scheduled_ms": 4288,
+      "mode": "hit",
+      "cost_ms": 42.5974323376285,
+      "messages_sha256": "91f9a58d38e645dd1eece4c97319ced84841295023df9589bbb11741a7923866",
+      "prefix_est": 920,
+      "total_est": 953
+    },
+    {
+      "session": "train-0-0-r02",
+      "turn": 2,
+      "scheduled_ms": 4352,
+      "mode": "hit",
+      "cost_ms": 45.08752626009417,
+      "messages_sha256": "659985237e9931184ae0b51fb27cb87c71f1adde14dbcd49df5252a42c9ce780",
+      "prefix_est": 197,
+      "total_est": 248
+    },
+    {
+      "session": "train-4-2-r01",
+      "turn": 2,
+      "scheduled_ms": 4416,
+      "mode": "miss",
+      "cost_ms": 100.09138397612224,
+      "messages_sha256": "333c03e64ea4b188c4bd3f338664ea8692e1c277dcc3c8d66fe45d53268dde1d",
+      "prefix_est": 0,
+      "total_est": 712
+    },
+    {
+      "session": "train-4-1-r01",
+      "turn": 2,
+      "scheduled_ms": 4480,
+      "mode": "miss",
+      "cost_ms": 61.313005404232996,
+      "messages_sha256": "659985237e9931184ae0b51fb27cb87c71f1adde14dbcd49df5252a42c9ce780",
+      "prefix_est": 0,
+      "total_est": 248
+    },
+    {
+      "session": "train-2-2-r00",
+      "turn": 2,
+      "scheduled_ms": 4544,
+      "mode": "hit",
+      "cost_ms": 38.13937511119166,
+      "messages_sha256": "fcb404ae19e6ff4690463dd4971bc7e5b8428c3c2c0ada888d358c6a98ac47e3",
+      "prefix_est": 284,
+      "total_est": 316
+    },
+    {
+      "session": "train-2-0-r03",
+      "turn": 3,
+      "scheduled_ms": 4608,
+      "mode": "miss",
+      "cost_ms": 134.90599279362297,
+      "messages_sha256": "7e6ec6a86b63790cf158b2c32c58d2eef78d9362fa20064834e571fcb7020bdd",
+      "prefix_est": 0,
+      "total_est": 1465
+    },
+    {
+      "session": "train-4-2-r00",
+      "turn": 3,
+      "scheduled_ms": 4672,
+      "mode": "hit",
+      "cost_ms": 76.04623614472385,
+      "messages_sha256": "7ccbfaf608e6605d4d55ba15f01753b0b2c38ad48648a76703fe251fe244cd91",
+      "prefix_est": 712,
+      "total_est": 1397
+    },
+    {
+      "session": "train-4-1-r02",
+      "turn": 3,
+      "scheduled_ms": 4736,
+      "mode": "hit",
+      "cost_ms": 64.49804004891662,
+      "messages_sha256": "8e4fa8be6d140d76b49da2bc962379500e6bc563d86fe0e56b9480c1927b2f38",
+      "prefix_est": 248,
+      "total_est": 563
+    },
+    {
+      "session": "train-4-2-r03",
+      "turn": 3,
+      "scheduled_ms": 4800,
+      "mode": "miss",
+      "cost_ms": 134.68857701084994,
+      "messages_sha256": "7ccbfaf608e6605d4d55ba15f01753b0b2c38ad48648a76703fe251fe244cd91",
+      "prefix_est": 0,
+      "total_est": 1397
+    },
+    {
+      "session": "train-0-1-r02",
+      "turn": 3,
+      "scheduled_ms": 4864,
+      "mode": "hit",
+      "cost_ms": 76.04623614472385,
+      "messages_sha256": "7ccbfaf608e6605d4d55ba15f01753b0b2c38ad48648a76703fe251fe244cd91",
+      "prefix_est": 712,
+      "total_est": 1397
+    },
+    {
+      "session": "train-2-1-r01",
+      "turn": 3,
+      "scheduled_ms": 4928,
+      "mode": "miss",
+      "cost_ms": 158.74345799936873,
+      "messages_sha256": "7210cb492e266c2893d5b6f176e45db00131ada07a22b8fa9cf2f7c5b4c47b2d",
+      "prefix_est": 0,
+      "total_est": 1821
+    },
+    {
+      "session": "train-0-1-r01",
+      "turn": 3,
+      "scheduled_ms": 4992,
+      "mode": "miss",
+      "cost_ms": 134.68857701084994,
+      "messages_sha256": "7ccbfaf608e6605d4d55ba15f01753b0b2c38ad48648a76703fe251fe244cd91",
+      "prefix_est": 0,
+      "total_est": 1397
+    },
+    {
+      "session": "train-0-2-r03",
+      "turn": 3,
+      "scheduled_ms": 5056,
+      "mode": "miss",
+      "cost_ms": 158.8681523453709,
+      "messages_sha256": "443cdad34f555b4d3c7732f95196bf45a1b63b4ed72e7640ac24ec022e442c94",
+      "prefix_est": 0,
+      "total_est": 1860
+    },
+    {
+      "session": "train-2-0-r01",
+      "turn": 3,
+      "scheduled_ms": 5120,
+      "mode": "miss",
+      "cost_ms": 134.90599279362297,
+      "messages_sha256": "7e6ec6a86b63790cf158b2c32c58d2eef78d9362fa20064834e571fcb7020bdd",
+      "prefix_est": 0,
+      "total_est": 1465
+    },
+    {
+      "session": "train-2-1-r03",
+      "turn": 3,
+      "scheduled_ms": 5184,
+      "mode": "miss",
+      "cost_ms": 158.74345799936873,
+      "messages_sha256": "7210cb492e266c2893d5b6f176e45db00131ada07a22b8fa9cf2f7c5b4c47b2d",
+      "prefix_est": 0,
+      "total_est": 1821
+    },
+    {
+      "session": "train-0-2-r01",
+      "turn": 3,
+      "scheduled_ms": 5248,
+      "mode": "miss",
+      "cost_ms": 158.8681523453709,
+      "messages_sha256": "443cdad34f555b4d3c7732f95196bf45a1b63b4ed72e7640ac24ec022e442c94",
+      "prefix_est": 0,
+      "total_est": 1860
+    },
+    {
+      "session": "train-0-1-r00",
+      "turn": 3,
+      "scheduled_ms": 5312,
+      "mode": "hit",
+      "cost_ms": 76.04623614472385,
+      "messages_sha256": "7ccbfaf608e6605d4d55ba15f01753b0b2c38ad48648a76703fe251fe244cd91",
+      "prefix_est": 712,
+      "total_est": 1397
+    },
+    {
+      "session": "train-0-0-r00",
+      "turn": 3,
+      "scheduled_ms": 5376,
+      "mode": "hit",
+      "cost_ms": 64.49804004891662,
+      "messages_sha256": "8e4fa8be6d140d76b49da2bc962379500e6bc563d86fe0e56b9480c1927b2f38",
+      "prefix_est": 248,
+      "total_est": 563
+    },
+    {
+      "session": "train-4-0-r03",
+      "turn": 3,
+      "scheduled_ms": 5440,
+      "mode": "miss",
+      "cost_ms": 158.60597448967403,
+      "messages_sha256": "4defedb3ffe317a576eb8a8df57392aa4a278988c5d5d5f8de33f51e5c25fe0f",
+      "prefix_est": 0,
+      "total_est": 1778
+    },
+    {
+      "session": "train-2-0-r00",
+      "turn": 3,
+      "scheduled_ms": 5504,
+      "mode": "hit",
+      "cost_ms": 72.72204988080665,
+      "messages_sha256": "7e6ec6a86b63790cf158b2c32c58d2eef78d9362fa20064834e571fcb7020bdd",
+      "prefix_est": 755,
+      "total_est": 1465
+    },
+    {
+      "session": "train-4-0-r02",
+      "turn": 3,
+      "scheduled_ms": 5568,
+      "mode": "hit",
+      "cost_ms": 80.11418959442376,
+      "messages_sha256": "4defedb3ffe317a576eb8a8df57392aa4a278988c5d5d5f8de33f51e5c25fe0f",
+      "prefix_est": 953,
+      "total_est": 1778
+    },
+    {
+      "session": "train-2-1-r00",
+      "turn": 3,
+      "scheduled_ms": 5632,
+      "mode": "hit",
+      "cost_ms": 75.14517712982098,
+      "messages_sha256": "7210cb492e266c2893d5b6f176e45db00131ada07a22b8fa9cf2f7c5b4c47b2d",
+      "prefix_est": 1015,
+      "total_est": 1821
+    },
+    {
+      "session": "train-2-2-r03",
+      "turn": 3,
+      "scheduled_ms": 5696,
+      "mode": "miss",
+      "cost_ms": 85.07749391041698,
+      "messages_sha256": "5a9b7716ad66017bc8ee08f4f62f534fba6657a49c181df19e4f4c3639f8e1c0",
+      "prefix_est": 0,
+      "total_est": 611
+    },
+    {
+      "session": "train-2-2-r01",
+      "turn": 3,
+      "scheduled_ms": 5760,
+      "mode": "miss",
+      "cost_ms": 85.07749391041698,
+      "messages_sha256": "5a9b7716ad66017bc8ee08f4f62f534fba6657a49c181df19e4f4c3639f8e1c0",
+      "prefix_est": 0,
+      "total_est": 611
+    },
+    {
+      "session": "train-0-2-r02",
+      "turn": 3,
+      "scheduled_ms": 5824,
+      "mode": "hit",
+      "cost_ms": 79.22328771398894,
+      "messages_sha256": "443cdad34f555b4d3c7732f95196bf45a1b63b4ed72e7640ac24ec022e442c94",
+      "prefix_est": 967,
+      "total_est": 1860
+    },
+    {
+      "session": "train-2-1-r02",
+      "turn": 3,
+      "scheduled_ms": 5888,
+      "mode": "hit",
+      "cost_ms": 75.14517712982098,
+      "messages_sha256": "7210cb492e266c2893d5b6f176e45db00131ada07a22b8fa9cf2f7c5b4c47b2d",
+      "prefix_est": 1015,
+      "total_est": 1821
+    },
+    {
+      "session": "train-4-1-r00",
+      "turn": 3,
+      "scheduled_ms": 5952,
+      "mode": "hit",
+      "cost_ms": 64.49804004891662,
+      "messages_sha256": "8e4fa8be6d140d76b49da2bc962379500e6bc563d86fe0e56b9480c1927b2f38",
+      "prefix_est": 248,
+      "total_est": 563
+    },
+    {
+      "session": "train-0-0-r01",
+      "turn": 3,
+      "scheduled_ms": 6016,
+      "mode": "miss",
+      "cost_ms": 84.92402394610662,
+      "messages_sha256": "8e4fa8be6d140d76b49da2bc962379500e6bc563d86fe0e56b9480c1927b2f38",
+      "prefix_est": 0,
+      "total_est": 563
+    },
+    {
+      "session": "train-4-1-r03",
+      "turn": 3,
+      "scheduled_ms": 6080,
+      "mode": "miss",
+      "cost_ms": 84.92402394610662,
+      "messages_sha256": "8e4fa8be6d140d76b49da2bc962379500e6bc563d86fe0e56b9480c1927b2f38",
+      "prefix_est": 0,
+      "total_est": 563
+    },
+    {
+      "session": "train-2-2-r02",
+      "turn": 3,
+      "scheduled_ms": 6144,
+      "mode": "hit",
+      "cost_ms": 59.050837009158755,
+      "messages_sha256": "5a9b7716ad66017bc8ee08f4f62f534fba6657a49c181df19e4f4c3639f8e1c0",
+      "prefix_est": 316,
+      "total_est": 611
+    },
+    {
+      "session": "train-4-0-r01",
+      "turn": 3,
+      "scheduled_ms": 6208,
+      "mode": "miss",
+      "cost_ms": 158.60597448967403,
+      "messages_sha256": "4defedb3ffe317a576eb8a8df57392aa4a278988c5d5d5f8de33f51e5c25fe0f",
+      "prefix_est": 0,
+      "total_est": 1778
+    },
+    {
+      "session": "train-0-2-r00",
+      "turn": 3,
+      "scheduled_ms": 6272,
+      "mode": "hit",
+      "cost_ms": 79.22328771398894,
+      "messages_sha256": "443cdad34f555b4d3c7732f95196bf45a1b63b4ed72e7640ac24ec022e442c94",
+      "prefix_est": 967,
+      "total_est": 1860
+    },
+    {
+      "session": "train-0-0-r03",
+      "turn": 3,
+      "scheduled_ms": 6336,
+      "mode": "miss",
+      "cost_ms": 84.92402394610662,
+      "messages_sha256": "8e4fa8be6d140d76b49da2bc962379500e6bc563d86fe0e56b9480c1927b2f38",
+      "prefix_est": 0,
+      "total_est": 563
+    },
+    {
+      "session": "train-4-2-r02",
+      "turn": 3,
+      "scheduled_ms": 6400,
+      "mode": "hit",
+      "cost_ms": 76.04623614472385,
+      "messages_sha256": "7ccbfaf608e6605d4d55ba15f01753b0b2c38ad48648a76703fe251fe244cd91",
+      "prefix_est": 712,
+      "total_est": 1397
+    },
+    {
+      "session": "train-0-1-r03",
+      "turn": 3,
+      "scheduled_ms": 6464,
+      "mode": "miss",
+      "cost_ms": 134.68857701084994,
+      "messages_sha256": "7ccbfaf608e6605d4d55ba15f01753b0b2c38ad48648a76703fe251fe244cd91",
+      "prefix_est": 0,
+      "total_est": 1397
+    },
+    {
+      "session": "train-2-0-r02",
+      "turn": 3,
+      "scheduled_ms": 6528,
+      "mode": "hit",
+      "cost_ms": 72.72204988080665,
+      "messages_sha256": "7e6ec6a86b63790cf158b2c32c58d2eef78d9362fa20064834e571fcb7020bdd",
+      "prefix_est": 755,
+      "total_est": 1465
+    },
+    {
+      "session": "train-4-0-r00",
+      "turn": 3,
+      "scheduled_ms": 6592,
+      "mode": "hit",
+      "cost_ms": 80.11418959442376,
+      "messages_sha256": "4defedb3ffe317a576eb8a8df57392aa4a278988c5d5d5f8de33f51e5c25fe0f",
+      "prefix_est": 953,
+      "total_est": 1778
+    },
+    {
+      "session": "train-0-0-r02",
+      "turn": 3,
+      "scheduled_ms": 6656,
+      "mode": "hit",
+      "cost_ms": 64.49804004891662,
+      "messages_sha256": "8e4fa8be6d140d76b49da2bc962379500e6bc563d86fe0e56b9480c1927b2f38",
+      "prefix_est": 248,
+      "total_est": 563
+    },
+    {
+      "session": "train-4-2-r01",
+      "turn": 3,
+      "scheduled_ms": 6720,
+      "mode": "miss",
+      "cost_ms": 134.68857701084994,
+      "messages_sha256": "7ccbfaf608e6605d4d55ba15f01753b0b2c38ad48648a76703fe251fe244cd91",
+      "prefix_est": 0,
+      "total_est": 1397
+    },
+    {
+      "session": "train-4-1-r01",
+      "turn": 3,
+      "scheduled_ms": 6784,
+      "mode": "miss",
+      "cost_ms": 84.92402394610662,
+      "messages_sha256": "8e4fa8be6d140d76b49da2bc962379500e6bc563d86fe0e56b9480c1927b2f38",
+      "prefix_est": 0,
+      "total_est": 563
+    },
+    {
+      "session": "train-2-2-r00",
+      "turn": 3,
+      "scheduled_ms": 6848,
+      "mode": "hit",
+      "cost_ms": 59.050837009158755,
+      "messages_sha256": "5a9b7716ad66017bc8ee08f4f62f534fba6657a49c181df19e4f4c3639f8e1c0",
+      "prefix_est": 316,
+      "total_est": 611
+    },
+    {
+      "session": "train-2-0-r03",
+      "turn": 4,
+      "scheduled_ms": 6912,
+      "mode": "miss",
+      "cost_ms": 161.85143961935782,
+      "messages_sha256": "f14c95c79350517b589b9540729dcf31f4b5e431354b724c3ac735c1377be7ff",
+      "prefix_est": 0,
+      "total_est": 1497
+    },
+    {
+      "session": "train-4-2-r00",
+      "turn": 4,
+      "scheduled_ms": 6976,
+      "mode": "hit",
+      "cost_ms": 46.851303048613374,
+      "messages_sha256": "7ac3417545a50fc588cd9e775117c4cfab2d353794b60b40a8bc2783566bf255",
+      "prefix_est": 1397,
+      "total_est": 1516
+    },
+    {
+      "session": "train-4-1-r02",
+      "turn": 4,
+      "scheduled_ms": 7040,
+      "mode": "hit",
+      "cost_ms": 45.73157319237211,
+      "messages_sha256": "19b79891265694d6246e9e952d8231de944b01e36256423ac43452275975ace2",
+      "prefix_est": 563,
+      "total_est": 656
+    },
+    {
+      "session": "train-4-2-r03",
+      "turn": 4,
+      "scheduled_ms": 7104,
+      "mode": "miss",
+      "cost_ms": 161.91218814689734,
+      "messages_sha256": "7ac3417545a50fc588cd9e775117c4cfab2d353794b60b40a8bc2783566bf255",
+      "prefix_est": 0,
+      "total_est": 1516
+    },
+    {
+      "session": "train-2-1-r01",
+      "turn": 4,
+      "scheduled_ms": 7232,
+      "mode": "miss",
+      "cost_ms": 196.3117228467172,
+      "messages_sha256": "097fd08998e87195bb62eb483fb30b9a182d43c6122a213f1ee8c8912b4cf4c1",
+      "prefix_est": 0,
+      "total_est": 1870
+    },
+    {
+      "session": "train-2-0-r01",
+      "turn": 4,
+      "scheduled_ms": 7424,
+      "mode": "miss",
+      "cost_ms": 161.85143961935782,
+      "messages_sha256": "f14c95c79350517b589b9540729dcf31f4b5e431354b724c3ac735c1377be7ff",
+      "prefix_est": 0,
+      "total_est": 1497
+    },
+    {
+      "session": "train-2-1-r03",
+      "turn": 4,
+      "scheduled_ms": 7488,
+      "mode": "miss",
+      "cost_ms": 196.3117228467172,
+      "messages_sha256": "097fd08998e87195bb62eb483fb30b9a182d43c6122a213f1ee8c8912b4cf4c1",
+      "prefix_est": 0,
+      "total_est": 1870
+    },
+    {
+      "session": "train-4-0-r03",
+      "turn": 4,
+      "scheduled_ms": 7744,
+      "mode": "miss",
+      "cost_ms": 196.23818515548516,
+      "messages_sha256": "02f476c246ce44659582243b5470dd714c9f82bbbb6933a08de07eeb7c97243e",
+      "prefix_est": 0,
+      "total_est": 1847
+    },
+    {
+      "session": "train-2-0-r00",
+      "turn": 4,
+      "scheduled_ms": 7808,
+      "mode": "hit",
+      "cost_ms": 41.18988151700562,
+      "messages_sha256": "f14c95c79350517b589b9540729dcf31f4b5e431354b724c3ac735c1377be7ff",
+      "prefix_est": 1465,
+      "total_est": 1497
+    },
+    {
+      "session": "train-4-0-r02",
+      "turn": 4,
+      "scheduled_ms": 7872,
+      "mode": "hit",
+      "cost_ms": 49.797058666760094,
+      "messages_sha256": "02f476c246ce44659582243b5470dd714c9f82bbbb6933a08de07eeb7c97243e",
+      "prefix_est": 1778,
+      "total_est": 1847
+    },
+    {
+      "session": "train-2-1-r00",
+      "turn": 4,
+      "scheduled_ms": 7936,
+      "mode": "hit",
+      "cost_ms": 46.32899431130194,
+      "messages_sha256": "097fd08998e87195bb62eb483fb30b9a182d43c6122a213f1ee8c8912b4cf4c1",
+      "prefix_est": 1821,
+      "total_est": 1870
+    },
+    {
+      "session": "train-2-2-r03",
+      "turn": 4,
+      "scheduled_ms": 8000,
+      "mode": "miss",
+      "cost_ms": 92.18178342560351,
+      "messages_sha256": "4172e12e7a43f18aa1e95a69bdda507c3c7287e961a4d1ef2ff99cffb8919b4d",
+      "prefix_est": 0,
+      "total_est": 681
+    },
+    {
+      "session": "train-2-2-r01",
+      "turn": 4,
+      "scheduled_ms": 8064,
+      "mode": "miss",
+      "cost_ms": 92.18178342560351,
+      "messages_sha256": "4172e12e7a43f18aa1e95a69bdda507c3c7287e961a4d1ef2ff99cffb8919b4d",
+      "prefix_est": 0,
+      "total_est": 681
+    },
+    {
+      "session": "train-2-1-r02",
+      "turn": 4,
+      "scheduled_ms": 8192,
+      "mode": "hit",
+      "cost_ms": 46.32899431130194,
+      "messages_sha256": "097fd08998e87195bb62eb483fb30b9a182d43c6122a213f1ee8c8912b4cf4c1",
+      "prefix_est": 1821,
+      "total_est": 1870
+    },
+    {
+      "session": "train-4-1-r00",
+      "turn": 4,
+      "scheduled_ms": 8256,
+      "mode": "hit",
+      "cost_ms": 45.73157319237211,
+      "messages_sha256": "19b79891265694d6246e9e952d8231de944b01e36256423ac43452275975ace2",
+      "prefix_est": 563,
+      "total_est": 656
+    },
+    {
+      "session": "train-4-1-r03",
+      "turn": 4,
+      "scheduled_ms": 8384,
+      "mode": "miss",
+      "cost_ms": 92.1018511525252,
+      "messages_sha256": "19b79891265694d6246e9e952d8231de944b01e36256423ac43452275975ace2",
+      "prefix_est": 0,
+      "total_est": 656
+    },
+    {
+      "session": "train-2-2-r02",
+      "turn": 4,
+      "scheduled_ms": 8448,
+      "mode": "hit",
+      "cost_ms": 41.858089227284616,
+      "messages_sha256": "4172e12e7a43f18aa1e95a69bdda507c3c7287e961a4d1ef2ff99cffb8919b4d",
+      "prefix_est": 611,
+      "total_est": 681
+    },
+    {
+      "session": "train-4-0-r01",
+      "turn": 4,
+      "scheduled_ms": 8512,
+      "mode": "miss",
+      "cost_ms": 196.23818515548516,
+      "messages_sha256": "02f476c246ce44659582243b5470dd714c9f82bbbb6933a08de07eeb7c97243e",
+      "prefix_est": 0,
+      "total_est": 1847
+    },
+    {
+      "session": "train-4-2-r02",
+      "turn": 4,
+      "scheduled_ms": 8704,
+      "mode": "hit",
+      "cost_ms": 46.851303048613374,
+      "messages_sha256": "7ac3417545a50fc588cd9e775117c4cfab2d353794b60b40a8bc2783566bf255",
+      "prefix_est": 1397,
+      "total_est": 1516
+    },
+    {
+      "session": "train-2-0-r02",
+      "turn": 4,
+      "scheduled_ms": 8832,
+      "mode": "hit",
+      "cost_ms": 41.18988151700562,
+      "messages_sha256": "f14c95c79350517b589b9540729dcf31f4b5e431354b724c3ac735c1377be7ff",
+      "prefix_est": 1465,
+      "total_est": 1497
+    },
+    {
+      "session": "train-4-0-r00",
+      "turn": 4,
+      "scheduled_ms": 8896,
+      "mode": "hit",
+      "cost_ms": 49.797058666760094,
+      "messages_sha256": "02f476c246ce44659582243b5470dd714c9f82bbbb6933a08de07eeb7c97243e",
+      "prefix_est": 1778,
+      "total_est": 1847
+    },
+    {
+      "session": "train-4-2-r01",
+      "turn": 4,
+      "scheduled_ms": 9024,
+      "mode": "miss",
+      "cost_ms": 161.91218814689734,
+      "messages_sha256": "7ac3417545a50fc588cd9e775117c4cfab2d353794b60b40a8bc2783566bf255",
+      "prefix_est": 0,
+      "total_est": 1516
+    },
+    {
+      "session": "train-4-1-r01",
+      "turn": 4,
+      "scheduled_ms": 9088,
+      "mode": "miss",
+      "cost_ms": 92.1018511525252,
+      "messages_sha256": "19b79891265694d6246e9e952d8231de944b01e36256423ac43452275975ace2",
+      "prefix_est": 0,
+      "total_est": 656
+    },
+    {
+      "session": "train-2-2-r00",
+      "turn": 4,
+      "scheduled_ms": 9152,
+      "mode": "hit",
+      "cost_ms": 41.858089227284616,
+      "messages_sha256": "4172e12e7a43f18aa1e95a69bdda507c3c7287e961a4d1ef2ff99cffb8919b4d",
+      "prefix_est": 611,
+      "total_est": 681
+    },
+    {
+      "session": "train-4-2-r00",
+      "turn": 5,
+      "scheduled_ms": 9280,
+      "mode": "hit",
+      "cost_ms": 77.87110554663853,
+      "messages_sha256": "a502cdd6c991c2084d84ee980a09795a2784a007f8f1a4203b30e377a3c74886",
+      "prefix_est": 1516,
+      "total_est": 2344
+    },
+    {
+      "session": "train-4-1-r02",
+      "turn": 5,
+      "scheduled_ms": 9344,
+      "mode": "hit",
+      "cost_ms": 31.238303275862286,
+      "messages_sha256": "b1355956e475f1254b01005d21083c87716ee86297bd8d7e47519f90e16cd70a",
+      "prefix_est": 656,
+      "total_est": 774
+    },
+    {
+      "session": "train-4-2-r03",
+      "turn": 5,
+      "scheduled_ms": 9408,
+      "mode": "miss",
+      "cost_ms": 202.73316840204188,
+      "messages_sha256": "a502cdd6c991c2084d84ee980a09795a2784a007f8f1a4203b30e377a3c74886",
+      "prefix_est": 0,
+      "total_est": 2344
+    },
+    {
+      "session": "train-4-0-r03",
+      "turn": 5,
+      "scheduled_ms": 10048,
+      "mode": "miss",
+      "cost_ms": 217.16814728328558,
+      "messages_sha256": "51e5af75fcac3b8cef9b1977348281f0658eab96d39dd93f6b6b0645392d9ddb",
+      "prefix_est": 0,
+      "total_est": 2099
+    },
+    {
+      "session": "train-4-0-r02",
+      "turn": 5,
+      "scheduled_ms": 10176,
+      "mode": "hit",
+      "cost_ms": 65.04398495219718,
+      "messages_sha256": "51e5af75fcac3b8cef9b1977348281f0658eab96d39dd93f6b6b0645392d9ddb",
+      "prefix_est": 1847,
+      "total_est": 2099
+    },
+    {
+      "session": "train-4-1-r00",
+      "turn": 5,
+      "scheduled_ms": 10560,
+      "mode": "hit",
+      "cost_ms": 31.238303275862286,
+      "messages_sha256": "b1355956e475f1254b01005d21083c87716ee86297bd8d7e47519f90e16cd70a",
+      "prefix_est": 656,
+      "total_est": 774
+    },
+    {
+      "session": "train-4-1-r03",
+      "turn": 5,
+      "scheduled_ms": 10688,
+      "mode": "miss",
+      "cost_ms": 85.26832519746162,
+      "messages_sha256": "b1355956e475f1254b01005d21083c87716ee86297bd8d7e47519f90e16cd70a",
+      "prefix_est": 0,
+      "total_est": 774
+    },
+    {
+      "session": "train-4-0-r01",
+      "turn": 5,
+      "scheduled_ms": 10816,
+      "mode": "miss",
+      "cost_ms": 217.16814728328558,
+      "messages_sha256": "51e5af75fcac3b8cef9b1977348281f0658eab96d39dd93f6b6b0645392d9ddb",
+      "prefix_est": 0,
+      "total_est": 2099
+    },
+    {
+      "session": "train-4-2-r02",
+      "turn": 5,
+      "scheduled_ms": 11008,
+      "mode": "hit",
+      "cost_ms": 77.87110554663853,
+      "messages_sha256": "a502cdd6c991c2084d84ee980a09795a2784a007f8f1a4203b30e377a3c74886",
+      "prefix_est": 1516,
+      "total_est": 2344
+    },
+    {
+      "session": "train-4-0-r00",
+      "turn": 5,
+      "scheduled_ms": 11200,
+      "mode": "hit",
+      "cost_ms": 65.04398495219718,
+      "messages_sha256": "51e5af75fcac3b8cef9b1977348281f0658eab96d39dd93f6b6b0645392d9ddb",
+      "prefix_est": 1847,
+      "total_est": 2099
+    },
+    {
+      "session": "train-4-2-r01",
+      "turn": 5,
+      "scheduled_ms": 11328,
+      "mode": "miss",
+      "cost_ms": 202.73316840204188,
+      "messages_sha256": "a502cdd6c991c2084d84ee980a09795a2784a007f8f1a4203b30e377a3c74886",
+      "prefix_est": 0,
+      "total_est": 2344
+    },
+    {
+      "session": "train-4-1-r01",
+      "turn": 5,
+      "scheduled_ms": 11392,
+      "mode": "miss",
+      "cost_ms": 85.26832519746162,
+      "messages_sha256": "b1355956e475f1254b01005d21083c87716ee86297bd8d7e47519f90e16cd70a",
+      "prefix_est": 0,
+      "total_est": 774
+    }
+  ],
+  "predictor_sha256": "accbff3545f47123bf80771031088eb30919102617812b9716ba261fbe4409ff",
+  "workload_sha256": "f6a0a4a9dadd4a1f79380eae202d27c7011fc758fcf2a0bbd6a72bb7c833926e",
+  "split": "train"
+}

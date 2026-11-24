@@ -1,0 +1,11 @@
+{
+  "repeats": 3,
+  "policies": ["fcfs", "lpm", "cost", "aging"],
+  "session_replicas": 6,
+  "turn_interval_ms": 3240,
+  "arrival_spacing_ms": 60,
+  "aging_rate": 0.35,
+  "overdue_ms": 220,
+  "starvation_watch_ms": 500,
+  "long_quantile": 0.75
+}

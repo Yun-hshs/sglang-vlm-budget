@@ -1,0 +1,12 @@
+index, name, memory.used [MiB], utilization.gpu [%]
+0, NVIDIA GeForce RTX 5090, 2 MiB, 0 %
+1, NVIDIA GeForce RTX 5090, 26635 MiB, 0 %
+SGLANG_VLM_CACHE_SIZE_MB=12
+CUDA_VISIBLE_DEVICES=1
+[2026-11-24 14:23:37] Experimental shortest-prefill-first: queue=1 shortest_uncached=805
+[2026-11-24 14:24:14] Experimental shortest-prefill-first: queue=2 shortest_uncached=192
+[2026-11-24 14:24:50] Experimental shortest-prefill-first: queue=1 shortest_uncached=173
+[2026-11-24 14:25:26] Experimental shortest-prefill-first: queue=1 shortest_uncached=856
+LISTEN 0      2048       127.0.0.1:30001      0.0.0.0:*
+Restored smoke service health HTTP 200
+LISTEN 0      2048       127.0.0.1:30000      0.0.0.0:*

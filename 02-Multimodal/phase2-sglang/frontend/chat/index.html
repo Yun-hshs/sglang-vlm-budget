@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="基于 SGLang 和 Qwen2.5-VL 的多轮视觉助手">
+  <title>目见 · 视觉助手</title>
+  <link rel="stylesheet" href="/assets/chat.css">
+  <script src="/assets/chat.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <aside id="sidebar" aria-label="会话侧栏">
+      <div class="brand"><span class="glyph" aria-hidden="true">✳</span><div><strong>目见</strong><span>视觉工作台</span></div></div>
+      <button id="new-chat" type="button"><span aria-hidden="true">＋</span> 新建对话</button>
+      <div class="nav-head">会话记录</div>
+      <nav id="chat-list" aria-label="历史会话"></nav>
+      <footer class="side-foot"><span class="connection"></span><div><strong id="connection">正在连接</strong><span>独立浏览器会话</span></div></footer>
+    </aside>
+    <main>
+      <header class="top">
+        <button id="toggle-sidebar" type="button" aria-label="展开会话" aria-controls="sidebar" aria-expanded="false">☰</button>
+        <div class="model"><strong>Qwen2.5-VL</strong><span>7B Instruct</span></div>
+        <div class="top-right" title="估计未缓存 Token，配合 100 毫秒等待老化"><i></i> 代价感知调度</div>
+        <button id="delete-chat" type="button" hidden aria-label="删除当前会话" title="删除当前会话">删除</button>
+      </header>
+      <section id="viewport" aria-label="对话正文">
+        <div id="welcome">
+          <div class="welcome-mark" aria-hidden="true"><span>✳</span></div>
+          <h1>今天想看懂什么？</h1>
+          <p>上传图片，提问细节，也可以围绕同一张图继续追问。</p>
+          <div class="examples">
+            <button type="button" data-prompt="请概述这张图表，并指出最大值、最小值及其单位。"><span class="example-icon mint" aria-hidden="true">▥</span><strong>解读图表</strong><span>提取数值、比较趋势</span><b aria-hidden="true">↗</b></button>
+            <button type="button" data-prompt="请对比这几张图片，列出它们的共同点和主要区别。"><span class="example-icon purple" aria-hidden="true">◫</span><strong>对比多图</strong><span>概括异同、寻找细节</span><b aria-hidden="true">↗</b></button>
+            <button type="button" data-prompt="请提取图片中的文字，并保留原有的段落和顺序。"><span class="example-icon amber" aria-hidden="true">≡</span><strong>识别文字</strong><span>阅读图片中的内容</span><b aria-hidden="true">↗</b></button>
+          </div>
+        </div>
+        <div id="messages" role="log" aria-label="聊天消息"></div>
+      </section>
+      <div class="compose-area">
+        <div id="notice" role="status"></div>
+        <form id="compose">
+          <div id="attachments"></div>
+          <label class="sr-only" for="question">发送消息</label>
+          <textarea id="question" rows="1" maxlength="4000" placeholder="输入问题，或上传图片开启视觉对话"></textarea>
+          <div class="actions">
+            <label for="file" class="attach" tabindex="0"><b aria-hidden="true">＋</b> 添加图片</label>
+            <input id="file" type="file" accept="image/*" multiple hidden>
+            <span class="budget">中档视觉预算</span>
+            <button id="send" type="submit" disabled aria-label="发送消息" title="发送消息">↑</button>
+            <button id="stop" type="button" hidden aria-label="停止回答" title="停止回答">■</button>
+          </div>
+        </form>
+        <p class="hint">每轮最多 4 张图片 · Shift + Enter 换行</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

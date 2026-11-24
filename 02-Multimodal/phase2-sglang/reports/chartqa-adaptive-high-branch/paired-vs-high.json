@@ -1,0 +1,192 @@
+{
+  "adaptive_v2": {
+    "n_questions": 9,
+    "stable_answers": 9,
+    "changed_visual_tokens_vs_high": 5,
+    "selected_budgets": {
+      "low": 5,
+      "high": 4
+    },
+    "score_changes_vs_high": [
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1468",
+        "subset": "augmented",
+        "reference": [
+          "0.3"
+        ],
+        "selected_budget": "low",
+        "high_answers": [
+          "0.3",
+          "0.3",
+          "0.3",
+          "0.3",
+          "0.3",
+          "0.3",
+          "0.3",
+          "0.3",
+          "0.3",
+          "0.3"
+        ],
+        "answers": [
+          "0.3%",
+          "0.3%",
+          "0.3%",
+          "0.3%",
+          "0.3%",
+          "0.3%",
+          "0.3%",
+          "0.3%",
+          "0.3%",
+          "0.3%"
+        ],
+        "high_correct": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "high_visual_tokens": [
+          1274,
+          1274,
+          1274,
+          1274,
+          1274,
+          1274,
+          1274,
+          1274,
+          1274,
+          1274
+        ],
+        "visual_tokens": [
+          264,
+          264,
+          264,
+          264,
+          264,
+          264,
+          264,
+          264,
+          264,
+          264
+        ]
+      }
+    ]
+  },
+  "medium": {
+    "n_questions": 9,
+    "stable_answers": 9,
+    "changed_visual_tokens_vs_high": 9,
+    "selected_budgets": {
+      "medium": 9
+    },
+    "score_changes_vs_high": [
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1468",
+        "subset": "augmented",
+        "reference": [
+          "0.3"
+        ],
+        "selected_budget": "medium",
+        "high_answers": [
+          "0.3",
+          "0.3",
+          "0.3",
+          "0.3",
+          "0.3",
+          "0.3",
+          "0.3",
+          "0.3",
+          "0.3",
+          "0.3"
+        ],
+        "answers": [
+          "0.3%",
+          "0.3%",
+          "0.3%",
+          "0.3%",
+          "0.3%",
+          "0.3%",
+          "0.3%",
+          "0.3%",
+          "0.3%",
+          "0.3%"
+        ],
+        "high_correct": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "high_visual_tokens": [
+          1274,
+          1274,
+          1274,
+          1274,
+          1274,
+          1274,
+          1274,
+          1274,
+          1274,
+          1274
+        ],
+        "visual_tokens": [
+          760,
+          760,
+          760,
+          760,
+          760,
+          760,
+          760,
+          760,
+          760,
+          760
+        ]
+      }
+    ]
+  },
+  "high": {
+    "n_questions": 9,
+    "stable_answers": 9,
+    "changed_visual_tokens_vs_high": 0,
+    "selected_budgets": {
+      "high": 9
+    },
+    "score_changes_vs_high": []
+  }
+}

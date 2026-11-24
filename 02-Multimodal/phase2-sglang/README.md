@@ -1,22 +1,20 @@
-# 阶段 2 · 探索优化
+# 阶段 2 · SGLang 多模态服务与调度
 
-研究 SGLang 部署与视觉 Token 预算，关注不同图像尺寸和数量下的问答质量、延迟、吞吐和显存。
+**目见**是运行在单张 RTX 5090 上的多用户视觉助手，使用 SGLang 0.5.23 和 Qwen2.5-VL-7B-Instruct。支持多图上传、流式输出、同图追问和隔离的持久化会话。
 
-**验证状态：探索原型已编写，SGLang 服务与 GPU 基准实验未运行。** 当前目录收纳研究协议、性能脚本、研究稿和演示材料。已完成的单卡 Gradio 与 ChartQA 实测请查看[阶段 1 · 基础作业](../phase1-assistant/README.md)。
+- **代价感知调度**。采用固定中档视觉预算，以估计未缓存 Token 排序，加入 100 ms 等待老化。小规模持续负载实测中，该策略的含排队 TTFT P95 为 1.80 秒，四组中最低。[调度实测](reports/CHARTQA_PREFILL_SIGNALS.md)
+- **部署与恢复**。固定 HTTPS 入口启用登录，SGLang、Web 和 ngrok 由 Supervisor 管理。整套服务重启后验证了同域名登录、历史恢复、会话隔离和流式回答。[试用入口](https://lethargic-aeration-elevate.ngrok-free.dev/) · [部署与验收](reports/VISUAL_CHAT_MVP.md)
+- **研究与复现**。归档了 ChartQA 视觉预算、自适应分配、缓存代价、Prefill 预测与等待老化的小规模对照，包含脚本、配置和实测记录。[实验索引](results/STATUS.md) · [研究报告](reports/final_report.md)
 
-[实验状态](results/STATUS.md) · [服务器交接](reports/GPU_HANDOFF.md) · [阶段 2 研究稿](reports/final_report.md) · [探索演示材料](slides/README.md)
-
-## 目标与范围
-
-实现图像问答、描述、文档/图表理解与多轮对话；通过客户端输入尺寸预算研究 RQ1（视觉输入规模对性能的影响）与 RQ2（质量与效率权衡）。模型采用 Qwen2.5-VL-7B-Instruct，服务采用 SGLang OpenAI-compatible API。理解能力由真实模型提供，当前没有伪造答案的演示后端。RQ3 缓存研究仅作为扩展，不修改 SGLang 源码。
+[阶段 1 · 基础作业](../phase1-assistant/README.md)记录 ChartQA 微调、评测和课程 Demo。
 
 ## 目录
 
-`frontend/` 界面；`api/` 流式客户端；`preprocessing/` 图像预算；`benchmark/` 请求与显存采样；`evaluation/` EM、VQA consensus、ANLS；`analysis/` 分位数与图表；`configs/` 实验配置；`scripts/` 部署复现；`tests/` 待执行的 CPU 测试；`reports/` 报告与验收记录；`slides/` 答辩源材料。
+`frontend/` 界面；`api/` 流式客户端；`preprocessing/` 图像预算；`benchmark/` 请求与显存采样；`evaluation/` EM、VQA consensus、ANLS；`analysis/` 分位数与图表；`configs/` 配置和依赖版本；`deployment/` 固定版本服务启动与冒烟；`scripts/` 部署复现；`tests/` CPU 测试；`reports/` 报告与验收记录；`slides/` 答辩源材料。
 
-## 安装（后续服务器阶段执行）
+## 实验客户端与 Gradio
 
-推荐 Linux、NVIDIA CUDA GPU、Python 3.11。硬件是否可容纳 7B BF16、上下文和并发请求需实测，不承诺固定显存门槛。Mac 可用于编辑和远程客户端。
+多用户 Web 的部署见上方验收报告。实验服务端使用[单卡部署复现说明](reports/DEPLOYMENT_SMOKE.md)，客户端依赖单独安装。
 
 ```bash
 cd 02-Multimodal/phase2-sglang
@@ -25,25 +23,14 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-依赖版本为本次准备环境中的版本；跨平台安装和 Python 3.11 兼容性尚未执行验证。客户端依赖不包含 SGLang。为避免 PyTorch/CUDA 依赖冲突，服务器单独建环境，依据 GPU 驱动和 SGLang 官方安装说明选择匹配的发行版本并固定版本。不得用未固定的 latest 作为论文实验环境。
-
-```bash
-# 在独立的 Linux GPU 服务环境，先选择并记录经核实的发行版本
-export SGLANG_VERSION='<exact-release>'
-pip install "sglang[all]==${SGLANG_VERSION}"
-export MODEL_REVISION='<Qwen 模型仓库不可变 commit SHA>'
-# 编辑 configs/model.yaml，填入相同的版本和 revision
-bash scripts/start_server.sh
-```
-
-启动脚本使用官方 `sglang.launch_server` 入口、`--model-path`、`--revision`、`--dtype`，这些参数组合尚未在真实 GPU 上运行。接入时先查该固定版本的 `python -m sglang.launch_server --help`，再启动；不得把本地编写脚本当作启动验证。默认只监听 127.0.0.1，通过 SSH 隧道访问；密钥只放环境变量。
+本节的实验服务和 Gradio 默认监听回环地址。跨主机使用实验客户端时通过 SSH 转发。
 
 ```bash
 # Mac 连接远端服务；按实际服务器替换地址，不写进版本库
 ssh -N -L 30000:127.0.0.1:30000 user@your-gpu-server
 # 客户端终端
 export VLM_BASE_URL=http://127.0.0.1:30000/v1
-export VLM_MODEL=Qwen/Qwen2.5-VL-7B-Instruct
+export VLM_MODEL=qwen25vl-7b
 python -m frontend.app
 ```
 
@@ -58,8 +45,9 @@ python -m frontend.app
 | medium | 602112 | 768 × 28² 像素 |
 | high | 1003520 | 1280 × 28² 像素 |
 | adaptive | low / high | 问题包含 OCR/文档/图表词，或高纵向分辨率时选 high，否则 low |
+| adaptive_v2 | low / medium / high | 差值、聚合、比较与显式读字选 medium，满足面积和纵向尺寸门槛的长图选 high |
 
-上述数字为**像素预算**，256/768/1280 不是实测视觉 Token。保持宽高比，只下采样、不放大，统一 PNG 编码以避免策略间 JPEG 损失差异；baseline 同样转换格式，因此不是原文件字节直传。模型仍可能按 patch 网格二次 resize。当前 `visual_tokens_actual=null`；应在 SGLang 实际图像处理器处记录 `image_grid_thw` 与 `spatial_merge_size`，按该版本实现核算，视频帧不能沿用静态图公式。不要将总 prompt_tokens 当视觉 Token。
+上述数字为**像素预算**。客户端保持宽高比，只下采样，统一 PNG 编码。模型可能按 patch 网格再次调整尺寸。静态图验收的实际视觉 Token 来自服务端 `image_grid_thw`、`spatial_merge_size` 与占位符的交叉验证，客户端正式实验记录中的 `visual_tokens_actual` 等待接入该观测。视频需要单独验证计数口径。
 
 ## 数据准备
 
@@ -71,9 +59,9 @@ python scripts/prepare_dataset.py --input /path/to/full.jsonl --output data/subs
 
 同一个子集跨策略复用。抽样器保存源哈希、样本 ID 和种子；正式研究建议每个任务单独准备 100–300 个样本，避免混用 EM、VQA 和 ANLS 得出统一“准确率”。数据集和图片默认不提交。
 
-## 测试与实验（尚未执行）
+## 正式预算实验（尚未执行）
 
-收到 GPU 后，先执行 CPU 测试，再进行单请求端到端冒烟和完整实验。当前不启用 GitHub Actions。scripts/manual_validation.yml.example 保留手动验证配置示例，后续获得 workflow 上传权限且用户决定开始测试时再启用。
+正式实验使用单独的服务配置和固定样本。两条部署冒烟请求的记录见[部署验收报告](reports/DEPLOYMENT_SMOKE.md)。
 
 ```bash
 python -m pytest -q

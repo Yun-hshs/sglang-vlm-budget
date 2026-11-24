@@ -1,0 +1,946 @@
+{
+  "adaptive": {
+    "n_questions": 128,
+    "stable_answers": 128,
+    "changed_visual_tokens_vs_adaptive": 0,
+    "selected_budgets": {
+      "low": 125,
+      "high": 3
+    },
+    "score_changes_vs_adaptive": []
+  },
+  "adaptive_v2": {
+    "n_questions": 128,
+    "stable_answers": 128,
+    "changed_visual_tokens_vs_adaptive": 33,
+    "selected_budgets": {
+      "low": 92,
+      "medium": 35,
+      "high": 1
+    },
+    "score_changes_vs_adaptive": [
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1063",
+        "subset": "human",
+        "reference": [
+          "35.2"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "34.2",
+          "34.2",
+          "34.2"
+        ],
+        "answers": [
+          "38.2",
+          "38.2",
+          "38.2"
+        ],
+        "adaptive_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "adaptive_visual_tokens": [
+          247,
+          247,
+          247
+        ],
+        "visual_tokens": [
+          580,
+          580,
+          580
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1077",
+        "subset": "human",
+        "reference": [
+          "46"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "10",
+          "10",
+          "10"
+        ],
+        "answers": [
+          "45",
+          "45",
+          "45"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          252,
+          252,
+          252
+        ],
+        "visual_tokens": [
+          775,
+          775,
+          775
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1227",
+        "subset": "human",
+        "reference": [
+          "0.6"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "2.4%",
+          "2.4%",
+          "2.4%"
+        ],
+        "answers": [
+          "0.6",
+          "0.6",
+          "0.6"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          247,
+          247,
+          247
+        ],
+        "visual_tokens": [
+          580,
+          580,
+          580
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:2307",
+        "subset": "augmented",
+        "reference": [
+          "25"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "25%",
+          "25%",
+          "25%"
+        ],
+        "answers": [
+          "25",
+          "25",
+          "25"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          247,
+          247,
+          247
+        ],
+        "visual_tokens": [
+          580,
+          580,
+          580
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:446",
+        "subset": "human",
+        "reference": [
+          "Yes"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "No",
+          "No",
+          "No"
+        ],
+        "answers": [
+          "Yes",
+          "Yes",
+          "Yes"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          260,
+          260,
+          260
+        ],
+        "visual_tokens": [
+          748,
+          748,
+          748
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:597",
+        "subset": "human",
+        "reference": [
+          "2"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "1",
+          "1",
+          "1"
+        ],
+        "answers": [
+          "2",
+          "2",
+          "2"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          252,
+          252,
+          252
+        ],
+        "visual_tokens": [
+          558,
+          558,
+          558
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:742",
+        "subset": "human",
+        "reference": [
+          "15017"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "15 017",
+          "15 017",
+          "15 017"
+        ],
+        "answers": [
+          "15017",
+          "15017",
+          "15017"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          247,
+          247,
+          247
+        ],
+        "visual_tokens": [
+          580,
+          580,
+          580
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:887",
+        "subset": "human",
+        "reference": [
+          "40"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "14",
+          "14",
+          "14"
+        ],
+        "answers": [
+          "40",
+          "40",
+          "40"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          247,
+          247,
+          247
+        ],
+        "visual_tokens": [
+          580,
+          580,
+          580
+        ]
+      }
+    ]
+  },
+  "medium": {
+    "n_questions": 128,
+    "stable_answers": 128,
+    "changed_visual_tokens_vs_adaptive": 115,
+    "selected_budgets": {
+      "medium": 128
+    },
+    "score_changes_vs_adaptive": [
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1063",
+        "subset": "human",
+        "reference": [
+          "35.2"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "34.2",
+          "34.2",
+          "34.2"
+        ],
+        "answers": [
+          "38.2",
+          "38.2",
+          "38.2"
+        ],
+        "adaptive_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "adaptive_visual_tokens": [
+          247,
+          247,
+          247
+        ],
+        "visual_tokens": [
+          580,
+          580,
+          580
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1077",
+        "subset": "human",
+        "reference": [
+          "46"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "10",
+          "10",
+          "10"
+        ],
+        "answers": [
+          "45",
+          "45",
+          "45"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          252,
+          252,
+          252
+        ],
+        "visual_tokens": [
+          775,
+          775,
+          775
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1227",
+        "subset": "human",
+        "reference": [
+          "0.6"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "2.4%",
+          "2.4%",
+          "2.4%"
+        ],
+        "answers": [
+          "0.6",
+          "0.6",
+          "0.6"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          247,
+          247,
+          247
+        ],
+        "visual_tokens": [
+          580,
+          580,
+          580
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1457",
+        "subset": "augmented",
+        "reference": [
+          "6.3"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "6.3%",
+          "6.3%",
+          "6.3%"
+        ],
+        "answers": [
+          "6.3",
+          "6.3",
+          "6.3"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          247,
+          247,
+          247
+        ],
+        "visual_tokens": [
+          580,
+          580,
+          580
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1802",
+        "subset": "augmented",
+        "reference": [
+          "28.52"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "28.52%",
+          "28.52%",
+          "28.52%"
+        ],
+        "answers": [
+          "28.52",
+          "28.52",
+          "28.52"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          247,
+          247,
+          247
+        ],
+        "visual_tokens": [
+          580,
+          580,
+          580
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:2202",
+        "subset": "augmented",
+        "reference": [
+          "36282"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "36 282",
+          "36 282",
+          "36 282"
+        ],
+        "answers": [
+          "36282",
+          "36282",
+          "36282"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          247,
+          247,
+          247
+        ],
+        "visual_tokens": [
+          580,
+          580,
+          580
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:2307",
+        "subset": "augmented",
+        "reference": [
+          "25"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "25%",
+          "25%",
+          "25%"
+        ],
+        "answers": [
+          "25",
+          "25",
+          "25"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          247,
+          247,
+          247
+        ],
+        "visual_tokens": [
+          580,
+          580,
+          580
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:2431",
+        "subset": "augmented",
+        "reference": [
+          "20"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "20%",
+          "20%",
+          "20%"
+        ],
+        "answers": [
+          "20",
+          "20",
+          "20"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          247,
+          247,
+          247
+        ],
+        "visual_tokens": [
+          580,
+          580,
+          580
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:412",
+        "subset": "human",
+        "reference": [
+          "Botswana"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "Botswana",
+          "Botswana",
+          "Botswana"
+        ],
+        "answers": [
+          "Chile",
+          "Chile",
+          "Chile"
+        ],
+        "adaptive_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "adaptive_visual_tokens": [
+          247,
+          247,
+          247
+        ],
+        "visual_tokens": [
+          630,
+          630,
+          630
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:446",
+        "subset": "human",
+        "reference": [
+          "Yes"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "No",
+          "No",
+          "No"
+        ],
+        "answers": [
+          "Yes",
+          "Yes",
+          "Yes"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          260,
+          260,
+          260
+        ],
+        "visual_tokens": [
+          748,
+          748,
+          748
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:457",
+        "subset": "human",
+        "reference": [
+          "2"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "4",
+          "4",
+          "4"
+        ],
+        "answers": [
+          "2",
+          "2",
+          "2"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          240,
+          240,
+          240
+        ],
+        "visual_tokens": [
+          770,
+          770,
+          770
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:597",
+        "subset": "human",
+        "reference": [
+          "2"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "1",
+          "1",
+          "1"
+        ],
+        "answers": [
+          "2",
+          "2",
+          "2"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          252,
+          252,
+          252
+        ],
+        "visual_tokens": [
+          558,
+          558,
+          558
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:706",
+        "subset": "human",
+        "reference": [
+          "6.6"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "6.6",
+          "6.6",
+          "6.6"
+        ],
+        "answers": [
+          "6.6%",
+          "6.6%",
+          "6.6%"
+        ],
+        "adaptive_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "adaptive_visual_tokens": [
+          247,
+          247,
+          247
+        ],
+        "visual_tokens": [
+          580,
+          580,
+          580
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:742",
+        "subset": "human",
+        "reference": [
+          "15017"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "15 017",
+          "15 017",
+          "15 017"
+        ],
+        "answers": [
+          "15017",
+          "15017",
+          "15017"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          247,
+          247,
+          247
+        ],
+        "visual_tokens": [
+          580,
+          580,
+          580
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:887",
+        "subset": "human",
+        "reference": [
+          "40"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "14",
+          "14",
+          "14"
+        ],
+        "answers": [
+          "40",
+          "40",
+          "40"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          247,
+          247,
+          247
+        ],
+        "visual_tokens": [
+          580,
+          580,
+          580
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:971",
+        "subset": "human",
+        "reference": [
+          "28"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "28%",
+          "28%",
+          "28%"
+        ],
+        "answers": [
+          "28",
+          "28",
+          "28"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          247,
+          247,
+          247
+        ],
+        "visual_tokens": [
+          580,
+          580,
+          580
+        ]
+      }
+    ]
+  }
+}

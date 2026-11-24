@@ -1,0 +1,19 @@
+{
+  "repeats": 2,
+  "policies": [
+    "probe"
+  ],
+  "session_replicas": 4,
+  "turn_interval_ms": 2304,
+  "arrival_spacing_ms": 64,
+  "aging_rate": 0.35,
+  "overdue_ms": 100,
+  "starvation_watch_ms": 500,
+  "long_quantile": 0.75,
+  "prefill_predictor_experiment": true,
+  "aging_thresholds_ms": {
+    "tokens": 100,
+    "ridge": 100,
+    "local": 100
+  }
+}

@@ -1,0 +1,718 @@
+{
+  "adaptive": {
+    "n_questions": 128,
+    "stable_answers": 128,
+    "changed_visual_tokens_vs_medium": 115,
+    "selected_budgets": {
+      "low": 124,
+      "high": 4
+    },
+    "score_changes_vs_medium": [
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1033",
+        "subset": "human",
+        "reference": [
+          "1.19"
+        ],
+        "selected_budget": "low",
+        "medium_answers": [
+          "1.23",
+          "1.23",
+          "1.23"
+        ],
+        "answers": [
+          "0.95",
+          "0.95",
+          "0.95"
+        ],
+        "medium_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "medium_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1119",
+        "subset": "human",
+        "reference": [
+          "25"
+        ],
+        "selected_budget": "low",
+        "medium_answers": [
+          "25",
+          "25",
+          "25"
+        ],
+        "answers": [
+          "25%",
+          "25%",
+          "25%"
+        ],
+        "medium_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "medium_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1262",
+        "subset": "augmented",
+        "reference": [
+          "32"
+        ],
+        "selected_budget": "low",
+        "medium_answers": [
+          "32",
+          "32",
+          "32"
+        ],
+        "answers": [
+          "17",
+          "17",
+          "17"
+        ],
+        "medium_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "medium_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1481",
+        "subset": "augmented",
+        "reference": [
+          "375"
+        ],
+        "selected_budget": "low",
+        "medium_answers": [
+          "8",
+          "8",
+          "8"
+        ],
+        "answers": [
+          "375",
+          "375",
+          "375"
+        ],
+        "medium_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "medium_visual_tokens": [
+          775,
+          775,
+          775
+        ],
+        "visual_tokens": [
+          252,
+          252,
+          252
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1488",
+        "subset": "augmented",
+        "reference": [
+          "0.28"
+        ],
+        "selected_budget": "low",
+        "medium_answers": [
+          "0.27",
+          "0.27",
+          "0.27"
+        ],
+        "answers": [
+          "0.26",
+          "0.26",
+          "0.26"
+        ],
+        "medium_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "medium_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1575",
+        "subset": "augmented",
+        "reference": [
+          "377.72"
+        ],
+        "selected_budget": "low",
+        "medium_answers": [
+          "377.72",
+          "377.72",
+          "377.72"
+        ],
+        "answers": [
+          "325.01",
+          "325.01",
+          "325.01"
+        ],
+        "medium_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "medium_visual_tokens": [
+          638,
+          638,
+          638
+        ],
+        "visual_tokens": [
+          252,
+          252,
+          252
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1629",
+        "subset": "augmented",
+        "reference": [
+          "Melilla"
+        ],
+        "selected_budget": "low",
+        "medium_answers": [
+          "Melilla",
+          "Melilla",
+          "Melilla"
+        ],
+        "answers": [
+          "Madrid",
+          "Madrid",
+          "Madrid"
+        ],
+        "medium_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "medium_visual_tokens": [
+          750,
+          750,
+          750
+        ],
+        "visual_tokens": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:2316",
+        "subset": "augmented",
+        "reference": [
+          "9.48"
+        ],
+        "selected_budget": "low",
+        "medium_answers": [
+          "9.48",
+          "9.48",
+          "9.48"
+        ],
+        "answers": [
+          "9.48%",
+          "9.48%",
+          "9.48%"
+        ],
+        "medium_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "medium_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:675",
+        "subset": "human",
+        "reference": [
+          "64"
+        ],
+        "selected_budget": "low",
+        "medium_answers": [
+          "64",
+          "64",
+          "64"
+        ],
+        "answers": [
+          "64%",
+          "64%",
+          "64%"
+        ],
+        "medium_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "medium_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:733",
+        "subset": "human",
+        "reference": [
+          "33"
+        ],
+        "selected_budget": "low",
+        "medium_answers": [
+          "33",
+          "33",
+          "33"
+        ],
+        "answers": [
+          "33%",
+          "33%",
+          "33%"
+        ],
+        "medium_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "medium_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:871",
+        "subset": "human",
+        "reference": [
+          "2.44"
+        ],
+        "selected_budget": "low",
+        "medium_answers": [
+          "2.38",
+          "2.38",
+          "2.38"
+        ],
+        "answers": [
+          "2.5%",
+          "2.5%",
+          "2.5%"
+        ],
+        "medium_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "medium_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      }
+    ]
+  },
+  "adaptive_v2": {
+    "n_questions": 128,
+    "stable_answers": 128,
+    "changed_visual_tokens_vs_medium": 92,
+    "selected_budgets": {
+      "low": 97,
+      "medium": 30,
+      "high": 1
+    },
+    "score_changes_vs_medium": [
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1262",
+        "subset": "augmented",
+        "reference": [
+          "32"
+        ],
+        "selected_budget": "low",
+        "medium_answers": [
+          "32",
+          "32",
+          "32"
+        ],
+        "answers": [
+          "17",
+          "17",
+          "17"
+        ],
+        "medium_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "medium_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1481",
+        "subset": "augmented",
+        "reference": [
+          "375"
+        ],
+        "selected_budget": "low",
+        "medium_answers": [
+          "8",
+          "8",
+          "8"
+        ],
+        "answers": [
+          "375",
+          "375",
+          "375"
+        ],
+        "medium_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "medium_visual_tokens": [
+          775,
+          775,
+          775
+        ],
+        "visual_tokens": [
+          252,
+          252,
+          252
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1488",
+        "subset": "augmented",
+        "reference": [
+          "0.28"
+        ],
+        "selected_budget": "low",
+        "medium_answers": [
+          "0.27",
+          "0.27",
+          "0.27"
+        ],
+        "answers": [
+          "0.26",
+          "0.26",
+          "0.26"
+        ],
+        "medium_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "medium_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1575",
+        "subset": "augmented",
+        "reference": [
+          "377.72"
+        ],
+        "selected_budget": "low",
+        "medium_answers": [
+          "377.72",
+          "377.72",
+          "377.72"
+        ],
+        "answers": [
+          "325.01",
+          "325.01",
+          "325.01"
+        ],
+        "medium_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "medium_visual_tokens": [
+          638,
+          638,
+          638
+        ],
+        "visual_tokens": [
+          252,
+          252,
+          252
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1629",
+        "subset": "augmented",
+        "reference": [
+          "Melilla"
+        ],
+        "selected_budget": "low",
+        "medium_answers": [
+          "Melilla",
+          "Melilla",
+          "Melilla"
+        ],
+        "answers": [
+          "Madrid",
+          "Madrid",
+          "Madrid"
+        ],
+        "medium_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "medium_visual_tokens": [
+          750,
+          750,
+          750
+        ],
+        "visual_tokens": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:2316",
+        "subset": "augmented",
+        "reference": [
+          "9.48"
+        ],
+        "selected_budget": "low",
+        "medium_answers": [
+          "9.48",
+          "9.48",
+          "9.48"
+        ],
+        "answers": [
+          "9.48%",
+          "9.48%",
+          "9.48%"
+        ],
+        "medium_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "medium_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:733",
+        "subset": "human",
+        "reference": [
+          "33"
+        ],
+        "selected_budget": "low",
+        "medium_answers": [
+          "33",
+          "33",
+          "33"
+        ],
+        "answers": [
+          "33%",
+          "33%",
+          "33%"
+        ],
+        "medium_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "medium_visual_tokens": [
+          580,
+          580,
+          580
+        ],
+        "visual_tokens": [
+          247,
+          247,
+          247
+        ]
+      }
+    ]
+  },
+  "medium": {
+    "n_questions": 128,
+    "stable_answers": 128,
+    "changed_visual_tokens_vs_medium": 0,
+    "selected_budgets": {
+      "medium": 128
+    },
+    "score_changes_vs_medium": []
+  }
+}

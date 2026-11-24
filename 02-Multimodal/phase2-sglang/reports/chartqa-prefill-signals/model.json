@@ -1,0 +1,257 @@
+{
+  "workload_sha256": "f6a0a4a9dadd4a1f79380eae202d27c7011fc758fcf2a0bbd6a72bb7c833926e",
+  "calibration_requests": 288,
+  "validation_requests": 288,
+  "calibration_sessions": [
+    "train-0-0-r00",
+    "train-0-0-r01",
+    "train-0-0-r02",
+    "train-0-0-r03",
+    "train-0-1-r00",
+    "train-0-1-r01",
+    "train-0-1-r02",
+    "train-0-1-r03",
+    "train-0-2-r00",
+    "train-0-2-r01",
+    "train-0-2-r02",
+    "train-0-2-r03",
+    "train-2-0-r00",
+    "train-2-0-r01",
+    "train-2-0-r02",
+    "train-2-0-r03",
+    "train-2-1-r00",
+    "train-2-1-r01",
+    "train-2-1-r02",
+    "train-2-1-r03",
+    "train-2-2-r00",
+    "train-2-2-r01",
+    "train-2-2-r02",
+    "train-2-2-r03",
+    "train-4-0-r00",
+    "train-4-0-r01",
+    "train-4-0-r02",
+    "train-4-0-r03",
+    "train-4-1-r00",
+    "train-4-1-r01",
+    "train-4-1-r02",
+    "train-4-1-r03",
+    "train-4-2-r00",
+    "train-4-2-r01",
+    "train-4-2-r02",
+    "train-4-2-r03"
+  ],
+  "validation_sessions": [
+    "validation-1-0-r00",
+    "validation-1-0-r01",
+    "validation-1-0-r02",
+    "validation-1-0-r03",
+    "validation-1-1-r00",
+    "validation-1-1-r01",
+    "validation-1-1-r02",
+    "validation-1-1-r03",
+    "validation-1-2-r00",
+    "validation-1-2-r01",
+    "validation-1-2-r02",
+    "validation-1-2-r03",
+    "validation-3-0-r00",
+    "validation-3-0-r01",
+    "validation-3-0-r02",
+    "validation-3-0-r03",
+    "validation-3-1-r00",
+    "validation-3-1-r01",
+    "validation-3-1-r02",
+    "validation-3-1-r03",
+    "validation-3-2-r00",
+    "validation-3-2-r01",
+    "validation-3-2-r02",
+    "validation-3-2-r03",
+    "validation-5-0-r00",
+    "validation-5-0-r01",
+    "validation-5-0-r02",
+    "validation-5-0-r03",
+    "validation-5-1-r00",
+    "validation-5-1-r01",
+    "validation-5-1-r02",
+    "validation-5-1-r03",
+    "validation-5-2-r00",
+    "validation-5-2-r01",
+    "validation-5-2-r02",
+    "validation-5-2-r03"
+  ],
+  "images_by_split": {
+    "train": 6,
+    "validation": 6
+  },
+  "features": {
+    "train": {
+      "uncached": {
+        "nonzero": 288,
+        "max": 2344
+      },
+      "prefix": {
+        "nonzero": 108,
+        "max": 1847
+      },
+      "attention_work": {
+        "nonzero": 288,
+        "max": 2747168.0
+      },
+      "visual_miss": {
+        "nonzero": 79,
+        "max": 1940
+      },
+      "running": {
+        "nonzero": 208,
+        "max": 2
+      },
+      "pending": {
+        "nonzero": 288,
+        "max": 19
+      },
+      "native": {
+        "nonzero": 288,
+        "max": 2344
+      }
+    },
+    "validation": {
+      "uncached": {
+        "nonzero": 288,
+        "max": 2493
+      },
+      "prefix": {
+        "nonzero": 108,
+        "max": 1675
+      },
+      "attention_work": {
+        "nonzero": 288,
+        "max": 3107524.5
+      },
+      "visual_miss": {
+        "nonzero": 76,
+        "max": 1348
+      },
+      "running": {
+        "nonzero": 251,
+        "max": 2
+      },
+      "pending": {
+        "nonzero": 288,
+        "max": 19
+      },
+      "native": {
+        "nonzero": 288,
+        "max": 2493
+      }
+    }
+  },
+  "validation_actual_prefix_hits": 108,
+  "shared_queue_snapshots": 88,
+  "pair_min_gap_ms": 10,
+  "models": {
+    "tokens": {
+      "n": 288,
+      "mae_ms": 42.325142662716935,
+      "rmse_ms": 52.65864696941397,
+      "p90_abs_error_ms": 73.14144603599755,
+      "same_queue_rank": {
+        "pairs": 1294,
+        "concordance": 0.7360896445131375
+      },
+      "fit": {
+        "features": [
+          "uncached"
+        ],
+        "centers": [
+          681.4027777777778
+        ],
+        "scales": [
+          570.6435368103234
+        ],
+        "standardized_weights": [
+          53.09043008967137
+        ],
+        "intercept_ms": 102.04952127403683
+      }
+    },
+    "ridge": {
+      "n": 288,
+      "mae_ms": 40.52371290471371,
+      "rmse_ms": 53.693878880342204,
+      "p90_abs_error_ms": 91.53591721956839,
+      "same_queue_rank": {
+        "pairs": 1294,
+        "concordance": 0.7484544049459042
+      }
+    },
+    "local": {
+      "n": 288,
+      "mae_ms": 32.0357550406638,
+      "rmse_ms": 43.987160682614196,
+      "p90_abs_error_ms": 78.97187305559737,
+      "same_queue_rank": {
+        "pairs": 1294,
+        "concordance": 0.7453632148377125
+      },
+      "fit": {
+        "features": [
+          "uncached",
+          "prefix",
+          "attention_work",
+          "visual_miss",
+          "running",
+          "pending"
+        ],
+        "centers": [
+          681.4027777777778,
+          317.93055555555554,
+          491475.88194444444,
+          207.77777777777777,
+          1.1006944444444444,
+          6.465277777777778
+        ],
+        "scales": [
+          570.6435368103237,
+          508.76561746132455,
+          601493.0534587365,
+          418.8669313431647,
+          0.8038100701397218,
+          6.8266361433689084
+        ],
+        "standardized_weights": [
+          30.468412046847657,
+          5.954653375781369,
+          14.506345996627601,
+          12.861498201382913,
+          5.585313157266911,
+          21.486135573475696
+        ],
+        "intercept_ms": 102.04952127403683
+      }
+    },
+    "spf": {
+      "n": 288,
+      "mae_ms": 40.058348318847294,
+      "rmse_ms": 53.854427272803214,
+      "p90_abs_error_ms": 83.98375067521508,
+      "same_queue_rank": {
+        "pairs": 1294,
+        "concordance": 0.6004636785162287
+      },
+      "fit": {
+        "features": [
+          "native"
+        ],
+        "centers": [
+          999.3333333333334
+        ],
+        "scales": [
+          586.6915240945998
+        ],
+        "standardized_weights": [
+          48.32423864331021
+        ],
+        "intercept_ms": 102.04952127403683
+      }
+    }
+  }
+}

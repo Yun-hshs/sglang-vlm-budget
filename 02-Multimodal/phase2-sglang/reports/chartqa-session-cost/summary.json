@@ -1,0 +1,565 @@
+{
+  "measured_by_turn": {
+    "1": {
+      "hit": {
+        "requests": 12,
+        "exact_numeric_answers": 12,
+        "prompt_tokens": [
+          813,
+          814,
+          815
+        ],
+        "cached_tokens": [
+          0
+        ],
+        "visual_tokens": [
+          777
+        ],
+        "cached_visual_prefix_tokens": [
+          0
+        ],
+        "client_ttft": {
+          "p50_ms": 203.1805827282369,
+          "p90_ms": 209.7725029103458
+        },
+        "stages": {
+          "api_before_dispatch": {
+            "p50_ms": 35.382628440856934,
+            "p90_ms": 50.722432136535645
+          },
+          "mm_preprocess": {
+            "p50_ms": 26.76548296585679,
+            "p90_ms": 42.37108901143074
+          },
+          "scheduler_queue": {
+            "p50_ms": 0.33583538606762886,
+            "p90_ms": 12.353151198476553
+          },
+          "prefill_wall": {
+            "p50_ms": 114.39383029937744,
+            "p90_ms": 119.79489326477051
+          },
+          "prefill_to_first_output": {
+            "p50_ms": 0.8374452590942383,
+            "p90_ms": 0.9957075119018555
+          },
+          "server_ttft": {
+            "p50_ms": 198.38371081277728,
+            "p90_ms": 204.70625022426248
+          },
+          "decode_and_finish": {
+            "p50_ms": 27.38795755431056,
+            "p90_ms": 124.67045783996582
+          },
+          "dispatch_to_forward": {
+            "p50_ms": 36.220431327819824,
+            "p90_ms": 51.292991638183594
+          }
+        },
+        "mm_batches": 8,
+        "mm_batch_cuda": {
+          "p50_ms": 0.3260479886084795,
+          "p90_ms": 0.7263455986976624
+        },
+        "vision_forward_batches": 0,
+        "vision_forward_batch_cuda": null
+      },
+      "miss": {
+        "requests": 12,
+        "exact_numeric_answers": 12,
+        "prompt_tokens": [
+          813,
+          814,
+          815
+        ],
+        "cached_tokens": [
+          0
+        ],
+        "visual_tokens": [
+          777
+        ],
+        "cached_visual_prefix_tokens": [
+          0
+        ],
+        "client_ttft": {
+          "p50_ms": 200.89093036949635,
+          "p90_ms": 202.92722368612885
+        },
+        "stages": {
+          "api_before_dispatch": {
+            "p50_ms": 30.47311305999756,
+            "p90_ms": 43.64185333251953
+          },
+          "mm_preprocess": {
+            "p50_ms": 23.585126269608736,
+            "p90_ms": 36.158010084182024
+          },
+          "scheduler_queue": {
+            "p50_ms": 0.32831821590662,
+            "p90_ms": 12.323046196252108
+          },
+          "prefill_wall": {
+            "p50_ms": 108.04879665374756,
+            "p90_ms": 119.58677768707275
+          },
+          "prefill_to_first_output": {
+            "p50_ms": 0.7460117340087891,
+            "p90_ms": 0.9111642837524414
+          },
+          "server_ttft": {
+            "p50_ms": 196.45892828702927,
+            "p90_ms": 197.7138132788241
+          },
+          "decode_and_finish": {
+            "p50_ms": 27.544728945940733,
+            "p90_ms": 126.19253871962428
+          },
+          "dispatch_to_forward": {
+            "p50_ms": 34.631967544555664,
+            "p90_ms": 46.59855365753174
+          }
+        },
+        "mm_batches": 9,
+        "mm_batch_cuda": {
+          "p50_ms": 0.0551999993622303,
+          "p90_ms": 0.5769919753074646
+        },
+        "vision_forward_batches": 0,
+        "vision_forward_batch_cuda": null
+      },
+      "paired_ttft_delta_hit_minus_miss": {
+        "p50_ms": 8.702811319380999,
+        "p90_ms": 96.83072175830603
+      }
+    },
+    "2": {
+      "hit": {
+        "requests": 12,
+        "exact_numeric_answers": 12,
+        "prompt_tokens": [
+          841,
+          844
+        ],
+        "cached_tokens": [
+          816,
+          817,
+          818
+        ],
+        "visual_tokens": [
+          777
+        ],
+        "cached_visual_prefix_tokens": [
+          777
+        ],
+        "client_ttft": {
+          "p50_ms": 110.68957345560193,
+          "p90_ms": 119.23308223485947
+        },
+        "stages": {
+          "api_before_dispatch": {
+            "p50_ms": 34.48188304901123,
+            "p90_ms": 51.140499114990234
+          },
+          "mm_preprocess": {
+            "p50_ms": 26.61222778260708,
+            "p90_ms": 42.83520160242915
+          },
+          "scheduler_queue": {
+            "p50_ms": 0.3426773473620415,
+            "p90_ms": 12.370153795927763
+          },
+          "prefill_wall": {
+            "p50_ms": 23.43928813934326,
+            "p90_ms": 71.16270065307617
+          },
+          "prefill_to_first_output": {
+            "p50_ms": 0.81634521484375,
+            "p90_ms": 0.9884357452392578
+          },
+          "server_ttft": {
+            "p50_ms": 106.52607074007392,
+            "p90_ms": 113.59683843329549
+          },
+          "decode_and_finish": {
+            "p50_ms": 26.753238402307034,
+            "p90_ms": 29.913666378706694
+          },
+          "dispatch_to_forward": {
+            "p50_ms": 36.026954650878906,
+            "p90_ms": 50.98624229431152
+          }
+        },
+        "mm_batches": 8,
+        "mm_batch_cuda": {
+          "p50_ms": 0.2512799948453903,
+          "p90_ms": 0.3123775988817215
+        },
+        "vision_forward_batches": 0,
+        "vision_forward_batch_cuda": null
+      },
+      "miss": {
+        "requests": 12,
+        "exact_numeric_answers": 12,
+        "prompt_tokens": [
+          841,
+          844
+        ],
+        "cached_tokens": [
+          0
+        ],
+        "visual_tokens": [
+          777
+        ],
+        "cached_visual_prefix_tokens": [
+          0
+        ],
+        "client_ttft": {
+          "p50_ms": 207.05218659713864,
+          "p90_ms": 209.64212380349636
+        },
+        "stages": {
+          "api_before_dispatch": {
+            "p50_ms": 30.408740043640137,
+            "p90_ms": 41.162991523742676
+          },
+          "mm_preprocess": {
+            "p50_ms": 23.53703510016203,
+            "p90_ms": 34.915605653077364
+          },
+          "scheduler_queue": {
+            "p50_ms": 0.32924069091677666,
+            "p90_ms": 12.331954296678305
+          },
+          "prefill_wall": {
+            "p50_ms": 124.88210201263428,
+            "p90_ms": 126.1075496673584
+          },
+          "prefill_to_first_output": {
+            "p50_ms": 0.823974609375,
+            "p90_ms": 0.9296894073486328
+          },
+          "server_ttft": {
+            "p50_ms": 202.80536450445652,
+            "p90_ms": 205.32897356897593
+          },
+          "decode_and_finish": {
+            "p50_ms": 26.74887329339981,
+            "p90_ms": 132.06723919138312
+          },
+          "dispatch_to_forward": {
+            "p50_ms": 34.578680992126465,
+            "p90_ms": 46.59225940704346
+          }
+        },
+        "mm_batches": 8,
+        "mm_batch_cuda": {
+          "p50_ms": 0.284399988129735,
+          "p90_ms": 0.5550112009048462
+        },
+        "vision_forward_batches": 0,
+        "vision_forward_batch_cuda": null
+      },
+      "paired_ttft_delta_hit_minus_miss": {
+        "p50_ms": -88.5844212025404,
+        "p90_ms": 10.905965138226748
+      }
+    },
+    "3": {
+      "hit": {
+        "requests": 12,
+        "exact_numeric_answers": 12,
+        "prompt_tokens": [
+          1651,
+          1653,
+          1661
+        ],
+        "cached_tokens": [
+          844,
+          847
+        ],
+        "visual_tokens": [
+          1554
+        ],
+        "cached_visual_prefix_tokens": [
+          777
+        ],
+        "client_ttft": {
+          "p50_ms": 248.7848335877061,
+          "p90_ms": 267.2446561977267
+        },
+        "stages": {
+          "api_before_dispatch": {
+            "p50_ms": 57.41417407989502,
+            "p90_ms": 91.50238037109375
+          },
+          "mm_preprocess": {
+            "p50_ms": 43.35451638326049,
+            "p90_ms": 73.61968420445919
+          },
+          "scheduler_queue": {
+            "p50_ms": 0.3809044137597084,
+            "p90_ms": 24.343703128397465
+          },
+          "prefill_wall": {
+            "p50_ms": 110.56458950042725,
+            "p90_ms": 117.14465618133545
+          },
+          "prefill_to_first_output": {
+            "p50_ms": 0.8933544158935547,
+            "p90_ms": 1.0561943054199219
+          },
+          "server_ttft": {
+            "p50_ms": 243.15308686345816,
+            "p90_ms": 261.12945582717657
+          },
+          "decode_and_finish": {
+            "p50_ms": 32.947047147899866,
+            "p90_ms": 129.51398165896535
+          },
+          "dispatch_to_forward": {
+            "p50_ms": 51.021695137023926,
+            "p90_ms": 75.56748390197754
+          }
+        },
+        "mm_batches": 9,
+        "mm_batch_cuda": {
+          "p50_ms": 0.5849599838256836,
+          "p90_ms": 0.7053375959396362
+        },
+        "vision_forward_batches": 0,
+        "vision_forward_batch_cuda": null
+      },
+      "miss": {
+        "requests": 12,
+        "exact_numeric_answers": 12,
+        "prompt_tokens": [
+          1651,
+          1653,
+          1661
+        ],
+        "cached_tokens": [
+          0
+        ],
+        "visual_tokens": [
+          1554
+        ],
+        "cached_visual_prefix_tokens": [
+          0
+        ],
+        "client_ttft": {
+          "p50_ms": 386.7141925729811,
+          "p90_ms": 399.42817809060216
+        },
+        "stages": {
+          "api_before_dispatch": {
+            "p50_ms": 52.43396759033203,
+            "p90_ms": 88.65108489990234
+          },
+          "mm_preprocess": {
+            "p50_ms": 39.2032191157341,
+            "p90_ms": 73.5920806415379
+          },
+          "scheduler_queue": {
+            "p50_ms": 0.3530271351337433,
+            "p90_ms": 24.250493850558996
+          },
+          "prefill_wall": {
+            "p50_ms": 223.30451011657715,
+            "p90_ms": 259.0807914733887
+          },
+          "prefill_to_first_output": {
+            "p50_ms": 0.8722543716430664,
+            "p90_ms": 1.057291030883789
+          },
+          "server_ttft": {
+            "p50_ms": 381.78832549601793,
+            "p90_ms": 393.44799015671015
+          },
+          "decode_and_finish": {
+            "p50_ms": 34.02135940268636,
+            "p90_ms": 250.8013310842216
+          },
+          "dispatch_to_forward": {
+            "p50_ms": 50.40943622589111,
+            "p90_ms": 81.36553764343262
+          }
+        },
+        "mm_batches": 9,
+        "mm_batch_cuda": {
+          "p50_ms": 0.07168000191450119,
+          "p90_ms": 0.6390720248222351
+        },
+        "vision_forward_batches": 0,
+        "vision_forward_batch_cuda": null
+      },
+      "paired_ttft_delta_hit_minus_miss": {
+        "p50_ms": -130.91497076675296,
+        "p90_ms": 65.83617301657796
+      }
+    },
+    "4": {
+      "hit": {
+        "requests": 12,
+        "exact_numeric_answers": 8,
+        "prompt_tokens": [
+          1682,
+          1683,
+          1690
+        ],
+        "cached_tokens": [
+          1654,
+          1656,
+          1664
+        ],
+        "visual_tokens": [
+          1554
+        ],
+        "cached_visual_prefix_tokens": [
+          1554
+        ],
+        "client_ttft": {
+          "p50_ms": 156.81559592485428,
+          "p90_ms": 176.3023443520069
+        },
+        "stages": {
+          "api_before_dispatch": {
+            "p50_ms": 53.50792407989502,
+            "p90_ms": 77.45404243469238
+          },
+          "mm_preprocess": {
+            "p50_ms": 40.5966998077929,
+            "p90_ms": 65.71492170915008
+          },
+          "scheduler_queue": {
+            "p50_ms": 0.3851111978292465,
+            "p90_ms": 24.338829144835472
+          },
+          "prefill_wall": {
+            "p50_ms": 23.813843727111816,
+            "p90_ms": 91.39878749847412
+          },
+          "prefill_to_first_output": {
+            "p50_ms": 0.8873939514160156,
+            "p90_ms": 1.0016679763793945
+          },
+          "server_ttft": {
+            "p50_ms": 150.27062641456723,
+            "p90_ms": 169.6841008029878
+          },
+          "decode_and_finish": {
+            "p50_ms": 31.805630307644606,
+            "p90_ms": 34.89759396761656
+          },
+          "dispatch_to_forward": {
+            "p50_ms": 50.98247528076172,
+            "p90_ms": 75.71110725402832
+          }
+        },
+        "mm_batches": 8,
+        "mm_batch_cuda": {
+          "p50_ms": 0.2643679976463318,
+          "p90_ms": 0.37085120379924774
+        },
+        "vision_forward_batches": 0,
+        "vision_forward_batch_cuda": null
+      },
+      "miss": {
+        "requests": 12,
+        "exact_numeric_answers": 8,
+        "prompt_tokens": [
+          1682,
+          1683,
+          1690
+        ],
+        "cached_tokens": [
+          0
+        ],
+        "visual_tokens": [
+          1554
+        ],
+        "cached_visual_prefix_tokens": [
+          0
+        ],
+        "client_ttft": {
+          "p50_ms": 398.76022189855576,
+          "p90_ms": 419.1514010541141
+        },
+        "stages": {
+          "api_before_dispatch": {
+            "p50_ms": 63.38393688201904,
+            "p90_ms": 90.50085544586182
+          },
+          "mm_preprocess": {
+            "p50_ms": 48.453436233103275,
+            "p90_ms": 75.14836834743619
+          },
+          "scheduler_queue": {
+            "p50_ms": 0.36011310294270515,
+            "p90_ms": 24.272424541413784
+          },
+          "prefill_wall": {
+            "p50_ms": 232.2458028793335,
+            "p90_ms": 268.7119483947754
+          },
+          "prefill_to_first_output": {
+            "p50_ms": 0.9312629699707031,
+            "p90_ms": 1.0662317276000977
+          },
+          "server_ttft": {
+            "p50_ms": 393.7467304058373,
+            "p90_ms": 407.94312842190266
+          },
+          "decode_and_finish": {
+            "p50_ms": 35.44759098440409,
+            "p90_ms": 253.01088942214847
+          },
+          "dispatch_to_forward": {
+            "p50_ms": 49.92663860321045,
+            "p90_ms": 83.02602767944336
+          }
+        },
+        "mm_batches": 9,
+        "mm_batch_cuda": {
+          "p50_ms": 0.07168000191450119,
+          "p90_ms": 0.6389567852020264
+        },
+        "vision_forward_batches": 0,
+        "vision_forward_batch_cuda": null
+      },
+      "paired_ttft_delta_hit_minus_miss": {
+        "p50_ms": -241.48298520594835,
+        "p90_ms": -21.868565026670694
+      }
+    }
+  },
+  "warmup_batches_with_vision_forward": [
+    {
+      "kind": "vision_batch",
+      "batch_id": "5408a8de193441a0b4e3f40f4a4cb89d",
+      "active_requests": [
+        "stage2-mm-session-8fa89e27dd-0-hit-apple-days-1"
+      ],
+      "batch_requests": [
+        "stage2-mm-session-8fa89e27dd-0-hit-apple-days-1"
+      ],
+      "mm_preparation_cuda_ms": 425.0889892578125,
+      "vision_forward_cuda_ms": 420.9187316894531,
+      "vision_forward_calls": 1
+    },
+    {
+      "kind": "vision_batch",
+      "batch_id": "2c0dfe8bc2f744ed9bd6c6885f85b9b1",
+      "active_requests": [
+        "stage2-mm-session-8fa89e27dd-0-hit-reverse-days-1",
+        "stage2-mm-session-8fa89e27dd-0-hit-chart-review-1"
+      ],
+      "batch_requests": [
+        "stage2-mm-session-8fa89e27dd-0-hit-reverse-days-1",
+        "stage2-mm-session-8fa89e27dd-0-hit-chart-review-1"
+      ],
+      "mm_preparation_cuda_ms": 30.674911499023438,
+      "vision_forward_cuda_ms": 26.384319305419922,
+      "vision_forward_calls": 1
+    }
+  ]
+}

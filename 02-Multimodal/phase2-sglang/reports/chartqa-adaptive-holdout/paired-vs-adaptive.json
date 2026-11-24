@@ -1,0 +1,604 @@
+{
+  "adaptive": {
+    "n_questions": 128,
+    "stable_answers": 128,
+    "changed_visual_tokens_vs_adaptive": 0,
+    "selected_budgets": {
+      "low": 124,
+      "high": 4
+    },
+    "score_changes_vs_adaptive": []
+  },
+  "adaptive_v2": {
+    "n_questions": 128,
+    "stable_answers": 128,
+    "changed_visual_tokens_vs_adaptive": 23,
+    "selected_budgets": {
+      "low": 97,
+      "medium": 30,
+      "high": 1
+    },
+    "score_changes_vs_adaptive": [
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1033",
+        "subset": "human",
+        "reference": [
+          "1.19"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "0.95",
+          "0.95",
+          "0.95"
+        ],
+        "answers": [
+          "1.23",
+          "1.23",
+          "1.23"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          247,
+          247,
+          247
+        ],
+        "visual_tokens": [
+          580,
+          580,
+          580
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1119",
+        "subset": "human",
+        "reference": [
+          "25"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "25%",
+          "25%",
+          "25%"
+        ],
+        "answers": [
+          "25",
+          "25",
+          "25"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          247,
+          247,
+          247
+        ],
+        "visual_tokens": [
+          580,
+          580,
+          580
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:675",
+        "subset": "human",
+        "reference": [
+          "64"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "64%",
+          "64%",
+          "64%"
+        ],
+        "answers": [
+          "64",
+          "64",
+          "64"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          247,
+          247,
+          247
+        ],
+        "visual_tokens": [
+          580,
+          580,
+          580
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:871",
+        "subset": "human",
+        "reference": [
+          "2.44"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "2.5%",
+          "2.5%",
+          "2.5%"
+        ],
+        "answers": [
+          "2.38",
+          "2.38",
+          "2.38"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          247,
+          247,
+          247
+        ],
+        "visual_tokens": [
+          580,
+          580,
+          580
+        ]
+      }
+    ]
+  },
+  "medium": {
+    "n_questions": 128,
+    "stable_answers": 128,
+    "changed_visual_tokens_vs_adaptive": 115,
+    "selected_budgets": {
+      "medium": 128
+    },
+    "score_changes_vs_adaptive": [
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1033",
+        "subset": "human",
+        "reference": [
+          "1.19"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "0.95",
+          "0.95",
+          "0.95"
+        ],
+        "answers": [
+          "1.23",
+          "1.23",
+          "1.23"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          247,
+          247,
+          247
+        ],
+        "visual_tokens": [
+          580,
+          580,
+          580
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1119",
+        "subset": "human",
+        "reference": [
+          "25"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "25%",
+          "25%",
+          "25%"
+        ],
+        "answers": [
+          "25",
+          "25",
+          "25"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          247,
+          247,
+          247
+        ],
+        "visual_tokens": [
+          580,
+          580,
+          580
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1262",
+        "subset": "augmented",
+        "reference": [
+          "32"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "17",
+          "17",
+          "17"
+        ],
+        "answers": [
+          "32",
+          "32",
+          "32"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          247,
+          247,
+          247
+        ],
+        "visual_tokens": [
+          580,
+          580,
+          580
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1481",
+        "subset": "augmented",
+        "reference": [
+          "375"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "375",
+          "375",
+          "375"
+        ],
+        "answers": [
+          "8",
+          "8",
+          "8"
+        ],
+        "adaptive_correct": [
+          true,
+          true,
+          true
+        ],
+        "correct": [
+          false,
+          false,
+          false
+        ],
+        "adaptive_visual_tokens": [
+          252,
+          252,
+          252
+        ],
+        "visual_tokens": [
+          775,
+          775,
+          775
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1488",
+        "subset": "augmented",
+        "reference": [
+          "0.28"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "0.26",
+          "0.26",
+          "0.26"
+        ],
+        "answers": [
+          "0.27",
+          "0.27",
+          "0.27"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          247,
+          247,
+          247
+        ],
+        "visual_tokens": [
+          580,
+          580,
+          580
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1575",
+        "subset": "augmented",
+        "reference": [
+          "377.72"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "325.01",
+          "325.01",
+          "325.01"
+        ],
+        "answers": [
+          "377.72",
+          "377.72",
+          "377.72"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          252,
+          252,
+          252
+        ],
+        "visual_tokens": [
+          638,
+          638,
+          638
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:1629",
+        "subset": "augmented",
+        "reference": [
+          "Melilla"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "Madrid",
+          "Madrid",
+          "Madrid"
+        ],
+        "answers": [
+          "Melilla",
+          "Melilla",
+          "Melilla"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          255,
+          255,
+          255
+        ],
+        "visual_tokens": [
+          750,
+          750,
+          750
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:2316",
+        "subset": "augmented",
+        "reference": [
+          "9.48"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "9.48%",
+          "9.48%",
+          "9.48%"
+        ],
+        "answers": [
+          "9.48",
+          "9.48",
+          "9.48"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          247,
+          247,
+          247
+        ],
+        "visual_tokens": [
+          580,
+          580,
+          580
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:675",
+        "subset": "human",
+        "reference": [
+          "64"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "64%",
+          "64%",
+          "64%"
+        ],
+        "answers": [
+          "64",
+          "64",
+          "64"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          247,
+          247,
+          247
+        ],
+        "visual_tokens": [
+          580,
+          580,
+          580
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:733",
+        "subset": "human",
+        "reference": [
+          "33"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "33%",
+          "33%",
+          "33%"
+        ],
+        "answers": [
+          "33",
+          "33",
+          "33"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          247,
+          247,
+          247
+        ],
+        "visual_tokens": [
+          580,
+          580,
+          580
+        ]
+      },
+      {
+        "id": "test-00000-of-00001-e2cd0b7a0f9eb20d:871",
+        "subset": "human",
+        "reference": [
+          "2.44"
+        ],
+        "selected_budget": "medium",
+        "adaptive_answers": [
+          "2.5%",
+          "2.5%",
+          "2.5%"
+        ],
+        "answers": [
+          "2.38",
+          "2.38",
+          "2.38"
+        ],
+        "adaptive_correct": [
+          false,
+          false,
+          false
+        ],
+        "correct": [
+          true,
+          true,
+          true
+        ],
+        "adaptive_visual_tokens": [
+          247,
+          247,
+          247
+        ],
+        "visual_tokens": [
+          580,
+          580,
+          580
+        ]
+      }
+    ]
+  }
+}

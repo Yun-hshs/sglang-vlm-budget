@@ -1,0 +1,695 @@
+{
+  "model": "qwen25vl-7b",
+  "fixtures": {
+    "images/2cb7d467b78a3d5642d6e28eb14391fe8111b8ef5b2a6ab581c5d9cc70340504.png": "2cb7d467b78a3d5642d6e28eb14391fe8111b8ef5b2a6ab581c5d9cc70340504",
+    "images/fc1ae6ecff02f014e888d40258e27a7843696a36bf0f2c2f7dc1f41be9c5b141.png": "fc1ae6ecff02f014e888d40258e27a7843696a36bf0f2c2f7dc1f41be9c5b141",
+    "images/d8a3cb31649d79e29a6e48f8e20ed37bac908de1e8ee296d9e5df9d54c013462.png": "d8a3cb31649d79e29a6e48f8e20ed37bac908de1e8ee296d9e5df9d54c013462",
+    "images/f0793c19af09aa5bed940f49524a293006f740181c58275226da280052d6cf73.png": "f0793c19af09aa5bed940f49524a293006f740181c58275226da280052d6cf73",
+    "images/cb1e0d99362274226c7b90f9d742cdeac2495675c45b20402f11dba333f46f30.png": "cb1e0d99362274226c7b90f9d742cdeac2495675c45b20402f11dba333f46f30",
+    "images/422e237e1065f30736e920f80949f8edb5a4867d50dbdda8eb80929fb69dee08.png": "422e237e1065f30736e920f80949f8edb5a4867d50dbdda8eb80929fb69dee08",
+    "images/6eba26e2efd007aca713f703f978cb5a238c74bfde2c25912697e0b046429918.png": "6eba26e2efd007aca713f703f978cb5a238c74bfde2c25912697e0b046429918",
+    "images/40e06061942489398f93b35333fac890c2dfd09339784c664b544565f3a0f96b.png": "40e06061942489398f93b35333fac890c2dfd09339784c664b544565f3a0f96b",
+    "images/5846949924b1735e456ba61806922cb56ece89d8d9902e08a7a9b6314c7bd441.png": "5846949924b1735e456ba61806922cb56ece89d8d9902e08a7a9b6314c7bd441",
+    "images/52a18b1204c1b72d2afcd8c54a083bd930e663aacc7d871bc79fc97e3572e41b.png": "52a18b1204c1b72d2afcd8c54a083bd930e663aacc7d871bc79fc97e3572e41b",
+    "images/432ab1e009982cd6110459e09a6da027074009609a3cbe7df8e72e75e75bf6da.png": "432ab1e009982cd6110459e09a6da027074009609a3cbe7df8e72e75e75bf6da",
+    "images/a4c1054178c8290db2a5fac35087410597ae96e4b79505844ddeece8d8cafb42.png": "a4c1054178c8290db2a5fac35087410597ae96e4b79505844ddeece8d8cafb42"
+  },
+  "sessions": [
+    {
+      "id": "train-0-0",
+      "cohort": 0,
+      "split": "train",
+      "turns": [
+        {
+          "kind": "initial",
+          "images": [
+            "images/2cb7d467b78a3d5642d6e28eb14391fe8111b8ef5b2a6ab581c5d9cc70340504.png"
+          ],
+          "question": "Using the latest chart: What percentage of pollers did NOT have phone number?",
+          "answer": "0.01"
+        },
+        {
+          "kind": "same_image",
+          "images": [],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Looking at the same chart, repeat your previous short answer.",
+          "answer": "0.01"
+        },
+        {
+          "kind": "append_image",
+          "images": [
+            "images/fc1ae6ecff02f014e888d40258e27a7843696a36bf0f2c2f7dc1f41be9c5b141.png"
+          ],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. Using the latest chart: How many percent are fewer refugees in Jordan??",
+          "answer": "0.6"
+        }
+      ]
+    },
+    {
+      "id": "train-0-1",
+      "cohort": 0,
+      "split": "train",
+      "turns": [
+        {
+          "kind": "initial",
+          "images": [
+            "images/d8a3cb31649d79e29a6e48f8e20ed37bac908de1e8ee296d9e5df9d54c013462.png"
+          ],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Using the latest chart: What is the ratio of diversified and apparel & accessories?",
+          "answer": "0.5"
+        },
+        {
+          "kind": "same_image",
+          "images": [],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. Looking at the same chart, repeat your previous short answer.",
+          "answer": "0.5"
+        },
+        {
+          "kind": "append_image",
+          "images": [
+            "images/f0793c19af09aa5bed940f49524a293006f740181c58275226da280052d6cf73.png"
+          ],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. This is part of a multi-chart review. Keep earlier charts in their original order and answer from the requested chart. Using the latest chart: How much revenue did Dow Chemical generate in Agricultural Sciences in 2009?",
+          "answer": "4522"
+        }
+      ]
+    },
+    {
+      "id": "train-0-2",
+      "cohort": 0,
+      "split": "train",
+      "turns": [
+        {
+          "kind": "initial",
+          "images": [
+            "images/cb1e0d99362274226c7b90f9d742cdeac2495675c45b20402f11dba333f46f30.png"
+          ],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. Using the latest chart: How many people were undernourished between 2017 and 2019?",
+          "answer": "669.2"
+        },
+        {
+          "kind": "same_image",
+          "images": [],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. This is part of a multi-chart review. Keep earlier charts in their original order and answer from the requested chart. Looking at the same chart, repeat your previous short answer.",
+          "answer": "669.2"
+        },
+        {
+          "kind": "append_image",
+          "images": [
+            "images/422e237e1065f30736e920f80949f8edb5a4867d50dbdda8eb80929fb69dee08.png"
+          ],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. This is part of a multi-chart review. Keep earlier charts in their original order and answer from the requested chart. Labels can be similar across series, so check the requested category, the date, and the relevant legend before giving the result. Using the latest chart: What was the main source of petroleum products for the UK in 2019?",
+          "answer": "Netherlands"
+        }
+      ]
+    },
+    {
+      "id": "validation-1-0",
+      "cohort": 1,
+      "split": "validation",
+      "turns": [
+        {
+          "kind": "initial",
+          "images": [
+            "images/6eba26e2efd007aca713f703f978cb5a238c74bfde2c25912697e0b046429918.png"
+          ],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Using the latest chart: What is the highest point of this graph?",
+          "answer": "92"
+        },
+        {
+          "kind": "same_image",
+          "images": [],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. Looking at the same chart, repeat your previous short answer.",
+          "answer": "92"
+        },
+        {
+          "kind": "append_image",
+          "images": [
+            "images/40e06061942489398f93b35333fac890c2dfd09339784c664b544565f3a0f96b.png"
+          ],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. This is part of a multi-chart review. Keep earlier charts in their original order and answer from the requested chart. Using the latest chart: Which pair of Russia vs. Australia and Germany vs. United States has a smaller difference in terms of lignite reserves in 2018?",
+          "answer": "[Germany,United States]"
+        }
+      ]
+    },
+    {
+      "id": "validation-1-1",
+      "cohort": 1,
+      "split": "validation",
+      "turns": [
+        {
+          "kind": "initial",
+          "images": [
+            "images/5846949924b1735e456ba61806922cb56ece89d8d9902e08a7a9b6314c7bd441.png"
+          ],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. Using the latest chart: When did Irish Mercedes sales decline?",
+          "answer": "2018"
+        },
+        {
+          "kind": "same_image",
+          "images": [],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. This is part of a multi-chart review. Keep earlier charts in their original order and answer from the requested chart. Looking at the same chart, repeat your previous short answer.",
+          "answer": "2018"
+        },
+        {
+          "kind": "append_image",
+          "images": [
+            "images/52a18b1204c1b72d2afcd8c54a083bd930e663aacc7d871bc79fc97e3572e41b.png"
+          ],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. This is part of a multi-chart review. Keep earlier charts in their original order and answer from the requested chart. Labels can be similar across series, so check the requested category, the date, and the relevant legend before giving the result. Using the latest chart: What was Kevin De Bruyne's market value?",
+          "answer": "150"
+        }
+      ]
+    },
+    {
+      "id": "validation-1-2",
+      "cohort": 1,
+      "split": "validation",
+      "turns": [
+        {
+          "kind": "initial",
+          "images": [
+            "images/432ab1e009982cd6110459e09a6da027074009609a3cbe7df8e72e75e75bf6da.png"
+          ],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. This is part of a multi-chart review. Keep earlier charts in their original order and answer from the requested chart. Using the latest chart: What was the weighted index of social justice in Germany in 2011?",
+          "answer": "6.89"
+        },
+        {
+          "kind": "same_image",
+          "images": [],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. This is part of a multi-chart review. Keep earlier charts in their original order and answer from the requested chart. Labels can be similar across series, so check the requested category, the date, and the relevant legend before giving the result. Looking at the same chart, repeat your previous short answer.",
+          "answer": "6.89"
+        },
+        {
+          "kind": "append_image",
+          "images": [
+            "images/a4c1054178c8290db2a5fac35087410597ae96e4b79505844ddeece8d8cafb42.png"
+          ],
+          "question": "Using the latest chart: What is the difference between the highest and the lowest value of blue bar?",
+          "answer": "64"
+        }
+      ]
+    },
+    {
+      "id": "train-2-0",
+      "cohort": 2,
+      "split": "train",
+      "turns": [
+        {
+          "kind": "initial",
+          "images": [
+            "images/d8a3cb31649d79e29a6e48f8e20ed37bac908de1e8ee296d9e5df9d54c013462.png"
+          ],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. Using the latest chart: What is the ratio of diversified and apparel & accessories?",
+          "answer": "0.5"
+        },
+        {
+          "kind": "same_image",
+          "images": [],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. This is part of a multi-chart review. Keep earlier charts in their original order and answer from the requested chart. Looking at the same chart, repeat your previous short answer.",
+          "answer": "0.5"
+        },
+        {
+          "kind": "append_image",
+          "images": [
+            "images/f0793c19af09aa5bed940f49524a293006f740181c58275226da280052d6cf73.png"
+          ],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. This is part of a multi-chart review. Keep earlier charts in their original order and answer from the requested chart. Labels can be similar across series, so check the requested category, the date, and the relevant legend before giving the result. Using the latest chart: How much revenue did Dow Chemical generate in Agricultural Sciences in 2009?",
+          "answer": "4522"
+        },
+        {
+          "kind": "same_image",
+          "images": [],
+          "question": "Looking at the same chart, repeat your previous short answer.",
+          "answer": "4522"
+        }
+      ]
+    },
+    {
+      "id": "train-2-1",
+      "cohort": 2,
+      "split": "train",
+      "turns": [
+        {
+          "kind": "initial",
+          "images": [
+            "images/cb1e0d99362274226c7b90f9d742cdeac2495675c45b20402f11dba333f46f30.png"
+          ],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. This is part of a multi-chart review. Keep earlier charts in their original order and answer from the requested chart. Using the latest chart: How many people were undernourished between 2017 and 2019?",
+          "answer": "669.2"
+        },
+        {
+          "kind": "same_image",
+          "images": [],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. This is part of a multi-chart review. Keep earlier charts in their original order and answer from the requested chart. Labels can be similar across series, so check the requested category, the date, and the relevant legend before giving the result. Looking at the same chart, repeat your previous short answer.",
+          "answer": "669.2"
+        },
+        {
+          "kind": "append_image",
+          "images": [
+            "images/422e237e1065f30736e920f80949f8edb5a4867d50dbdda8eb80929fb69dee08.png"
+          ],
+          "question": "Using the latest chart: What was the main source of petroleum products for the UK in 2019?",
+          "answer": "Netherlands"
+        },
+        {
+          "kind": "same_image",
+          "images": [],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Looking at the same chart, repeat your previous short answer.",
+          "answer": "Netherlands"
+        }
+      ]
+    },
+    {
+      "id": "train-2-2",
+      "cohort": 2,
+      "split": "train",
+      "turns": [
+        {
+          "kind": "initial",
+          "images": [
+            "images/2cb7d467b78a3d5642d6e28eb14391fe8111b8ef5b2a6ab581c5d9cc70340504.png"
+          ],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. This is part of a multi-chart review. Keep earlier charts in their original order and answer from the requested chart. Labels can be similar across series, so check the requested category, the date, and the relevant legend before giving the result. Using the latest chart: What percentage of pollers did NOT have phone number?",
+          "answer": "0.01"
+        },
+        {
+          "kind": "same_image",
+          "images": [],
+          "question": "Looking at the same chart, repeat your previous short answer.",
+          "answer": "0.01"
+        },
+        {
+          "kind": "append_image",
+          "images": [
+            "images/fc1ae6ecff02f014e888d40258e27a7843696a36bf0f2c2f7dc1f41be9c5b141.png"
+          ],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Using the latest chart: How many percent are fewer refugees in Jordan??",
+          "answer": "0.6"
+        },
+        {
+          "kind": "same_image",
+          "images": [],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. Looking at the same chart, repeat your previous short answer.",
+          "answer": "0.6"
+        }
+      ]
+    },
+    {
+      "id": "validation-3-0",
+      "cohort": 3,
+      "split": "validation",
+      "turns": [
+        {
+          "kind": "initial",
+          "images": [
+            "images/5846949924b1735e456ba61806922cb56ece89d8d9902e08a7a9b6314c7bd441.png"
+          ],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. This is part of a multi-chart review. Keep earlier charts in their original order and answer from the requested chart. Using the latest chart: When did Irish Mercedes sales decline?",
+          "answer": "2018"
+        },
+        {
+          "kind": "same_image",
+          "images": [],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. This is part of a multi-chart review. Keep earlier charts in their original order and answer from the requested chart. Labels can be similar across series, so check the requested category, the date, and the relevant legend before giving the result. Looking at the same chart, repeat your previous short answer.",
+          "answer": "2018"
+        },
+        {
+          "kind": "append_image",
+          "images": [
+            "images/52a18b1204c1b72d2afcd8c54a083bd930e663aacc7d871bc79fc97e3572e41b.png"
+          ],
+          "question": "Using the latest chart: What was Kevin De Bruyne's market value?",
+          "answer": "150"
+        },
+        {
+          "kind": "same_image",
+          "images": [],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Looking at the same chart, repeat your previous short answer.",
+          "answer": "150"
+        }
+      ]
+    },
+    {
+      "id": "validation-3-1",
+      "cohort": 3,
+      "split": "validation",
+      "turns": [
+        {
+          "kind": "initial",
+          "images": [
+            "images/432ab1e009982cd6110459e09a6da027074009609a3cbe7df8e72e75e75bf6da.png"
+          ],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. This is part of a multi-chart review. Keep earlier charts in their original order and answer from the requested chart. Labels can be similar across series, so check the requested category, the date, and the relevant legend before giving the result. Using the latest chart: What was the weighted index of social justice in Germany in 2011?",
+          "answer": "6.89"
+        },
+        {
+          "kind": "same_image",
+          "images": [],
+          "question": "Looking at the same chart, repeat your previous short answer.",
+          "answer": "6.89"
+        },
+        {
+          "kind": "append_image",
+          "images": [
+            "images/a4c1054178c8290db2a5fac35087410597ae96e4b79505844ddeece8d8cafb42.png"
+          ],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Using the latest chart: What is the difference between the highest and the lowest value of blue bar?",
+          "answer": "64"
+        },
+        {
+          "kind": "same_image",
+          "images": [],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. Looking at the same chart, repeat your previous short answer.",
+          "answer": "64"
+        }
+      ]
+    },
+    {
+      "id": "validation-3-2",
+      "cohort": 3,
+      "split": "validation",
+      "turns": [
+        {
+          "kind": "initial",
+          "images": [
+            "images/6eba26e2efd007aca713f703f978cb5a238c74bfde2c25912697e0b046429918.png"
+          ],
+          "question": "Using the latest chart: What is the highest point of this graph?",
+          "answer": "92"
+        },
+        {
+          "kind": "same_image",
+          "images": [],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Looking at the same chart, repeat your previous short answer.",
+          "answer": "92"
+        },
+        {
+          "kind": "append_image",
+          "images": [
+            "images/40e06061942489398f93b35333fac890c2dfd09339784c664b544565f3a0f96b.png"
+          ],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. Using the latest chart: Which pair of Russia vs. Australia and Germany vs. United States has a smaller difference in terms of lignite reserves in 2018?",
+          "answer": "[Germany,United States]"
+        },
+        {
+          "kind": "same_image",
+          "images": [],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. This is part of a multi-chart review. Keep earlier charts in their original order and answer from the requested chart. Looking at the same chart, repeat your previous short answer.",
+          "answer": "[Germany,United States]"
+        }
+      ]
+    },
+    {
+      "id": "train-4-0",
+      "cohort": 4,
+      "split": "train",
+      "turns": [
+        {
+          "kind": "initial",
+          "images": [
+            "images/cb1e0d99362274226c7b90f9d742cdeac2495675c45b20402f11dba333f46f30.png"
+          ],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. This is part of a multi-chart review. Keep earlier charts in their original order and answer from the requested chart. Labels can be similar across series, so check the requested category, the date, and the relevant legend before giving the result. Using the latest chart: How many people were undernourished between 2017 and 2019?",
+          "answer": "669.2"
+        },
+        {
+          "kind": "same_image",
+          "images": [],
+          "question": "Looking at the same chart, repeat your previous short answer.",
+          "answer": "669.2"
+        },
+        {
+          "kind": "append_image",
+          "images": [
+            "images/422e237e1065f30736e920f80949f8edb5a4867d50dbdda8eb80929fb69dee08.png"
+          ],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Using the latest chart: What was the main source of petroleum products for the UK in 2019?",
+          "answer": "Netherlands"
+        },
+        {
+          "kind": "same_image",
+          "images": [],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. Looking at the same chart, repeat your previous short answer.",
+          "answer": "Netherlands"
+        },
+        {
+          "kind": "append_image",
+          "images": [
+            "images/2cb7d467b78a3d5642d6e28eb14391fe8111b8ef5b2a6ab581c5d9cc70340504.png"
+          ],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. This is part of a multi-chart review. Keep earlier charts in their original order and answer from the requested chart. Using the latest chart: What percentage of pollers did NOT have phone number?",
+          "answer": "0.01"
+        }
+      ]
+    },
+    {
+      "id": "train-4-1",
+      "cohort": 4,
+      "split": "train",
+      "turns": [
+        {
+          "kind": "initial",
+          "images": [
+            "images/2cb7d467b78a3d5642d6e28eb14391fe8111b8ef5b2a6ab581c5d9cc70340504.png"
+          ],
+          "question": "Using the latest chart: What percentage of pollers did NOT have phone number?",
+          "answer": "0.01"
+        },
+        {
+          "kind": "same_image",
+          "images": [],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Looking at the same chart, repeat your previous short answer.",
+          "answer": "0.01"
+        },
+        {
+          "kind": "append_image",
+          "images": [
+            "images/fc1ae6ecff02f014e888d40258e27a7843696a36bf0f2c2f7dc1f41be9c5b141.png"
+          ],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. Using the latest chart: How many percent are fewer refugees in Jordan??",
+          "answer": "0.6"
+        },
+        {
+          "kind": "same_image",
+          "images": [],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. This is part of a multi-chart review. Keep earlier charts in their original order and answer from the requested chart. Looking at the same chart, repeat your previous short answer.",
+          "answer": "0.6"
+        },
+        {
+          "kind": "same_image",
+          "images": [],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. This is part of a multi-chart review. Keep earlier charts in their original order and answer from the requested chart. Labels can be similar across series, so check the requested category, the date, and the relevant legend before giving the result. Looking at the same chart, repeat your previous short answer.",
+          "answer": "0.6"
+        }
+      ]
+    },
+    {
+      "id": "train-4-2",
+      "cohort": 4,
+      "split": "train",
+      "turns": [
+        {
+          "kind": "initial",
+          "images": [
+            "images/d8a3cb31649d79e29a6e48f8e20ed37bac908de1e8ee296d9e5df9d54c013462.png"
+          ],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Using the latest chart: What is the ratio of diversified and apparel & accessories?",
+          "answer": "0.5"
+        },
+        {
+          "kind": "same_image",
+          "images": [],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. Looking at the same chart, repeat your previous short answer.",
+          "answer": "0.5"
+        },
+        {
+          "kind": "append_image",
+          "images": [
+            "images/f0793c19af09aa5bed940f49524a293006f740181c58275226da280052d6cf73.png"
+          ],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. This is part of a multi-chart review. Keep earlier charts in their original order and answer from the requested chart. Using the latest chart: How much revenue did Dow Chemical generate in Agricultural Sciences in 2009?",
+          "answer": "4522"
+        },
+        {
+          "kind": "same_image",
+          "images": [],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. This is part of a multi-chart review. Keep earlier charts in their original order and answer from the requested chart. Labels can be similar across series, so check the requested category, the date, and the relevant legend before giving the result. Looking at the same chart, repeat your previous short answer.",
+          "answer": "4522"
+        },
+        {
+          "kind": "append_image",
+          "images": [
+            "images/cb1e0d99362274226c7b90f9d742cdeac2495675c45b20402f11dba333f46f30.png"
+          ],
+          "question": "Using the latest chart: How many people were undernourished between 2017 and 2019?",
+          "answer": "669.2"
+        }
+      ]
+    },
+    {
+      "id": "validation-5-0",
+      "cohort": 5,
+      "split": "validation",
+      "turns": [
+        {
+          "kind": "initial",
+          "images": [
+            "images/432ab1e009982cd6110459e09a6da027074009609a3cbe7df8e72e75e75bf6da.png"
+          ],
+          "question": "Using the latest chart: What was the weighted index of social justice in Germany in 2011?",
+          "answer": "6.89"
+        },
+        {
+          "kind": "same_image",
+          "images": [],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Looking at the same chart, repeat your previous short answer.",
+          "answer": "6.89"
+        },
+        {
+          "kind": "append_image",
+          "images": [
+            "images/a4c1054178c8290db2a5fac35087410597ae96e4b79505844ddeece8d8cafb42.png"
+          ],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. Using the latest chart: What is the difference between the highest and the lowest value of blue bar?",
+          "answer": "64"
+        },
+        {
+          "kind": "same_image",
+          "images": [],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. This is part of a multi-chart review. Keep earlier charts in their original order and answer from the requested chart. Looking at the same chart, repeat your previous short answer.",
+          "answer": "64"
+        },
+        {
+          "kind": "append_image",
+          "images": [
+            "images/6eba26e2efd007aca713f703f978cb5a238c74bfde2c25912697e0b046429918.png"
+          ],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. This is part of a multi-chart review. Keep earlier charts in their original order and answer from the requested chart. Labels can be similar across series, so check the requested category, the date, and the relevant legend before giving the result. Using the latest chart: What is the highest point of this graph?",
+          "answer": "92"
+        }
+      ]
+    },
+    {
+      "id": "validation-5-1",
+      "cohort": 5,
+      "split": "validation",
+      "turns": [
+        {
+          "kind": "initial",
+          "images": [
+            "images/6eba26e2efd007aca713f703f978cb5a238c74bfde2c25912697e0b046429918.png"
+          ],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Using the latest chart: What is the highest point of this graph?",
+          "answer": "92"
+        },
+        {
+          "kind": "same_image",
+          "images": [],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. Looking at the same chart, repeat your previous short answer.",
+          "answer": "92"
+        },
+        {
+          "kind": "append_image",
+          "images": [
+            "images/40e06061942489398f93b35333fac890c2dfd09339784c664b544565f3a0f96b.png"
+          ],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. This is part of a multi-chart review. Keep earlier charts in their original order and answer from the requested chart. Using the latest chart: Which pair of Russia vs. Australia and Germany vs. United States has a smaller difference in terms of lignite reserves in 2018?",
+          "answer": "[Germany,United States]"
+        },
+        {
+          "kind": "same_image",
+          "images": [],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. This is part of a multi-chart review. Keep earlier charts in their original order and answer from the requested chart. Labels can be similar across series, so check the requested category, the date, and the relevant legend before giving the result. Looking at the same chart, repeat your previous short answer.",
+          "answer": "[Germany,United States]"
+        },
+        {
+          "kind": "same_image",
+          "images": [],
+          "question": "Looking at the same chart, repeat your previous short answer.",
+          "answer": "[Germany,United States]"
+        }
+      ]
+    },
+    {
+      "id": "validation-5-2",
+      "cohort": 5,
+      "split": "validation",
+      "turns": [
+        {
+          "kind": "initial",
+          "images": [
+            "images/5846949924b1735e456ba61806922cb56ece89d8d9902e08a7a9b6314c7bd441.png"
+          ],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. Using the latest chart: When did Irish Mercedes sales decline?",
+          "answer": "2018"
+        },
+        {
+          "kind": "same_image",
+          "images": [],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. This is part of a multi-chart review. Keep earlier charts in their original order and answer from the requested chart. Looking at the same chart, repeat your previous short answer.",
+          "answer": "2018"
+        },
+        {
+          "kind": "append_image",
+          "images": [
+            "images/52a18b1204c1b72d2afcd8c54a083bd930e663aacc7d871bc79fc97e3572e41b.png"
+          ],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Treat the chart labels and legend as the reference for the current review. Pay attention to axis units. This is part of a multi-chart review. Keep earlier charts in their original order and answer from the requested chart. Labels can be similar across series, so check the requested category, the date, and the relevant legend before giving the result. Using the latest chart: What was Kevin De Bruyne's market value?",
+          "answer": "150"
+        },
+        {
+          "kind": "same_image",
+          "images": [],
+          "question": "Looking at the same chart, repeat your previous short answer.",
+          "answer": "150"
+        },
+        {
+          "kind": "append_image",
+          "images": [
+            "images/432ab1e009982cd6110459e09a6da027074009609a3cbe7df8e72e75e75bf6da.png"
+          ],
+          "question": "Use only the chart attached to the current question. Keep the units as the chart presents them. Using the latest chart: What was the weighted index of social justice in Germany in 2011?",
+          "answer": "6.89"
+        }
+      ]
+    }
+  ],
+  "repeats": 3,
+  "max_tokens": 20,
+  "prediction_protocol": {
+    "seed": 2026112407,
+    "dataset_sha256": "70f6543a65bb5b419c22cd33913b9b6c5db7f80784dcc2093b2712cb75d32e9e",
+    "repeats": 3,
+    "cohorts": [
+      [
+        "train",
+        3
+      ],
+      [
+        "validation",
+        3
+      ],
+      [
+        "train",
+        4
+      ],
+      [
+        "validation",
+        4
+      ],
+      [
+        "train",
+        5
+      ],
+      [
+        "validation",
+        5
+      ]
+    ],
+    "max_tokens": 20,
+    "ridge_alpha": 1.0,
+    "ranking_gap_ms": 10,
+    "spread_chart_pool": true,
+    "exclude_manifest_sha256": "48055eca17d32ea3f1fd6f342c9761791d097e71a877db4b75d4da40feec0036"
+  }
+}

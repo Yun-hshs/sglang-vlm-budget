@@ -29,10 +29,14 @@ def answer(files, question, strategy, history, display):
 
 def build_app():
     with gr.Blocks(title="SGLang 视觉语言助手") as app:
-        gr.Markdown("# 多模态视觉问答\n连接真实 SGLang 服务后使用；本项目目前尚未进行 GPU 验证。")
+        gr.Markdown("# 多模态视觉问答")
         state=gr.State([])
         files=gr.File(file_count="multiple",file_types=["image"],type="filepath",label="图片（最多 8 张）")
-        strategy=gr.Dropdown(["baseline","low","medium","high","adaptive"],value="baseline",label="本轮新增图片预算")
+        strategy=gr.Dropdown(
+            ["baseline", "low", "medium", "high", ("自适应（改进规则）", "adaptive_v2"),
+             ("自适应（旧规则）", "adaptive")],
+            value="baseline", label="本轮新增图片预算",
+        )
         chat=gr.Chatbot(label="多轮会话")
         question=gr.Textbox(label="问题",placeholder="请描述图片，或读取图中的文字")
         stats=gr.Textbox(label="性能信息",lines=8)

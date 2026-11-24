@@ -1,0 +1,23 @@
+{
+  "repeats": 3,
+  "policies": [
+    "fcfs",
+    "cost",
+    "aging100",
+    "aging220",
+    "aging350"
+  ],
+  "session_replicas": 6,
+  "turn_interval_ms": 3240,
+  "arrival_spacing_ms": 60,
+  "aging_rate": 0.35,
+  "overdue_ms": 220,
+  "starvation_watch_ms": 500,
+  "long_quantile": 0.75,
+  "aging_thresholds_ms": {
+    "aging100": 100,
+    "aging220": 220,
+    "aging350": 350
+  },
+  "reference_trace_sha256": "5d83435425bd66eef6bf8a8324e0165155cb48cb6fb3787a4f5b535c6fcc8862"
+}
