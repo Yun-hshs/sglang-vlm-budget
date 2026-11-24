@@ -29,8 +29,10 @@ case "${1:-}" in
         if [[ $1 == run ]]; then
             exec "${supervisor[@]}" -n
         fi
+        exec 9>"$CHAT_STACK_RUN/launch.lock"
+        flock -x 9
         if ! "${ctl[@]}" pid >/dev/null 2>&1; then
-            exec "${supervisor[@]}"
+            "${supervisor[@]}" 9>&-
         fi
         ;;
     ctl)

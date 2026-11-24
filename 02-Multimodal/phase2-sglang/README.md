@@ -1,6 +1,6 @@
 # 阶段 2 · SGLang 多模态服务与调度
 
-**目见**是运行在单张 RTX 5090 上的多用户视觉助手，使用 SGLang 0.5.23 和 Qwen2.5-VL-7B-Instruct。支持多图上传、流式输出、同图追问和隔离的持久化会话。
+**hybrid**是运行在单张 RTX 5090 上的多用户视觉助手，使用 SGLang 0.5.23 和 Qwen2.5-VL-7B-Instruct。支持多图上传、流式输出、同图追问和隔离的持久化会话。
 
 - **代价感知调度**。采用固定中档视觉预算，以估计未缓存 Token 排序，加入 100 ms 等待老化。小规模持续负载实测中，该策略的含排队 TTFT P95 为 1.80 秒，四组中最低。[调度实测](reports/CHARTQA_PREFILL_SIGNALS.md)
 - **部署与恢复**。固定 HTTPS 入口启用登录，SGLang、Web 和 ngrok 由 Supervisor 管理。整套服务重启后验证了同域名登录、历史恢复、会话隔离和流式回答。[试用入口](https://lethargic-aeration-elevate.ngrok-free.dev/) · [部署与验收](reports/VISUAL_CHAT_MVP.md)
