@@ -1,12 +1,10 @@
-# 阶段 2 · SGLang 多模态服务与调度
+# 阶段 2 · Hybrid 多模态助手
 
-**hybrid**是运行在单张 RTX 5090 上的多用户视觉助手，使用 SGLang 0.5.23 和 Qwen2.5-VL-7B-Instruct。支持多图上传、流式输出、同图追问和隔离的持久化会话。
+- **系统**：在单张 RTX 5090 上用 SGLang 部署 Qwen2.5-VL-7B-Instruct，实现多用户隔离、多图多轮对话和流式回答。
+- **调度**：按估计未缓存 Token 数优先调度，等待满 100 ms 的请求优先处理。固定中档预算的小规模持续负载对照中，含排队的首 Token 延迟 P95 为 **1.80 秒**，四组中最低。
+- **部署**：通过固定 HTTPS 地址提供登录试用。实测整套服务重启后，原地址可重新登录、恢复历史并继续流式对话。归档了 ChartQA 视觉预算、缓存与调度对照的脚本和结果。
 
-- **代价感知调度**。采用固定中档视觉预算，以估计未缓存 Token 排序，加入 100 ms 等待老化。小规模持续负载实测中，该策略的含排队 TTFT P95 为 1.80 秒，四组中最低。[调度实测](reports/CHARTQA_PREFILL_SIGNALS.md)
-- **部署与恢复**。固定 HTTPS 入口启用登录，SGLang、Web 和 ngrok 由 Supervisor 管理。整套服务重启后验证了同域名登录、历史恢复、会话隔离和流式回答。[试用入口](https://lethargic-aeration-elevate.ngrok-free.dev/) · [部署与验收](reports/VISUAL_CHAT_MVP.md)
-- **研究与复现**。归档了 ChartQA 视觉预算、自适应分配、缓存代价、Prefill 预测与等待老化的小规模对照，包含脚本、配置和实测记录。[实验索引](results/STATUS.md) · [研究报告](reports/final_report.md)
-
-[阶段 1 · 基础作业](../phase1-assistant/README.md)记录 ChartQA 微调、评测和课程 Demo。
+[试用 Hybrid](https://lethargic-aeration-elevate.ngrok-free.dev/) · [部署与验收](reports/VISUAL_CHAT_MVP.md) · [调度实测](reports/CHARTQA_PREFILL_SIGNALS.md) · [实验索引](results/STATUS.md) · [阶段 1 作业](../phase1-assistant/README.md)
 
 ## 目录
 

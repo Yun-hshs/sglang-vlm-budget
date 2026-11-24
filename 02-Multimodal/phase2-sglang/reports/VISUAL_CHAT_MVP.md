@@ -1,6 +1,6 @@
-# hybrid · 多用户视觉助手
+# Hybrid · 多用户视觉助手
 
-hybrid 是阶段 2 的浏览器聊天界面，后端使用单张 RTX 5090 上的 SGLang 0.5.23 和 Qwen2.5-VL-7B-Instruct。支持独立浏览器身份、多个会话、SQLite 历史、每轮最多四张图片、同图追问、流式响应和停止生成。浏览器历史列表及附件由当前 Cookie 所属会话隔离。会话使用独立 Radix Cache 命名空间，成功生成后保存本轮历史，下一轮使用实际历史回复。固定中档视觉预算，每个对话最多 10 轮，按 8K 服务端上下文预检。
+Hybrid 是阶段 2 的浏览器聊天界面，后端使用单张 RTX 5090 上的 SGLang 0.5.23 和 Qwen2.5-VL-7B-Instruct。支持独立浏览器身份、多个会话、SQLite 历史、每轮最多四张图片、同图追问、流式响应和停止生成。浏览器历史列表及附件由当前 Cookie 所属会话隔离。会话使用独立 Radix Cache 命名空间，成功生成后保存本轮历史，下一轮使用实际历史回复。固定中档视觉预算，每个对话最多 10 轮，按 8K 服务端上下文预检。
 
 ## 调度
 
@@ -76,7 +76,7 @@ CHAT_PUBLIC_URL=https://YOUR_ASSIGNED_NAME.ngrok-free.app bash scripts/start_vis
 
 启动脚本检查本机 Web 入口确实要求登录，仅向该端口转发，并关闭 HTTP 请求检查。切换后从公网验证匿名访问返回 401，独立 Cookie 无法互读会话，图表问答及追问逐段返回。接着重启 Agent，使用同一 URL 和 Cookie 验证历史与追问。浏览器从旧临时域名初次进入固定域名时会建立新的浏览器身份。
 
-2026-11-24 固定入口已启用。[打开「hybrid」](https://lethargic-aeration-elevate.ngrok-free.dev/)
+2026-11-24 固定入口已启用。[打开「Hybrid」](https://lethargic-aeration-elevate.ngrok-free.dev/)
 
 在同一公网 HTTPS 地址上创建两个独立 Cookie 会话，重启 ngrok Agent 后用原 Cookie 继续对话。匿名页面及 API 访问返回 401，使用演示凭据返回 200。两个会话的历史列表各自独立，跨会话读取返回 404。图表追问答出差值 45，服务端报告命中 398 个前缀 Token。另一会话可回忆自己的文字上下文。长回复实测收到 65 次 NDJSON 增量，客户端在 0.552 秒收到首个增量，于 1.186 秒收到完成事件。凭据文件仅保存在运行目录和用户本机。
 

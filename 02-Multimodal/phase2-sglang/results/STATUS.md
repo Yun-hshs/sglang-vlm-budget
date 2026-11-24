@@ -24,7 +24,7 @@
 
 **本地 Prefill 校准与原生 SPF 对照完成（PASS）。** 校准和验证图像及会话独立。验证探针计量 288 条，线上四组各计量 432 条。[实测与复现](../reports/CHARTQA_PREFILL_SIGNALS.md)
 
-**hybrid 多用户 Web 与故障恢复完成（PASS）。** 固定 HTTPS 入口实测通过登录、隔离历史、流式回答、整套进程重启及组件故障恢复。[部署与验收](../reports/VISUAL_CHAT_MVP.md)
+**Hybrid 多用户 Web 与故障恢复完成（PASS）。** 固定 HTTPS 入口实测通过登录、隔离历史、流式回答、整套进程重启及组件故障恢复。[部署与验收](../reports/VISUAL_CHAT_MVP.md)
 
 **正式预算实验待运行（NOT_RUN）。** 图数、并发、预算与质量的对照矩阵以及缓存扩展仍待执行。
 

@@ -56,7 +56,7 @@ async def lifespan(app):
         yield
 
 
-app = FastAPI(title="hybrid", lifespan=lifespan, docs_url=None, redoc_url=None, openapi_url=None)
+app = FastAPI(title="Hybrid", lifespan=lifespan, docs_url=None, redoc_url=None, openapi_url=None)
 app.mount("/assets", StaticFiles(directory=ASSETS), name="assets")
 
 
